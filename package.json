@@ -1,11 +1,12 @@
 {
   "name": "tailwindcss-export-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Export Tailwindcss config options to SASS, SCSS, LESS and Stylus",
   "main": "src/index.js",
   "bin": "src/cli.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "jest": "^23.1.0",
+    "standard-version": "^4.4.0",
     "tailwindcss": "^0.5.3"
   }
 }
