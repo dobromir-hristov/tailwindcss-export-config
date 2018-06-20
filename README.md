@@ -1,8 +1,8 @@
-<div style="text-align:center">
+<div align="center">
   <a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank">
     <img alt="Tailwindcss-export-config" src="https://github.com/dobromir-hristov/tailwindcss-export-config/blob/master/assets/tailwindcss-export-config.png">
   </a>
-  <h2 style="text-align:center">Export Tailwind config options like a pro</h2>
+  <h2 align="center">Export Tailwind config options like a pro</h2>
   
 [![npm package](https://img.shields.io/npm/v/tailwindcss-export-config.svg)](https://www.npmjs.com/package/tailwindcss-export-config)
 </div>
