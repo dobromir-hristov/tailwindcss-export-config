@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank">
-    <img alt="Tailwindcss-export-config" src="https://github.com/dobromir-hristov/tailwindcss-export-config/blob/master/assets/tailwindcss-export-config.png">
+    <img alt="Tailwindcss-export-config" src="https://raw.githubusercontent.com/dobromir-hristov/tailwindcss-export-config/master/assets/tailwindcss-export-config.png">
   </a>
   <h2 align="center">Export Tailwind config options like a pro</h2>
   
