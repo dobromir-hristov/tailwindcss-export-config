@@ -7,9 +7,9 @@ const allowedFormatsMap = {
   styl: converters.Stylus,
   sass: converters.Sass,
   scss: converters.Scss,
-  less: converters.Less,
-  css: 'css'
+  less: converters.Less
 }
+
 /**
  * Converts tailwind config into desired format
  */
@@ -29,7 +29,7 @@ class ConvertTo {
     this.options = options
 
     const Converter = allowedFormatsMap[options.format]
-    const config = typeof options.config === 'object' ? options.config : require(path.join(process.cwd(), options.config))
+    const config = typeof options.config === 'object' ? options.config : require(options.config)
 
     this.converterInstance = new Converter({ config, prefix: options.prefix, flat: options.flat })
   }

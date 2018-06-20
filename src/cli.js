@@ -5,6 +5,8 @@ const ConvertTo = require('./index.js')
 const chalk = require('chalk').default
 const log = console.log
 const error = (msg) => chalk.bold.bgRed('\n' + chalk.white(msg) + '\n')
+const path = require('path')
+
 const argv = yargs // eslint-disable-line
   .usage('Usage: $0 -config [relative_path] -destination [relative_path]')
   .option('config', {
@@ -42,7 +44,7 @@ const argv = yargs // eslint-disable-line
 
 try {
   const converter = new ConvertTo({
-    config: argv.config,
+    config: path.join(process.cwd(), argv.config),
     destination: argv.destination,
     format: argv.format,
     prefix: argv.prefix,
