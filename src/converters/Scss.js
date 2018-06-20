@@ -1,6 +1,9 @@
 const Converter = require('./Converter')
 
-module.exports = class ConvertToScss extends Converter {
+/**
+ * @extends Converter
+ */
+class ScssConverter extends Converter {
   constructor (opts) {
     super(opts)
   }
@@ -31,3 +34,5 @@ module.exports = class ConvertToScss extends Converter {
     return 'scss'
   }
 }
+
+module.exports = ScssConverter

@@ -1,6 +1,8 @@
 const yargs = require('yargs')
-const convert = require('./index.js')
-
+const ConvertTo = require('./index.js')
+const chalk = require('chalk').default
+const log = console.log
+const error = (msg) => chalk.bold.bgRed('\n' + chalk.white(msg) + '\n')
 const argv = yargs // eslint-disable-line
   .usage('Usage: $0 -config [relative_path] -destination [relative_path]')
   .option('config', {
@@ -36,10 +38,24 @@ const argv = yargs // eslint-disable-line
   })
   .argv
 
-convert({
-  config: argv.config,
-  destination: argv.destination,
-  format: argv.format,
-  prefix: argv.prefix,
-  flat: argv.flat
-})
+try {
+  const converter = new ConvertTo({
+    config: argv.config,
+    destination: argv.destination,
+    format: argv.format,
+    prefix: argv.prefix,
+    flat: argv.flat
+  })
+  converter.writeToFile()
+    .then((options) => {
+      log(chalk.bold.bgGreen(`\n Config file written successfully to ${options.destination} `))
+    })
+    .catch((e) => {
+      log(error(e.message))
+    })
+} catch (e) {
+  log(error(e.message))
+  throw e
+}
+
+

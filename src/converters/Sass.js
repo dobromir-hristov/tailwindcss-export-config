@@ -1,6 +1,6 @@
 const Converter = require('./Converter')
 
-module.exports = class ConvertToSass extends Converter {
+class SassConverter extends Converter {
   constructor (opts) {
     super(opts)
   }
@@ -25,3 +25,5 @@ module.exports = class ConvertToSass extends Converter {
     return 'sass'
   }
 }
+
+module.exports = SassConverter

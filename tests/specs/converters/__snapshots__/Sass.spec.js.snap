@@ -1,0 +1,2063 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sass converter Converts to flat variables 1`] = `
+"
+
+$colors-transparent: transparent
+$colors-black: #22292f
+$colors-grey-darkest: #3d4852
+$colors-grey-darker: #606f7b
+$colors-grey-dark: #8795a1
+$colors-grey: #b8c2cc
+$colors-grey-light: #dae1e7
+$colors-grey-lighter: #f1f5f8
+$colors-grey-lightest: #f8fafc
+$colors-white: #ffffff
+$colors-red-darkest: #3b0d0c
+$colors-red-darker: #621b18
+$colors-red-dark: #cc1f1a
+$colors-red: #e3342f
+$colors-red-light: #ef5753
+$colors-red-lighter: #f9acaa
+$colors-red-lightest: #fcebea
+$colors-orange-darkest: #462a16
+$colors-orange-darker: #613b1f
+$colors-orange-dark: #de751f
+$colors-orange: #f6993f
+$colors-orange-light: #faad63
+$colors-orange-lighter: #fcd9b6
+$colors-orange-lightest: #fff5eb
+$colors-yellow-darkest: #453411
+$colors-yellow-darker: #684f1d
+$colors-yellow-dark: #f2d024
+$colors-yellow: #ffed4a
+$colors-yellow-light: #fff382
+$colors-yellow-lighter: #fff9c2
+$colors-yellow-lightest: #fcfbeb
+$colors-green-darkest: #0f2f21
+$colors-green-darker: #1a4731
+$colors-green-dark: #1f9d55
+$colors-green: #38c172
+$colors-green-light: #51d88a
+$colors-green-lighter: #a2f5bf
+$colors-green-lightest: #e3fcec
+$colors-teal-darkest: #0d3331
+$colors-teal-darker: #20504f
+$colors-teal-dark: #38a89d
+$colors-teal: #4dc0b5
+$colors-teal-light: #64d5ca
+$colors-teal-lighter: #a0f0ed
+$colors-teal-lightest: #e8fffe
+$colors-blue-darkest: #12283a
+$colors-blue-darker: #1c3d5a
+$colors-blue-dark: #2779bd
+$colors-blue: #3490dc
+$colors-blue-light: #6cb2eb
+$colors-blue-lighter: #bcdefa
+$colors-blue-lightest: #eff8ff
+$colors-indigo-darkest: #191e38
+$colors-indigo-darker: #2f365f
+$colors-indigo-dark: #5661b3
+$colors-indigo: #6574cd
+$colors-indigo-light: #7886d7
+$colors-indigo-lighter: #b2b7ff
+$colors-indigo-lightest: #e6e8ff
+$colors-purple-darkest: #21183c
+$colors-purple-darker: #382b5f
+$colors-purple-dark: #794acf
+$colors-purple: #9561e2
+$colors-purple-light: #a779e9
+$colors-purple-lighter: #d6bbfc
+$colors-purple-lightest: #f3ebff
+$colors-pink-darkest: #451225
+$colors-pink-darker: #6f213f
+$colors-pink-dark: #eb5286
+$colors-pink: #f66d9b
+$colors-pink-light: #fa7ea8
+$colors-pink-lighter: #ffbbca
+$colors-pink-lightest: #ffebef
+
+
+$screens-sm: 576px
+$screens-md: 768px
+$screens-lg: 992px
+$screens-xl: 1200px
+
+
+$fonts-sans: (system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif)
+$fonts-serif: (Constantia,Lucida Bright,Lucidabright,Lucida Serif,Lucida,DejaVu Serif,Bitstream Vera Serif,Liberation Serif,Georgia,serif)
+$fonts-mono: (Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace)
+
+
+$textSizes-xs: .75rem
+$textSizes-sm: .875rem
+$textSizes-base: 1rem
+$textSizes-lg: 1.125rem
+$textSizes-xl: 1.25rem
+$textSizes-2xl: 1.5rem
+$textSizes-3xl: 1.875rem
+$textSizes-4xl: 2.25rem
+$textSizes-5xl: 3rem
+
+
+$fontWeights-hairline: 100
+$fontWeights-thin: 200
+$fontWeights-light: 300
+$fontWeights-normal: 400
+$fontWeights-medium: 500
+$fontWeights-semibold: 600
+$fontWeights-bold: 700
+$fontWeights-extrabold: 800
+$fontWeights-black: 900
+
+
+$leading-none: 1
+$leading-tight: 1.25
+$leading-normal: 1.5
+$leading-loose: 2
+
+
+$tracking-tight: -0.05em
+$tracking-normal: 0
+$tracking-wide: 0.05em
+
+
+$textColors-transparent: transparent
+$textColors-black: #22292f
+$textColors-grey-darkest: #3d4852
+$textColors-grey-darker: #606f7b
+$textColors-grey-dark: #8795a1
+$textColors-grey: #b8c2cc
+$textColors-grey-light: #dae1e7
+$textColors-grey-lighter: #f1f5f8
+$textColors-grey-lightest: #f8fafc
+$textColors-white: #ffffff
+$textColors-red-darkest: #3b0d0c
+$textColors-red-darker: #621b18
+$textColors-red-dark: #cc1f1a
+$textColors-red: #e3342f
+$textColors-red-light: #ef5753
+$textColors-red-lighter: #f9acaa
+$textColors-red-lightest: #fcebea
+$textColors-orange-darkest: #462a16
+$textColors-orange-darker: #613b1f
+$textColors-orange-dark: #de751f
+$textColors-orange: #f6993f
+$textColors-orange-light: #faad63
+$textColors-orange-lighter: #fcd9b6
+$textColors-orange-lightest: #fff5eb
+$textColors-yellow-darkest: #453411
+$textColors-yellow-darker: #684f1d
+$textColors-yellow-dark: #f2d024
+$textColors-yellow: #ffed4a
+$textColors-yellow-light: #fff382
+$textColors-yellow-lighter: #fff9c2
+$textColors-yellow-lightest: #fcfbeb
+$textColors-green-darkest: #0f2f21
+$textColors-green-darker: #1a4731
+$textColors-green-dark: #1f9d55
+$textColors-green: #38c172
+$textColors-green-light: #51d88a
+$textColors-green-lighter: #a2f5bf
+$textColors-green-lightest: #e3fcec
+$textColors-teal-darkest: #0d3331
+$textColors-teal-darker: #20504f
+$textColors-teal-dark: #38a89d
+$textColors-teal: #4dc0b5
+$textColors-teal-light: #64d5ca
+$textColors-teal-lighter: #a0f0ed
+$textColors-teal-lightest: #e8fffe
+$textColors-blue-darkest: #12283a
+$textColors-blue-darker: #1c3d5a
+$textColors-blue-dark: #2779bd
+$textColors-blue: #3490dc
+$textColors-blue-light: #6cb2eb
+$textColors-blue-lighter: #bcdefa
+$textColors-blue-lightest: #eff8ff
+$textColors-indigo-darkest: #191e38
+$textColors-indigo-darker: #2f365f
+$textColors-indigo-dark: #5661b3
+$textColors-indigo: #6574cd
+$textColors-indigo-light: #7886d7
+$textColors-indigo-lighter: #b2b7ff
+$textColors-indigo-lightest: #e6e8ff
+$textColors-purple-darkest: #21183c
+$textColors-purple-darker: #382b5f
+$textColors-purple-dark: #794acf
+$textColors-purple: #9561e2
+$textColors-purple-light: #a779e9
+$textColors-purple-lighter: #d6bbfc
+$textColors-purple-lightest: #f3ebff
+$textColors-pink-darkest: #451225
+$textColors-pink-darker: #6f213f
+$textColors-pink-dark: #eb5286
+$textColors-pink: #f66d9b
+$textColors-pink-light: #fa7ea8
+$textColors-pink-lighter: #ffbbca
+$textColors-pink-lightest: #ffebef
+
+
+$backgroundColors-transparent: transparent
+$backgroundColors-black: #22292f
+$backgroundColors-grey-darkest: #3d4852
+$backgroundColors-grey-darker: #606f7b
+$backgroundColors-grey-dark: #8795a1
+$backgroundColors-grey: #b8c2cc
+$backgroundColors-grey-light: #dae1e7
+$backgroundColors-grey-lighter: #f1f5f8
+$backgroundColors-grey-lightest: #f8fafc
+$backgroundColors-white: #ffffff
+$backgroundColors-red-darkest: #3b0d0c
+$backgroundColors-red-darker: #621b18
+$backgroundColors-red-dark: #cc1f1a
+$backgroundColors-red: #e3342f
+$backgroundColors-red-light: #ef5753
+$backgroundColors-red-lighter: #f9acaa
+$backgroundColors-red-lightest: #fcebea
+$backgroundColors-orange-darkest: #462a16
+$backgroundColors-orange-darker: #613b1f
+$backgroundColors-orange-dark: #de751f
+$backgroundColors-orange: #f6993f
+$backgroundColors-orange-light: #faad63
+$backgroundColors-orange-lighter: #fcd9b6
+$backgroundColors-orange-lightest: #fff5eb
+$backgroundColors-yellow-darkest: #453411
+$backgroundColors-yellow-darker: #684f1d
+$backgroundColors-yellow-dark: #f2d024
+$backgroundColors-yellow: #ffed4a
+$backgroundColors-yellow-light: #fff382
+$backgroundColors-yellow-lighter: #fff9c2
+$backgroundColors-yellow-lightest: #fcfbeb
+$backgroundColors-green-darkest: #0f2f21
+$backgroundColors-green-darker: #1a4731
+$backgroundColors-green-dark: #1f9d55
+$backgroundColors-green: #38c172
+$backgroundColors-green-light: #51d88a
+$backgroundColors-green-lighter: #a2f5bf
+$backgroundColors-green-lightest: #e3fcec
+$backgroundColors-teal-darkest: #0d3331
+$backgroundColors-teal-darker: #20504f
+$backgroundColors-teal-dark: #38a89d
+$backgroundColors-teal: #4dc0b5
+$backgroundColors-teal-light: #64d5ca
+$backgroundColors-teal-lighter: #a0f0ed
+$backgroundColors-teal-lightest: #e8fffe
+$backgroundColors-blue-darkest: #12283a
+$backgroundColors-blue-darker: #1c3d5a
+$backgroundColors-blue-dark: #2779bd
+$backgroundColors-blue: #3490dc
+$backgroundColors-blue-light: #6cb2eb
+$backgroundColors-blue-lighter: #bcdefa
+$backgroundColors-blue-lightest: #eff8ff
+$backgroundColors-indigo-darkest: #191e38
+$backgroundColors-indigo-darker: #2f365f
+$backgroundColors-indigo-dark: #5661b3
+$backgroundColors-indigo: #6574cd
+$backgroundColors-indigo-light: #7886d7
+$backgroundColors-indigo-lighter: #b2b7ff
+$backgroundColors-indigo-lightest: #e6e8ff
+$backgroundColors-purple-darkest: #21183c
+$backgroundColors-purple-darker: #382b5f
+$backgroundColors-purple-dark: #794acf
+$backgroundColors-purple: #9561e2
+$backgroundColors-purple-light: #a779e9
+$backgroundColors-purple-lighter: #d6bbfc
+$backgroundColors-purple-lightest: #f3ebff
+$backgroundColors-pink-darkest: #451225
+$backgroundColors-pink-darker: #6f213f
+$backgroundColors-pink-dark: #eb5286
+$backgroundColors-pink: #f66d9b
+$backgroundColors-pink-light: #fa7ea8
+$backgroundColors-pink-lighter: #ffbbca
+$backgroundColors-pink-lightest: #ffebef
+
+
+$backgroundSize-auto: auto
+$backgroundSize-cover: cover
+$backgroundSize-contain: contain
+
+
+$borderWidths-0: 0
+$borderWidths-2: 2px
+$borderWidths-4: 4px
+$borderWidths-8: 8px
+$borderWidths-default: 1px
+
+
+$borderColors-default: #dae1e7
+$borderColors-transparent: transparent
+$borderColors-black: #22292f
+$borderColors-grey-darkest: #3d4852
+$borderColors-grey-darker: #606f7b
+$borderColors-grey-dark: #8795a1
+$borderColors-grey: #b8c2cc
+$borderColors-grey-light: #dae1e7
+$borderColors-grey-lighter: #f1f5f8
+$borderColors-grey-lightest: #f8fafc
+$borderColors-white: #ffffff
+$borderColors-red-darkest: #3b0d0c
+$borderColors-red-darker: #621b18
+$borderColors-red-dark: #cc1f1a
+$borderColors-red: #e3342f
+$borderColors-red-light: #ef5753
+$borderColors-red-lighter: #f9acaa
+$borderColors-red-lightest: #fcebea
+$borderColors-orange-darkest: #462a16
+$borderColors-orange-darker: #613b1f
+$borderColors-orange-dark: #de751f
+$borderColors-orange: #f6993f
+$borderColors-orange-light: #faad63
+$borderColors-orange-lighter: #fcd9b6
+$borderColors-orange-lightest: #fff5eb
+$borderColors-yellow-darkest: #453411
+$borderColors-yellow-darker: #684f1d
+$borderColors-yellow-dark: #f2d024
+$borderColors-yellow: #ffed4a
+$borderColors-yellow-light: #fff382
+$borderColors-yellow-lighter: #fff9c2
+$borderColors-yellow-lightest: #fcfbeb
+$borderColors-green-darkest: #0f2f21
+$borderColors-green-darker: #1a4731
+$borderColors-green-dark: #1f9d55
+$borderColors-green: #38c172
+$borderColors-green-light: #51d88a
+$borderColors-green-lighter: #a2f5bf
+$borderColors-green-lightest: #e3fcec
+$borderColors-teal-darkest: #0d3331
+$borderColors-teal-darker: #20504f
+$borderColors-teal-dark: #38a89d
+$borderColors-teal: #4dc0b5
+$borderColors-teal-light: #64d5ca
+$borderColors-teal-lighter: #a0f0ed
+$borderColors-teal-lightest: #e8fffe
+$borderColors-blue-darkest: #12283a
+$borderColors-blue-darker: #1c3d5a
+$borderColors-blue-dark: #2779bd
+$borderColors-blue: #3490dc
+$borderColors-blue-light: #6cb2eb
+$borderColors-blue-lighter: #bcdefa
+$borderColors-blue-lightest: #eff8ff
+$borderColors-indigo-darkest: #191e38
+$borderColors-indigo-darker: #2f365f
+$borderColors-indigo-dark: #5661b3
+$borderColors-indigo: #6574cd
+$borderColors-indigo-light: #7886d7
+$borderColors-indigo-lighter: #b2b7ff
+$borderColors-indigo-lightest: #e6e8ff
+$borderColors-purple-darkest: #21183c
+$borderColors-purple-darker: #382b5f
+$borderColors-purple-dark: #794acf
+$borderColors-purple: #9561e2
+$borderColors-purple-light: #a779e9
+$borderColors-purple-lighter: #d6bbfc
+$borderColors-purple-lightest: #f3ebff
+$borderColors-pink-darkest: #451225
+$borderColors-pink-darker: #6f213f
+$borderColors-pink-dark: #eb5286
+$borderColors-pink: #f66d9b
+$borderColors-pink-light: #fa7ea8
+$borderColors-pink-lighter: #ffbbca
+$borderColors-pink-lightest: #ffebef
+
+
+$borderRadius-none: 0
+$borderRadius-sm: .125rem
+$borderRadius-default: .25rem
+$borderRadius-lg: .5rem
+$borderRadius-full: 9999px
+
+
+$width-1: 0.25rem
+$width-2: 0.5rem
+$width-3: 0.75rem
+$width-4: 1rem
+$width-6: 1.5rem
+$width-8: 2rem
+$width-10: 2.5rem
+$width-12: 3rem
+$width-16: 4rem
+$width-24: 6rem
+$width-32: 8rem
+$width-48: 12rem
+$width-64: 16rem
+$width-auto: auto
+$width-px: 1px
+$width-1\\\\/2: 50%
+$width-1\\\\/3: 33.33333%
+$width-2\\\\/3: 66.66667%
+$width-1\\\\/4: 25%
+$width-3\\\\/4: 75%
+$width-1\\\\/5: 20%
+$width-2\\\\/5: 40%
+$width-3\\\\/5: 60%
+$width-4\\\\/5: 80%
+$width-1\\\\/6: 16.66667%
+$width-5\\\\/6: 83.33333%
+$width-full: 100%
+$width-screen: 100vw
+
+
+$height-1: 0.25rem
+$height-2: 0.5rem
+$height-3: 0.75rem
+$height-4: 1rem
+$height-6: 1.5rem
+$height-8: 2rem
+$height-10: 2.5rem
+$height-12: 3rem
+$height-16: 4rem
+$height-24: 6rem
+$height-32: 8rem
+$height-48: 12rem
+$height-64: 16rem
+$height-auto: auto
+$height-px: 1px
+$height-full: 100%
+$height-screen: 100vh
+
+
+$minWidth-0: 0
+$minWidth-full: 100%
+
+
+$minHeight-0: 0
+$minHeight-full: 100%
+$minHeight-screen: 100vh
+
+
+$maxWidth-xs: 20rem
+$maxWidth-sm: 30rem
+$maxWidth-md: 40rem
+$maxWidth-lg: 50rem
+$maxWidth-xl: 60rem
+$maxWidth-2xl: 70rem
+$maxWidth-3xl: 80rem
+$maxWidth-4xl: 90rem
+$maxWidth-5xl: 100rem
+$maxWidth-full: 100%
+
+
+$maxHeight-full: 100%
+$maxHeight-screen: 100vh
+
+
+$padding-0: 0
+$padding-1: 0.25rem
+$padding-2: 0.5rem
+$padding-3: 0.75rem
+$padding-4: 1rem
+$padding-6: 1.5rem
+$padding-8: 2rem
+$padding-px: 1px
+
+
+$margin-0: 0
+$margin-1: 0.25rem
+$margin-2: 0.5rem
+$margin-3: 0.75rem
+$margin-4: 1rem
+$margin-6: 1.5rem
+$margin-8: 2rem
+$margin-auto: auto
+$margin-px: 1px
+
+
+$negativeMargin-0: 0
+$negativeMargin-1: 0.25rem
+$negativeMargin-2: 0.5rem
+$negativeMargin-3: 0.75rem
+$negativeMargin-4: 1rem
+$negativeMargin-6: 1.5rem
+$negativeMargin-8: 2rem
+$negativeMargin-px: 1px
+
+
+$shadows-default: (0 2px 4px 0 rgba(0,0,0,0.10))
+$shadows-md: (0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08))
+$shadows-lg: (0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08))
+$shadows-inner: (inset 0 2px 4px 0 rgba(0,0,0,0.06))
+$shadows-none: none
+
+
+$zIndex-0: 0
+$zIndex-10: 10
+$zIndex-20: 20
+$zIndex-30: 30
+$zIndex-40: 40
+$zIndex-50: 50
+$zIndex-auto: auto
+
+
+$opacity-0: 0
+$opacity-25: .25
+$opacity-50: .5
+$opacity-75: .75
+$opacity-100: 1
+
+
+$svgFill-current: currentColor
+
+
+$svgStroke-current: currentColor
+"
+`;
+
+exports[`Sass converter Converts to flat variables with prefix 1`] = `
+"
+
+$tw-colors-transparent: transparent
+$tw-colors-black: #22292f
+$tw-colors-grey-darkest: #3d4852
+$tw-colors-grey-darker: #606f7b
+$tw-colors-grey-dark: #8795a1
+$tw-colors-grey: #b8c2cc
+$tw-colors-grey-light: #dae1e7
+$tw-colors-grey-lighter: #f1f5f8
+$tw-colors-grey-lightest: #f8fafc
+$tw-colors-white: #ffffff
+$tw-colors-red-darkest: #3b0d0c
+$tw-colors-red-darker: #621b18
+$tw-colors-red-dark: #cc1f1a
+$tw-colors-red: #e3342f
+$tw-colors-red-light: #ef5753
+$tw-colors-red-lighter: #f9acaa
+$tw-colors-red-lightest: #fcebea
+$tw-colors-orange-darkest: #462a16
+$tw-colors-orange-darker: #613b1f
+$tw-colors-orange-dark: #de751f
+$tw-colors-orange: #f6993f
+$tw-colors-orange-light: #faad63
+$tw-colors-orange-lighter: #fcd9b6
+$tw-colors-orange-lightest: #fff5eb
+$tw-colors-yellow-darkest: #453411
+$tw-colors-yellow-darker: #684f1d
+$tw-colors-yellow-dark: #f2d024
+$tw-colors-yellow: #ffed4a
+$tw-colors-yellow-light: #fff382
+$tw-colors-yellow-lighter: #fff9c2
+$tw-colors-yellow-lightest: #fcfbeb
+$tw-colors-green-darkest: #0f2f21
+$tw-colors-green-darker: #1a4731
+$tw-colors-green-dark: #1f9d55
+$tw-colors-green: #38c172
+$tw-colors-green-light: #51d88a
+$tw-colors-green-lighter: #a2f5bf
+$tw-colors-green-lightest: #e3fcec
+$tw-colors-teal-darkest: #0d3331
+$tw-colors-teal-darker: #20504f
+$tw-colors-teal-dark: #38a89d
+$tw-colors-teal: #4dc0b5
+$tw-colors-teal-light: #64d5ca
+$tw-colors-teal-lighter: #a0f0ed
+$tw-colors-teal-lightest: #e8fffe
+$tw-colors-blue-darkest: #12283a
+$tw-colors-blue-darker: #1c3d5a
+$tw-colors-blue-dark: #2779bd
+$tw-colors-blue: #3490dc
+$tw-colors-blue-light: #6cb2eb
+$tw-colors-blue-lighter: #bcdefa
+$tw-colors-blue-lightest: #eff8ff
+$tw-colors-indigo-darkest: #191e38
+$tw-colors-indigo-darker: #2f365f
+$tw-colors-indigo-dark: #5661b3
+$tw-colors-indigo: #6574cd
+$tw-colors-indigo-light: #7886d7
+$tw-colors-indigo-lighter: #b2b7ff
+$tw-colors-indigo-lightest: #e6e8ff
+$tw-colors-purple-darkest: #21183c
+$tw-colors-purple-darker: #382b5f
+$tw-colors-purple-dark: #794acf
+$tw-colors-purple: #9561e2
+$tw-colors-purple-light: #a779e9
+$tw-colors-purple-lighter: #d6bbfc
+$tw-colors-purple-lightest: #f3ebff
+$tw-colors-pink-darkest: #451225
+$tw-colors-pink-darker: #6f213f
+$tw-colors-pink-dark: #eb5286
+$tw-colors-pink: #f66d9b
+$tw-colors-pink-light: #fa7ea8
+$tw-colors-pink-lighter: #ffbbca
+$tw-colors-pink-lightest: #ffebef
+
+
+$tw-screens-sm: 576px
+$tw-screens-md: 768px
+$tw-screens-lg: 992px
+$tw-screens-xl: 1200px
+
+
+$tw-fonts-sans: (system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif)
+$tw-fonts-serif: (Constantia,Lucida Bright,Lucidabright,Lucida Serif,Lucida,DejaVu Serif,Bitstream Vera Serif,Liberation Serif,Georgia,serif)
+$tw-fonts-mono: (Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace)
+
+
+$tw-textSizes-xs: .75rem
+$tw-textSizes-sm: .875rem
+$tw-textSizes-base: 1rem
+$tw-textSizes-lg: 1.125rem
+$tw-textSizes-xl: 1.25rem
+$tw-textSizes-2xl: 1.5rem
+$tw-textSizes-3xl: 1.875rem
+$tw-textSizes-4xl: 2.25rem
+$tw-textSizes-5xl: 3rem
+
+
+$tw-fontWeights-hairline: 100
+$tw-fontWeights-thin: 200
+$tw-fontWeights-light: 300
+$tw-fontWeights-normal: 400
+$tw-fontWeights-medium: 500
+$tw-fontWeights-semibold: 600
+$tw-fontWeights-bold: 700
+$tw-fontWeights-extrabold: 800
+$tw-fontWeights-black: 900
+
+
+$tw-leading-none: 1
+$tw-leading-tight: 1.25
+$tw-leading-normal: 1.5
+$tw-leading-loose: 2
+
+
+$tw-tracking-tight: -0.05em
+$tw-tracking-normal: 0
+$tw-tracking-wide: 0.05em
+
+
+$tw-textColors-transparent: transparent
+$tw-textColors-black: #22292f
+$tw-textColors-grey-darkest: #3d4852
+$tw-textColors-grey-darker: #606f7b
+$tw-textColors-grey-dark: #8795a1
+$tw-textColors-grey: #b8c2cc
+$tw-textColors-grey-light: #dae1e7
+$tw-textColors-grey-lighter: #f1f5f8
+$tw-textColors-grey-lightest: #f8fafc
+$tw-textColors-white: #ffffff
+$tw-textColors-red-darkest: #3b0d0c
+$tw-textColors-red-darker: #621b18
+$tw-textColors-red-dark: #cc1f1a
+$tw-textColors-red: #e3342f
+$tw-textColors-red-light: #ef5753
+$tw-textColors-red-lighter: #f9acaa
+$tw-textColors-red-lightest: #fcebea
+$tw-textColors-orange-darkest: #462a16
+$tw-textColors-orange-darker: #613b1f
+$tw-textColors-orange-dark: #de751f
+$tw-textColors-orange: #f6993f
+$tw-textColors-orange-light: #faad63
+$tw-textColors-orange-lighter: #fcd9b6
+$tw-textColors-orange-lightest: #fff5eb
+$tw-textColors-yellow-darkest: #453411
+$tw-textColors-yellow-darker: #684f1d
+$tw-textColors-yellow-dark: #f2d024
+$tw-textColors-yellow: #ffed4a
+$tw-textColors-yellow-light: #fff382
+$tw-textColors-yellow-lighter: #fff9c2
+$tw-textColors-yellow-lightest: #fcfbeb
+$tw-textColors-green-darkest: #0f2f21
+$tw-textColors-green-darker: #1a4731
+$tw-textColors-green-dark: #1f9d55
+$tw-textColors-green: #38c172
+$tw-textColors-green-light: #51d88a
+$tw-textColors-green-lighter: #a2f5bf
+$tw-textColors-green-lightest: #e3fcec
+$tw-textColors-teal-darkest: #0d3331
+$tw-textColors-teal-darker: #20504f
+$tw-textColors-teal-dark: #38a89d
+$tw-textColors-teal: #4dc0b5
+$tw-textColors-teal-light: #64d5ca
+$tw-textColors-teal-lighter: #a0f0ed
+$tw-textColors-teal-lightest: #e8fffe
+$tw-textColors-blue-darkest: #12283a
+$tw-textColors-blue-darker: #1c3d5a
+$tw-textColors-blue-dark: #2779bd
+$tw-textColors-blue: #3490dc
+$tw-textColors-blue-light: #6cb2eb
+$tw-textColors-blue-lighter: #bcdefa
+$tw-textColors-blue-lightest: #eff8ff
+$tw-textColors-indigo-darkest: #191e38
+$tw-textColors-indigo-darker: #2f365f
+$tw-textColors-indigo-dark: #5661b3
+$tw-textColors-indigo: #6574cd
+$tw-textColors-indigo-light: #7886d7
+$tw-textColors-indigo-lighter: #b2b7ff
+$tw-textColors-indigo-lightest: #e6e8ff
+$tw-textColors-purple-darkest: #21183c
+$tw-textColors-purple-darker: #382b5f
+$tw-textColors-purple-dark: #794acf
+$tw-textColors-purple: #9561e2
+$tw-textColors-purple-light: #a779e9
+$tw-textColors-purple-lighter: #d6bbfc
+$tw-textColors-purple-lightest: #f3ebff
+$tw-textColors-pink-darkest: #451225
+$tw-textColors-pink-darker: #6f213f
+$tw-textColors-pink-dark: #eb5286
+$tw-textColors-pink: #f66d9b
+$tw-textColors-pink-light: #fa7ea8
+$tw-textColors-pink-lighter: #ffbbca
+$tw-textColors-pink-lightest: #ffebef
+
+
+$tw-backgroundColors-transparent: transparent
+$tw-backgroundColors-black: #22292f
+$tw-backgroundColors-grey-darkest: #3d4852
+$tw-backgroundColors-grey-darker: #606f7b
+$tw-backgroundColors-grey-dark: #8795a1
+$tw-backgroundColors-grey: #b8c2cc
+$tw-backgroundColors-grey-light: #dae1e7
+$tw-backgroundColors-grey-lighter: #f1f5f8
+$tw-backgroundColors-grey-lightest: #f8fafc
+$tw-backgroundColors-white: #ffffff
+$tw-backgroundColors-red-darkest: #3b0d0c
+$tw-backgroundColors-red-darker: #621b18
+$tw-backgroundColors-red-dark: #cc1f1a
+$tw-backgroundColors-red: #e3342f
+$tw-backgroundColors-red-light: #ef5753
+$tw-backgroundColors-red-lighter: #f9acaa
+$tw-backgroundColors-red-lightest: #fcebea
+$tw-backgroundColors-orange-darkest: #462a16
+$tw-backgroundColors-orange-darker: #613b1f
+$tw-backgroundColors-orange-dark: #de751f
+$tw-backgroundColors-orange: #f6993f
+$tw-backgroundColors-orange-light: #faad63
+$tw-backgroundColors-orange-lighter: #fcd9b6
+$tw-backgroundColors-orange-lightest: #fff5eb
+$tw-backgroundColors-yellow-darkest: #453411
+$tw-backgroundColors-yellow-darker: #684f1d
+$tw-backgroundColors-yellow-dark: #f2d024
+$tw-backgroundColors-yellow: #ffed4a
+$tw-backgroundColors-yellow-light: #fff382
+$tw-backgroundColors-yellow-lighter: #fff9c2
+$tw-backgroundColors-yellow-lightest: #fcfbeb
+$tw-backgroundColors-green-darkest: #0f2f21
+$tw-backgroundColors-green-darker: #1a4731
+$tw-backgroundColors-green-dark: #1f9d55
+$tw-backgroundColors-green: #38c172
+$tw-backgroundColors-green-light: #51d88a
+$tw-backgroundColors-green-lighter: #a2f5bf
+$tw-backgroundColors-green-lightest: #e3fcec
+$tw-backgroundColors-teal-darkest: #0d3331
+$tw-backgroundColors-teal-darker: #20504f
+$tw-backgroundColors-teal-dark: #38a89d
+$tw-backgroundColors-teal: #4dc0b5
+$tw-backgroundColors-teal-light: #64d5ca
+$tw-backgroundColors-teal-lighter: #a0f0ed
+$tw-backgroundColors-teal-lightest: #e8fffe
+$tw-backgroundColors-blue-darkest: #12283a
+$tw-backgroundColors-blue-darker: #1c3d5a
+$tw-backgroundColors-blue-dark: #2779bd
+$tw-backgroundColors-blue: #3490dc
+$tw-backgroundColors-blue-light: #6cb2eb
+$tw-backgroundColors-blue-lighter: #bcdefa
+$tw-backgroundColors-blue-lightest: #eff8ff
+$tw-backgroundColors-indigo-darkest: #191e38
+$tw-backgroundColors-indigo-darker: #2f365f
+$tw-backgroundColors-indigo-dark: #5661b3
+$tw-backgroundColors-indigo: #6574cd
+$tw-backgroundColors-indigo-light: #7886d7
+$tw-backgroundColors-indigo-lighter: #b2b7ff
+$tw-backgroundColors-indigo-lightest: #e6e8ff
+$tw-backgroundColors-purple-darkest: #21183c
+$tw-backgroundColors-purple-darker: #382b5f
+$tw-backgroundColors-purple-dark: #794acf
+$tw-backgroundColors-purple: #9561e2
+$tw-backgroundColors-purple-light: #a779e9
+$tw-backgroundColors-purple-lighter: #d6bbfc
+$tw-backgroundColors-purple-lightest: #f3ebff
+$tw-backgroundColors-pink-darkest: #451225
+$tw-backgroundColors-pink-darker: #6f213f
+$tw-backgroundColors-pink-dark: #eb5286
+$tw-backgroundColors-pink: #f66d9b
+$tw-backgroundColors-pink-light: #fa7ea8
+$tw-backgroundColors-pink-lighter: #ffbbca
+$tw-backgroundColors-pink-lightest: #ffebef
+
+
+$tw-backgroundSize-auto: auto
+$tw-backgroundSize-cover: cover
+$tw-backgroundSize-contain: contain
+
+
+$tw-borderWidths-0: 0
+$tw-borderWidths-2: 2px
+$tw-borderWidths-4: 4px
+$tw-borderWidths-8: 8px
+$tw-borderWidths-default: 1px
+
+
+$tw-borderColors-default: #dae1e7
+$tw-borderColors-transparent: transparent
+$tw-borderColors-black: #22292f
+$tw-borderColors-grey-darkest: #3d4852
+$tw-borderColors-grey-darker: #606f7b
+$tw-borderColors-grey-dark: #8795a1
+$tw-borderColors-grey: #b8c2cc
+$tw-borderColors-grey-light: #dae1e7
+$tw-borderColors-grey-lighter: #f1f5f8
+$tw-borderColors-grey-lightest: #f8fafc
+$tw-borderColors-white: #ffffff
+$tw-borderColors-red-darkest: #3b0d0c
+$tw-borderColors-red-darker: #621b18
+$tw-borderColors-red-dark: #cc1f1a
+$tw-borderColors-red: #e3342f
+$tw-borderColors-red-light: #ef5753
+$tw-borderColors-red-lighter: #f9acaa
+$tw-borderColors-red-lightest: #fcebea
+$tw-borderColors-orange-darkest: #462a16
+$tw-borderColors-orange-darker: #613b1f
+$tw-borderColors-orange-dark: #de751f
+$tw-borderColors-orange: #f6993f
+$tw-borderColors-orange-light: #faad63
+$tw-borderColors-orange-lighter: #fcd9b6
+$tw-borderColors-orange-lightest: #fff5eb
+$tw-borderColors-yellow-darkest: #453411
+$tw-borderColors-yellow-darker: #684f1d
+$tw-borderColors-yellow-dark: #f2d024
+$tw-borderColors-yellow: #ffed4a
+$tw-borderColors-yellow-light: #fff382
+$tw-borderColors-yellow-lighter: #fff9c2
+$tw-borderColors-yellow-lightest: #fcfbeb
+$tw-borderColors-green-darkest: #0f2f21
+$tw-borderColors-green-darker: #1a4731
+$tw-borderColors-green-dark: #1f9d55
+$tw-borderColors-green: #38c172
+$tw-borderColors-green-light: #51d88a
+$tw-borderColors-green-lighter: #a2f5bf
+$tw-borderColors-green-lightest: #e3fcec
+$tw-borderColors-teal-darkest: #0d3331
+$tw-borderColors-teal-darker: #20504f
+$tw-borderColors-teal-dark: #38a89d
+$tw-borderColors-teal: #4dc0b5
+$tw-borderColors-teal-light: #64d5ca
+$tw-borderColors-teal-lighter: #a0f0ed
+$tw-borderColors-teal-lightest: #e8fffe
+$tw-borderColors-blue-darkest: #12283a
+$tw-borderColors-blue-darker: #1c3d5a
+$tw-borderColors-blue-dark: #2779bd
+$tw-borderColors-blue: #3490dc
+$tw-borderColors-blue-light: #6cb2eb
+$tw-borderColors-blue-lighter: #bcdefa
+$tw-borderColors-blue-lightest: #eff8ff
+$tw-borderColors-indigo-darkest: #191e38
+$tw-borderColors-indigo-darker: #2f365f
+$tw-borderColors-indigo-dark: #5661b3
+$tw-borderColors-indigo: #6574cd
+$tw-borderColors-indigo-light: #7886d7
+$tw-borderColors-indigo-lighter: #b2b7ff
+$tw-borderColors-indigo-lightest: #e6e8ff
+$tw-borderColors-purple-darkest: #21183c
+$tw-borderColors-purple-darker: #382b5f
+$tw-borderColors-purple-dark: #794acf
+$tw-borderColors-purple: #9561e2
+$tw-borderColors-purple-light: #a779e9
+$tw-borderColors-purple-lighter: #d6bbfc
+$tw-borderColors-purple-lightest: #f3ebff
+$tw-borderColors-pink-darkest: #451225
+$tw-borderColors-pink-darker: #6f213f
+$tw-borderColors-pink-dark: #eb5286
+$tw-borderColors-pink: #f66d9b
+$tw-borderColors-pink-light: #fa7ea8
+$tw-borderColors-pink-lighter: #ffbbca
+$tw-borderColors-pink-lightest: #ffebef
+
+
+$tw-borderRadius-none: 0
+$tw-borderRadius-sm: .125rem
+$tw-borderRadius-default: .25rem
+$tw-borderRadius-lg: .5rem
+$tw-borderRadius-full: 9999px
+
+
+$tw-width-1: 0.25rem
+$tw-width-2: 0.5rem
+$tw-width-3: 0.75rem
+$tw-width-4: 1rem
+$tw-width-6: 1.5rem
+$tw-width-8: 2rem
+$tw-width-10: 2.5rem
+$tw-width-12: 3rem
+$tw-width-16: 4rem
+$tw-width-24: 6rem
+$tw-width-32: 8rem
+$tw-width-48: 12rem
+$tw-width-64: 16rem
+$tw-width-auto: auto
+$tw-width-px: 1px
+$tw-width-1\\\\/2: 50%
+$tw-width-1\\\\/3: 33.33333%
+$tw-width-2\\\\/3: 66.66667%
+$tw-width-1\\\\/4: 25%
+$tw-width-3\\\\/4: 75%
+$tw-width-1\\\\/5: 20%
+$tw-width-2\\\\/5: 40%
+$tw-width-3\\\\/5: 60%
+$tw-width-4\\\\/5: 80%
+$tw-width-1\\\\/6: 16.66667%
+$tw-width-5\\\\/6: 83.33333%
+$tw-width-full: 100%
+$tw-width-screen: 100vw
+
+
+$tw-height-1: 0.25rem
+$tw-height-2: 0.5rem
+$tw-height-3: 0.75rem
+$tw-height-4: 1rem
+$tw-height-6: 1.5rem
+$tw-height-8: 2rem
+$tw-height-10: 2.5rem
+$tw-height-12: 3rem
+$tw-height-16: 4rem
+$tw-height-24: 6rem
+$tw-height-32: 8rem
+$tw-height-48: 12rem
+$tw-height-64: 16rem
+$tw-height-auto: auto
+$tw-height-px: 1px
+$tw-height-full: 100%
+$tw-height-screen: 100vh
+
+
+$tw-minWidth-0: 0
+$tw-minWidth-full: 100%
+
+
+$tw-minHeight-0: 0
+$tw-minHeight-full: 100%
+$tw-minHeight-screen: 100vh
+
+
+$tw-maxWidth-xs: 20rem
+$tw-maxWidth-sm: 30rem
+$tw-maxWidth-md: 40rem
+$tw-maxWidth-lg: 50rem
+$tw-maxWidth-xl: 60rem
+$tw-maxWidth-2xl: 70rem
+$tw-maxWidth-3xl: 80rem
+$tw-maxWidth-4xl: 90rem
+$tw-maxWidth-5xl: 100rem
+$tw-maxWidth-full: 100%
+
+
+$tw-maxHeight-full: 100%
+$tw-maxHeight-screen: 100vh
+
+
+$tw-padding-0: 0
+$tw-padding-1: 0.25rem
+$tw-padding-2: 0.5rem
+$tw-padding-3: 0.75rem
+$tw-padding-4: 1rem
+$tw-padding-6: 1.5rem
+$tw-padding-8: 2rem
+$tw-padding-px: 1px
+
+
+$tw-margin-0: 0
+$tw-margin-1: 0.25rem
+$tw-margin-2: 0.5rem
+$tw-margin-3: 0.75rem
+$tw-margin-4: 1rem
+$tw-margin-6: 1.5rem
+$tw-margin-8: 2rem
+$tw-margin-auto: auto
+$tw-margin-px: 1px
+
+
+$tw-negativeMargin-0: 0
+$tw-negativeMargin-1: 0.25rem
+$tw-negativeMargin-2: 0.5rem
+$tw-negativeMargin-3: 0.75rem
+$tw-negativeMargin-4: 1rem
+$tw-negativeMargin-6: 1.5rem
+$tw-negativeMargin-8: 2rem
+$tw-negativeMargin-px: 1px
+
+
+$tw-shadows-default: (0 2px 4px 0 rgba(0,0,0,0.10))
+$tw-shadows-md: (0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08))
+$tw-shadows-lg: (0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08))
+$tw-shadows-inner: (inset 0 2px 4px 0 rgba(0,0,0,0.06))
+$tw-shadows-none: none
+
+
+$tw-zIndex-0: 0
+$tw-zIndex-10: 10
+$tw-zIndex-20: 20
+$tw-zIndex-30: 30
+$tw-zIndex-40: 40
+$tw-zIndex-50: 50
+$tw-zIndex-auto: auto
+
+
+$tw-opacity-0: 0
+$tw-opacity-25: .25
+$tw-opacity-50: .5
+$tw-opacity-75: .75
+$tw-opacity-100: 1
+
+
+$tw-svgFill-current: currentColor
+
+
+$tw-svgStroke-current: currentColor
+"
+`;
+
+exports[`Sass converter Converts to nested map 1`] = `
+"
+
+$colors: (
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$screens: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+)
+
+$fonts: (
+  sans: (system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif),
+  serif: (Constantia,Lucida Bright,Lucidabright,Lucida Serif,Lucida,DejaVu Serif,Bitstream Vera Serif,Liberation Serif,Georgia,serif),
+  mono: (Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace),
+)
+
+$textSizes: (
+  xs: .75rem,
+  sm: .875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem,
+  5xl: 3rem,
+)
+
+$fontWeights: (
+  hairline: 100,
+  thin: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+)
+
+$leading: (
+  none: 1,
+  tight: 1.25,
+  normal: 1.5,
+  loose: 2,
+)
+
+$tracking: (
+  tight: -0.05em,
+  normal: 0,
+  wide: 0.05em,
+)
+
+$textColors: (
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$backgroundColors: (
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$backgroundSize: (
+  auto: auto,
+  cover: cover,
+  contain: contain,
+)
+
+$borderWidths: (
+  0: 0,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  default: 1px,
+)
+
+$borderColors: (
+  default: #dae1e7,
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$borderRadius: (
+  none: 0,
+  sm: .125rem,
+  default: .25rem,
+  lg: .5rem,
+  full: 9999px,
+)
+
+$width: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  24: 6rem,
+  32: 8rem,
+  48: 12rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  1/2: 50%,
+  1/3: 33.33333%,
+  2/3: 66.66667%,
+  1/4: 25%,
+  3/4: 75%,
+  1/5: 20%,
+  2/5: 40%,
+  3/5: 60%,
+  4/5: 80%,
+  1/6: 16.66667%,
+  5/6: 83.33333%,
+  full: 100%,
+  screen: 100vw,
+)
+
+$height: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  24: 6rem,
+  32: 8rem,
+  48: 12rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  full: 100%,
+  screen: 100vh,
+)
+
+$minWidth: (
+  0: 0,
+  full: 100%,
+)
+
+$minHeight: (
+  0: 0,
+  full: 100%,
+  screen: 100vh,
+)
+
+$maxWidth: (
+  xs: 20rem,
+  sm: 30rem,
+  md: 40rem,
+  lg: 50rem,
+  xl: 60rem,
+  2xl: 70rem,
+  3xl: 80rem,
+  4xl: 90rem,
+  5xl: 100rem,
+  full: 100%,
+)
+
+$maxHeight: (
+  full: 100%,
+  screen: 100vh,
+)
+
+$padding: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  px: 1px,
+)
+
+$margin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  auto: auto,
+  px: 1px,
+)
+
+$negativeMargin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  px: 1px,
+)
+
+$shadows: (
+  default: (0 2px 4px 0 rgba(0,0,0,0.10)),
+  md: (0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)),
+  lg: (0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)),
+  inner: (inset 0 2px 4px 0 rgba(0,0,0,0.06)),
+  none: none,
+)
+
+$zIndex: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+)
+
+$opacity: (
+  0: 0,
+  25: .25,
+  50: .5,
+  75: .75,
+  100: 1,
+)
+
+$svgFill: (
+  current: currentColor,
+)
+
+$svgStroke: (
+  current: currentColor,
+)"
+`;
+
+exports[`Sass converter Converts to nested map with prefix 1`] = `
+"
+
+$tw-colors: (
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$tw-screens: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+)
+
+$tw-fonts: (
+  sans: (system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif),
+  serif: (Constantia,Lucida Bright,Lucidabright,Lucida Serif,Lucida,DejaVu Serif,Bitstream Vera Serif,Liberation Serif,Georgia,serif),
+  mono: (Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace),
+)
+
+$tw-textSizes: (
+  xs: .75rem,
+  sm: .875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem,
+  5xl: 3rem,
+)
+
+$tw-fontWeights: (
+  hairline: 100,
+  thin: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+)
+
+$tw-leading: (
+  none: 1,
+  tight: 1.25,
+  normal: 1.5,
+  loose: 2,
+)
+
+$tw-tracking: (
+  tight: -0.05em,
+  normal: 0,
+  wide: 0.05em,
+)
+
+$tw-textColors: (
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$tw-backgroundColors: (
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$tw-backgroundSize: (
+  auto: auto,
+  cover: cover,
+  contain: contain,
+)
+
+$tw-borderWidths: (
+  0: 0,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  default: 1px,
+)
+
+$tw-borderColors: (
+  default: #dae1e7,
+  transparent: transparent,
+  black: #22292f,
+  grey-darkest: #3d4852,
+  grey-darker: #606f7b,
+  grey-dark: #8795a1,
+  grey: #b8c2cc,
+  grey-light: #dae1e7,
+  grey-lighter: #f1f5f8,
+  grey-lightest: #f8fafc,
+  white: #ffffff,
+  red-darkest: #3b0d0c,
+  red-darker: #621b18,
+  red-dark: #cc1f1a,
+  red: #e3342f,
+  red-light: #ef5753,
+  red-lighter: #f9acaa,
+  red-lightest: #fcebea,
+  orange-darkest: #462a16,
+  orange-darker: #613b1f,
+  orange-dark: #de751f,
+  orange: #f6993f,
+  orange-light: #faad63,
+  orange-lighter: #fcd9b6,
+  orange-lightest: #fff5eb,
+  yellow-darkest: #453411,
+  yellow-darker: #684f1d,
+  yellow-dark: #f2d024,
+  yellow: #ffed4a,
+  yellow-light: #fff382,
+  yellow-lighter: #fff9c2,
+  yellow-lightest: #fcfbeb,
+  green-darkest: #0f2f21,
+  green-darker: #1a4731,
+  green-dark: #1f9d55,
+  green: #38c172,
+  green-light: #51d88a,
+  green-lighter: #a2f5bf,
+  green-lightest: #e3fcec,
+  teal-darkest: #0d3331,
+  teal-darker: #20504f,
+  teal-dark: #38a89d,
+  teal: #4dc0b5,
+  teal-light: #64d5ca,
+  teal-lighter: #a0f0ed,
+  teal-lightest: #e8fffe,
+  blue-darkest: #12283a,
+  blue-darker: #1c3d5a,
+  blue-dark: #2779bd,
+  blue: #3490dc,
+  blue-light: #6cb2eb,
+  blue-lighter: #bcdefa,
+  blue-lightest: #eff8ff,
+  indigo-darkest: #191e38,
+  indigo-darker: #2f365f,
+  indigo-dark: #5661b3,
+  indigo: #6574cd,
+  indigo-light: #7886d7,
+  indigo-lighter: #b2b7ff,
+  indigo-lightest: #e6e8ff,
+  purple-darkest: #21183c,
+  purple-darker: #382b5f,
+  purple-dark: #794acf,
+  purple: #9561e2,
+  purple-light: #a779e9,
+  purple-lighter: #d6bbfc,
+  purple-lightest: #f3ebff,
+  pink-darkest: #451225,
+  pink-darker: #6f213f,
+  pink-dark: #eb5286,
+  pink: #f66d9b,
+  pink-light: #fa7ea8,
+  pink-lighter: #ffbbca,
+  pink-lightest: #ffebef,
+)
+
+$tw-borderRadius: (
+  none: 0,
+  sm: .125rem,
+  default: .25rem,
+  lg: .5rem,
+  full: 9999px,
+)
+
+$tw-width: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  24: 6rem,
+  32: 8rem,
+  48: 12rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  1/2: 50%,
+  1/3: 33.33333%,
+  2/3: 66.66667%,
+  1/4: 25%,
+  3/4: 75%,
+  1/5: 20%,
+  2/5: 40%,
+  3/5: 60%,
+  4/5: 80%,
+  1/6: 16.66667%,
+  5/6: 83.33333%,
+  full: 100%,
+  screen: 100vw,
+)
+
+$tw-height: (
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  24: 6rem,
+  32: 8rem,
+  48: 12rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  full: 100%,
+  screen: 100vh,
+)
+
+$tw-minWidth: (
+  0: 0,
+  full: 100%,
+)
+
+$tw-minHeight: (
+  0: 0,
+  full: 100%,
+  screen: 100vh,
+)
+
+$tw-maxWidth: (
+  xs: 20rem,
+  sm: 30rem,
+  md: 40rem,
+  lg: 50rem,
+  xl: 60rem,
+  2xl: 70rem,
+  3xl: 80rem,
+  4xl: 90rem,
+  5xl: 100rem,
+  full: 100%,
+)
+
+$tw-maxHeight: (
+  full: 100%,
+  screen: 100vh,
+)
+
+$tw-padding: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  px: 1px,
+)
+
+$tw-margin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  auto: auto,
+  px: 1px,
+)
+
+$tw-negativeMargin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  6: 1.5rem,
+  8: 2rem,
+  px: 1px,
+)
+
+$tw-shadows: (
+  default: (0 2px 4px 0 rgba(0,0,0,0.10)),
+  md: (0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)),
+  lg: (0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)),
+  inner: (inset 0 2px 4px 0 rgba(0,0,0,0.06)),
+  none: none,
+)
+
+$tw-zIndex: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+)
+
+$tw-opacity: (
+  0: 0,
+  25: .25,
+  50: .5,
+  75: .75,
+  100: 1,
+)
+
+$tw-svgFill: (
+  current: currentColor,
+)
+
+$tw-svgStroke: (
+  current: currentColor,
+)"
+`;

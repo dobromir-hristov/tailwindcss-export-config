@@ -1,6 +1,6 @@
 const Converter = require('./Converter.js')
 
-module.exports = class ConvertToLess extends Converter {
+class LessConverter extends Converter {
   constructor (opts) {
     super(opts)
   }
@@ -25,3 +25,5 @@ module.exports = class ConvertToLess extends Converter {
     return value
   }
 }
+
+module.exports = LessConverter

@@ -1,6 +1,6 @@
 const Converter = require('./Converter.js')
 
-module.exports = class ConvertToStylus extends Converter {
+class StylusConverter extends Converter {
   constructor (opts) {
     super(opts)
   }
@@ -30,3 +30,5 @@ module.exports = class ConvertToStylus extends Converter {
     return prop
   }
 }
+
+module.exports = StylusConverter

@@ -1,10 +1,8 @@
 /**
  * General converter class. To be extended by any specific format converter.
- * @type {module.Converter}
  */
-module.exports = class Converter {
+class Converter {
   /**
-   * @constructor
    * @param opts
    * @param {Object} opts.config - Tailwind config object
    * @param {Boolean} opts.flat - Is flat or not
@@ -35,6 +33,10 @@ module.exports = class Converter {
    */
   _convertObjectToMap (prop, data) {}
 
+  /**
+   * Converts the options config to the required format.
+   * @returns {string}
+   */
   convert () {
     let prop
     let buffer = ''
@@ -59,3 +61,5 @@ module.exports = class Converter {
     throw new Error('Implement getFormat function')
   }
 }
+
+module.exports = Converter
