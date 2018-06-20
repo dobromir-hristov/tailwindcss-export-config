@@ -39,7 +39,7 @@ class ConvertTo {
    * @returns {string}
    */
   convert () {
-    let buffer = `/** Converted Tailwind Config to ${this.options.format} **/`
+    let buffer = `/* Converted Tailwind Config to ${this.options.format} */`
     buffer += this.converterInstance.convert()
     return buffer
   }

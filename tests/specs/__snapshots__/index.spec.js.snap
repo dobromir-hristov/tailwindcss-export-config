@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tailwind Options Exporter allows using an object as a config: scss format 1`] = `
-"/** Converted Tailwind Config to scss **/
+"/* Converted Tailwind Config to scss */
 
 $colors: (
   transparent: transparent,
@@ -530,7 +530,7 @@ $svgStroke: (
 `;
 
 exports[`Tailwind Options Exporter allows using an object as a config: scss format 2`] = `
-"/** Converted Tailwind Config to scss **/
+"/* Converted Tailwind Config to scss */
 
 $colors: (
   transparent: transparent,

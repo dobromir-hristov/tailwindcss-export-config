@@ -1,3 +1,6 @@
+const reduce = require('lodash.reduce')
+const foreach = require('lodash.foreach')
+
 const Converter = require('./Converter')
 
 /**
@@ -10,7 +13,7 @@ class ScssConverter extends Converter {
 
   _convertObjectToMap (prop, data) {
     let buffer = '(\n'
-    Object.entries(data).forEach(([p, v]) => {
+    foreach(data, (v, p) => {
       buffer += `  ${p}: ${this._sanitizePropValue(v)},\n`
     })
     buffer += ')'
@@ -18,7 +21,7 @@ class ScssConverter extends Converter {
   }
 
   _convertObjectToVar (prop, data) {
-    return Object.entries(data).reduce((all, [p, v]) => {
+    return reduce(data, (all, v, p) => {
       all += `$${this.prefix}${prop}-${p.replace('/', '\\/')}: ${this._sanitizePropValue(v)};\n`
       return all
     }, '')

@@ -1,26 +1,34 @@
-# Export Tailwindcss config options to SASS, SCSS, LESS, Stylus and CSS variables.
-Sometimes you just need the tailwind config options to be available to your preprocessor of choice, be it Sass/Less/Stylus or even as plain css variables.
+<p align="center">
+  <a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank">
+    <img alt="Tailwindcss-export-config" src="https://github.com/dobromir-hristov/tailwindcss-export-config/blob/master/assets/tailwindcss-export-config.png" width="749">
+  </a>
+</p>
 
-Unfortunately Tailwindcss exports its values as a javascript object, but with **tailwindcss-export-config** you can convert those into any of the formats noted above, as nested lists/maps or flat level variables.
+[![npm package](https://img.shields.io/npm/v/tailwindcss-export-config.svg)](https://www.npmjs.com/package/tailwindcss-export-config)
 
-## Config Options
-All options are available to the CLI and node package.
+## Features
+Exports Tailwindcss config options to SASS, SCSS, LESS, Stylus.
 
-Prop|Type|Required|Description
- ---|---|---|---
-config|String,Object|true| Tailwindcss config path or config object to transform
-destination|String|true| Destination to save converted file
-format|String|true| The format in which to convert the file
-prefix|String|false| An optional prefix for each variable name
-flat|Boolean|false| Optionally transforms the variables from nested maps to flat level variables. Less and CSS vars do not support nested maps so we default to flat for them always.
 
-## Usage
-**tailwindcss-export-config** can be used either as a node package or directly in the terminal.
+## Getting started
+1. Using npm:
+`npm install tailwindcss-export-config`
 
-### Terminal/CLI usage
-`tailwindcss-export-config --config=path/to/tailwind.config.js --destination=converted/file/destination --format=scss --prefix=tw --flat=true`
+or with yarn:
+ 
+`yarn add tailwindcss-export-config`
 
-### Node usage
+2. Make a package.json script and run it for convenience
+```json
+{
+  "scripts": {
+    "export-tailwind-config": "tailwindcss-export-config --src/styles/tailwind/tailwind.config.js --destination=src/styles/scss/tailwind-configs --format=scss"
+  }
+}
+```
+
+or import inside your own node script
+
 ```js
 import TailwindExportConfig from 'tailwindcss-export-config'
 const converter = new TailwindExportConfig({
@@ -37,3 +45,14 @@ converter.writeToFile().then(() => {
   console.log('Oops', error.message)
 })
 ```
+
+## Config Options
+All options are available to the CLI and node package.
+
+Prop|Type|Required|Description
+ ---|---|---|---
+config|String,Object|true| Tailwindcss config path or config object to transform
+destination|String|true| Destination to save converted file
+format|String|true| The format in which to convert the file
+prefix|String|false| An optional prefix for each variable name
+flat|Boolean|false| Optionally transforms the variables from nested maps to flat level variables. Less does not support nested maps so we default to flat for them always.

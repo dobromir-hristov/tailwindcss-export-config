@@ -1,3 +1,4 @@
+const reduce = require('lodash.reduce')
 const Converter = require('./Converter.js')
 
 class LessConverter extends Converter {
@@ -6,7 +7,7 @@ class LessConverter extends Converter {
   }
 
   _convertObjectToVar (prop, data) {
-    return Object.entries(data).reduce((all, [p, v]) => {
+    return reduce(data, (all, v, p) => {
       all += `@${this.prefix}${prop}-${p.replace('/', '\\/')}: ${this._sanitizePropValue(v)};\n`
       return all
     }, '')

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const yargs = require('yargs')
 const ConvertTo = require('./index.js')
 const chalk = require('chalk').default
