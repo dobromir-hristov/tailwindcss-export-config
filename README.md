@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank">
-    <img alt="Tailwindcss-export-config" src="https://github.com/dobromir-hristov/tailwindcss-export-config/blob/master/assets/tailwindcss-export-config.png" width="749">
+    <img alt="Tailwindcss-export-config" src="https://github.com/dobromir-hristov/tailwindcss-export-config/blob/master/assets/tailwindcss-export-config.png">
   </a>
   <h3>Export Tailwind config options like a pro</h3>
 </p>
@@ -9,9 +9,9 @@
 
 ## Features
 
-:rocket: Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
-:boom: Both CLI and Node api
-:muscle:: Unit Tested
+* :rocket: Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
+* :boom: CLI and Node api support
+* :muscle: Unit Tested
 
 ## Getting started
 1. Using npm:
