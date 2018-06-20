@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-export-config",
+  "name": "tailwindcss-export-config",
   "version": "1.0.0",
   "description": "Export Tailwindcss config options to SASS, SCSS, LESS, Stylus and CSS variables.",
   "main": "src/index.js",

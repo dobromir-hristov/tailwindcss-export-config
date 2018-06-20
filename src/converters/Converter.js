@@ -57,6 +57,9 @@ class Converter {
     return value
   }
 
+  /**
+   * @return string
+   */
   getFormat () {
     throw new Error('Implement getFormat function')
   }
