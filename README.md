@@ -7,9 +7,7 @@
 <h2 align="center">Export Tailwind config options like a pro</h2>
 
 <p align="center">
-
-[![npm package](https://img.shields.io/npm/v/tailwindcss-export-config.svg)](https://www.npmjs.com/package/tailwindcss-export-config)
-
+<a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank"><img src="https://img.shields.io/npm/v/tailwindcss-export-config.svg"</a>
 </p>
 
 
