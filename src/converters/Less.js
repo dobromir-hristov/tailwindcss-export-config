@@ -22,7 +22,7 @@ class LessConverter extends Converter {
   }
 
   _sanitizePropValue (value) {
-    if (Array.isArray(value)) return value.join(' ')
+    if (Array.isArray(value)) return value.join(', ')
     return value
   }
 }

@@ -84,9 +84,9 @@ exports[`Less converter Converts to flat variables 1`] = `
 @screens-xl: 1200px;
 
 
-@fonts-sans: system-ui BlinkMacSystemFont -apple-system Segoe UI Roboto Oxygen Ubuntu Cantarell Fira Sans Droid Sans Helvetica Neue sans-serif;
-@fonts-serif: Constantia Lucida Bright Lucidabright Lucida Serif Lucida DejaVu Serif Bitstream Vera Serif Liberation Serif Georgia serif;
-@fonts-mono: Menlo Monaco Consolas Liberation Mono Courier New monospace;
+@fonts-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@fonts-serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+@fonts-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
 
 @textSizes-xs: .75rem;
@@ -586,9 +586,9 @@ exports[`Less converter Converts to flat variables with prefix 1`] = `
 @tw-screens-xl: 1200px;
 
 
-@tw-fonts-sans: system-ui BlinkMacSystemFont -apple-system Segoe UI Roboto Oxygen Ubuntu Cantarell Fira Sans Droid Sans Helvetica Neue sans-serif;
-@tw-fonts-serif: Constantia Lucida Bright Lucidabright Lucida Serif Lucida DejaVu Serif Bitstream Vera Serif Liberation Serif Georgia serif;
-@tw-fonts-mono: Menlo Monaco Consolas Liberation Mono Courier New monospace;
+@tw-fonts-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tw-fonts-serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+@tw-fonts-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
 
 @tw-textSizes-xs: .75rem;
@@ -1088,9 +1088,9 @@ exports[`Less converter Converts to nested map 1`] = `
 @screens-xl: 1200px;
 
 
-@fonts-sans: system-ui BlinkMacSystemFont -apple-system Segoe UI Roboto Oxygen Ubuntu Cantarell Fira Sans Droid Sans Helvetica Neue sans-serif;
-@fonts-serif: Constantia Lucida Bright Lucidabright Lucida Serif Lucida DejaVu Serif Bitstream Vera Serif Liberation Serif Georgia serif;
-@fonts-mono: Menlo Monaco Consolas Liberation Mono Courier New monospace;
+@fonts-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@fonts-serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+@fonts-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
 
 @textSizes-xs: .75rem;
@@ -1590,9 +1590,9 @@ exports[`Less converter Converts to nested map with prefix 1`] = `
 @tw-screens-xl: 1200px;
 
 
-@tw-fonts-sans: system-ui BlinkMacSystemFont -apple-system Segoe UI Roboto Oxygen Ubuntu Cantarell Fira Sans Droid Sans Helvetica Neue sans-serif;
-@tw-fonts-serif: Constantia Lucida Bright Lucidabright Lucida Serif Lucida DejaVu Serif Bitstream Vera Serif Liberation Serif Georgia serif;
-@tw-fonts-mono: Menlo Monaco Consolas Liberation Mono Courier New monospace;
+@tw-fonts-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tw-fonts-serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+@tw-fonts-mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 
 
 @tw-textSizes-xs: .75rem;
