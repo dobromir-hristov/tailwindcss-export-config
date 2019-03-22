@@ -38,7 +38,7 @@ describe('Less converter', () => {
 
   it('Converts an array to a comma separated string', () => {
     const testObject = 'fonts'
-    const keyName = Object.keys(testConfig[testObject])[0];
+    const keyName = Object.keys(testConfig[testObject])[0]
     const values = testConfig[testObject][keyName].join(', ')
     const expectedResult = `${variablePrefix}${testObject}-${keyName}: ${values}${variableSuffix}`
 
