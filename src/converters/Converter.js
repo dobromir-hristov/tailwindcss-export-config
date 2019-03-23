@@ -14,7 +14,7 @@ class Converter {
     this.config = opts.config
     this.flat = opts.flat
 
-    this.prefix = `${ opts.prefix ? opts.prefix + '-' : ''}`
+    this.prefix = opts.prefix || ''
   }
 
   /**
@@ -38,12 +38,12 @@ class Converter {
    * @returns {string}
    */
   convert () {
-    let prop
+    let metric
     let buffer = ''
-    for (prop in this.config) {
-      if (this.config.hasOwnProperty(prop) && !this.ignored.includes(prop)) {
-        const data = this.config[prop]
-        const body = this.flat ? this._convertObjectToVar(prop, data) : this._convertObjectToMap(prop, data)
+    for (metric in this.config) {
+      if (this.config.hasOwnProperty(metric) && !this.ignored.includes(metric)) {
+        const data = this.config[metric]
+        const body = this.flat ? this._convertObjectToVar(metric, data) : this._convertObjectToMap(metric, data)
         buffer += '\n\n'
         buffer += body
       }
@@ -62,6 +62,13 @@ class Converter {
    */
   getFormat () {
     throw new Error('Implement getFormat function')
+  }
+
+  _propertyNameSanitizer (property, metric = '') {
+    if (metric) {
+      metric = metric.replace('/', '\\/')
+    }
+    return [this.prefix, property, metric].filter(v => v).join('-')
   }
 }
 
