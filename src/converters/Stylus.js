@@ -4,31 +4,27 @@ const foreach = require('lodash.foreach')
 const Converter = require('./Converter.js')
 
 class StylusConverter extends Converter {
-  constructor (opts) {
-    super(opts)
-  }
-
-  _convertObjectToVar (prop, data) {
-    return reduce(data, (all, v, p) => {
-      all += `$${this.prefix}${prop}-${p.replace('/', '\\/')} = ${this._sanitizePropValue(v)}\n`
+  _convertObjectToVar (property, data) {
+    return reduce(data, (all, value, metric) => {
+      all += `$${this._propertyNameSanitizer(property, metric)} = ${this._sanitizePropValue(value)}\n`
       return all
     }, '')
   }
 
-  _convertObjectToMap (prop, data) {
+  _convertObjectToMap (property, data) {
     let buffer = '{\n'
-    foreach(data, (v, p) => {
-      buffer += `  ${this._sanitizeProp(p)}: ${this._sanitizePropValue(v)},\n`
+    foreach(data, (value, metric) => {
+      buffer += `  ${this._sanitizeMetric(metric)}: ${this._sanitizePropValue(value)},\n`
     })
     buffer += '}'
-    return `$${this.prefix}${prop} = ${buffer}`
+    return `$${this._propertyNameSanitizer(property)} = ${buffer}`
   }
 
   getFormat () {
     return 'styl'
   }
 
-  _sanitizeProp (prop) {
+  _sanitizeMetric (prop) {
     if (/\d/.test(prop)) return `"${prop}"`
     return prop
   }

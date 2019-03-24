@@ -2,13 +2,9 @@ const reduce = require('lodash.reduce')
 const Converter = require('./Converter.js')
 
 class LessConverter extends Converter {
-  constructor (opts) {
-    super(opts)
-  }
-
-  _convertObjectToVar (prop, data) {
-    return reduce(data, (all, v, p) => {
-      all += `@${this.prefix}${prop}-${p.replace('/', '\\/')}: ${this._sanitizePropValue(v)};\n`
+  _convertObjectToVar (property, data) {
+    return reduce(data, (all, value, metric) => {
+      all += `@${this._propertyNameSanitizer(property, metric)}: ${this._sanitizePropValue(value)};\n`
       return all
     }, '')
   }

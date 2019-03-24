@@ -4,22 +4,18 @@ const foreach = require('lodash.foreach')
 const Converter = require('./Converter')
 
 class SassConverter extends Converter {
-  constructor (opts) {
-    super(opts)
-  }
-
-  _convertObjectToMap (prop, data) {
+  _convertObjectToMap (property, data) {
     let buffer = '(\n'
-    foreach(data, (v, p) => {
-      buffer += `  ${p}: ${this._sanitizePropValue(v)},\n`
+    foreach(data, (value, metric) => {
+      buffer += `  ${metric}: ${this._sanitizePropValue(value)},\n`
     })
     buffer += ')'
-    return `$${this.prefix}${prop}: ${buffer}`
+    return `$${this._propertyNameSanitizer(property)}: ${buffer}`
   }
 
-  _convertObjectToVar (prop, data) {
-    return reduce(data, (all, v, p) => {
-      all += `$${this.prefix}${prop}-${p.replace('/', '\\/')}: ${this._sanitizePropValue(v)}\n`
+  _convertObjectToVar (property, data) {
+    return reduce(data, (all, value, metric) => {
+      all += `$${this._propertyNameSanitizer(property, metric)}: ${this._sanitizePropValue(value)}\n`
       return all
     }, '')
   }
