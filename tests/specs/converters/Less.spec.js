@@ -1,7 +1,5 @@
 const LessConverter = require('../../../src/converters/Less')
 const testConfig = require('../../tailwind.config')
-const variablePrefix = '@'
-const variableSuffix = ';'
 
 describe('Less converter', () => {
   it('Converts to nested map', () => {
@@ -36,11 +34,9 @@ describe('Less converter', () => {
     expect(converter.convert()).toMatchSnapshot()
   })
 
-  it('Converts an array to a comma separated string', () => {
-    const testObject = 'fonts'
-    const keyName = Object.keys(testConfig[testObject])[0]
-    const values = testConfig[testObject][keyName].join(', ')
-    const expectedResult = `${variablePrefix}${testObject}-${keyName}: ${values}${variableSuffix}`
+  it('Converts fonts sans array to a comma separated string', () => {
+    const values = testConfig.fonts.sans.join(', ')
+    const expectedResult = `@fonts-sans: ${values};`
 
     const converter = new LessConverter({
       config: testConfig,
