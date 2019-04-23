@@ -11,6 +11,10 @@
 </p>
 
 
+## Usage with Tailwind 1.x
+
+Please use the [fix/tailwind-v1](https://github.com/dobromir-hristov/tailwindcss-export-config/tree/fix/tailwind_v1) branch to test with Tailwind above version 1.
+
 ## Features
 
 * :rocket: Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
