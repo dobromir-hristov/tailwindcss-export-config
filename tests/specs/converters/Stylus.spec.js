@@ -1,10 +1,11 @@
-const StylusConverter = require('../../../src/converters/Stylus')
-const testConfig = require('../../tailwind.config')
+import StylusConverter from '../../../src/converters/Stylus'
+import testConfig from '../../tailwind.config'
+import { resolveConfig } from '../../../src/converters/utils'
 
 describe('Stylus converter', () => {
   it('Converts to nested map', () => {
     const converter = new StylusConverter({
-      config: testConfig,
+      config: resolveConfig(testConfig),
       flat: true
     })
     expect(converter.convert()).toMatchSnapshot()
@@ -12,14 +13,14 @@ describe('Stylus converter', () => {
 
   it('Converts to flat variables', () => {
     const converter = new StylusConverter({
-      config: testConfig
+      config: resolveConfig(testConfig)
     })
     expect(converter.convert()).toMatchSnapshot()
   })
 
   it('Converts to flat variables with prefix', () => {
     const converter = new StylusConverter({
-      config: testConfig,
+      config: resolveConfig(testConfig),
       flat: true,
       prefix: 'tw'
     })
@@ -28,7 +29,7 @@ describe('Stylus converter', () => {
 
   it('Converts to nested map with prefix', () => {
     const converter = new StylusConverter({
-      config: testConfig,
+      config: resolveConfig(testConfig),
       prefix: 'tw'
     })
     expect(converter.convert()).toMatchSnapshot()

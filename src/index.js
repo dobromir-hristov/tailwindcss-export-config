@@ -1,6 +1,7 @@
-const fse = require('fs-extra')
-const path = require('path')
-const converters = require('./converters/index')
+import fse from 'fs-extra'
+import path from 'path'
+import converters from './converters'
+import { resolveConfig } from './converters/utils'
 
 const allowedFormatsMap = {
   stylus: converters.Stylus,
@@ -29,7 +30,7 @@ class ConvertTo {
     this.options = options
 
     const Converter = allowedFormatsMap[options.format]
-    const config = typeof options.config === 'object' ? options.config : require(options.config)
+    const config = resolveConfig(options.config)
 
     this.converterInstance = new Converter({ config, prefix: options.prefix, flat: options.flat })
   }
@@ -50,7 +51,7 @@ class ConvertTo {
    */
   writeToFile () {
     let buffer = this.convert()
-    return this._writeFile(buffer, { destination: this.options.destination, format: this.converterInstance.getFormat() })
+    return this._writeFile(buffer, { destination: this.options.destination, format: this.converterInstance.format })
   }
 
   /**

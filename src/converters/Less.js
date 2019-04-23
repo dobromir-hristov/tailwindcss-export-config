@@ -1,20 +1,14 @@
-const reduce = require('lodash.reduce')
-const Converter = require('./Converter.js')
+import Converter from './Converter.js'
 
 class LessConverter extends Converter {
-  _convertObjectToVar (property, data) {
-    return reduce(data, (all, value, metric) => {
-      all += `@${this._propertyNameSanitizer(property, metric)}: ${this._sanitizePropValue(value)};\n`
-      return all
-    }, '')
+  format = 'less'
+
+  _buildVar (name, value) {
+    return `@${name}: ${value};\n`
   }
 
   _convertObjectToMap (prop, data) {
     return this._convertObjectToVar(prop, data)
-  }
-
-  getFormat () {
-    return 'less'
   }
 
   _sanitizePropValue (value) {
@@ -23,4 +17,4 @@ class LessConverter extends Converter {
   }
 }
 
-module.exports = LessConverter
+export default LessConverter

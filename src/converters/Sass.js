@@ -1,28 +1,19 @@
-const reduce = require('lodash.reduce')
-const foreach = require('lodash.foreach')
-
-const Converter = require('./Converter')
+import Converter from './Converter'
+import { indentWith } from './utils'
 
 class SassConverter extends Converter {
-  _convertObjectToMap (property, data) {
-    let buffer = '(\n'
-    foreach(data, (value, metric) => {
-      buffer += `  ${metric}: ${this._sanitizePropValue(value)},\n`
-    })
-    buffer += ')'
-    return `$${this._propertyNameSanitizer(property)}: ${buffer}`
+  format = 'sass'
+
+  mapOpener = '('
+  mapCloser = ')'
+
+  _buildVar (name, value) {
+    return `$${name}: ${value}\n`
   }
 
-  _convertObjectToVar (property, data) {
-    return reduce(data, (all, value, metric) => {
-      all += `$${this._propertyNameSanitizer(property, metric)}: ${this._sanitizePropValue(value)}\n`
-      return all
-    }, '')
-  }
-
-  getFormat () {
-    return 'sass'
+  _buildObjectEntry (key, value, indent, index, metricIndex = 0) {
+    return indentWith(`${key}: ${this._sanitizePropValue(value)},`, indent + ((!index && !metricIndex) ? 0 : 1))
   }
 }
 
-module.exports = SassConverter
+export default SassConverter

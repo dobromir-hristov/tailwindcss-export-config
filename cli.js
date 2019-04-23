@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs')
-const ConvertTo = require('./index.js')
+const ConvertTo = require('./dist')
 const chalk = require('chalk').default
 const log = console.log
 const error = (msg) => chalk.bold.bgRed('\n' + chalk.white(msg) + '\n')

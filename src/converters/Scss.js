@@ -1,31 +1,17 @@
-const reduce = require('lodash.reduce')
-const foreach = require('lodash.foreach')
-
-const Converter = require('./Converter')
+import Converter from './Converter'
 
 /**
  * @extends Converter
  */
 class ScssConverter extends Converter {
-  _convertObjectToMap (property, data) {
-    let buffer = '(\n'
-    foreach(data, (value, metric) => {
-      buffer += `  ${metric}: ${this._sanitizePropValue(value)},\n`
-    })
-    buffer += ')'
-    return `$${this._propertyNameSanitizer(property)}: ${buffer};`
-  }
+  format = 'scss'
 
-  _convertObjectToVar (prop, data) {
-    return reduce(data, (all, value, metric) => {
-      all += `$${this._propertyNameSanitizer(prop, metric)}: ${this._sanitizePropValue(value)};\n`
-      return all
-    }, '')
-  }
+  mapOpener = '(\n'
+  mapCloser = ')'
 
-  getFormat () {
-    return 'scss'
+  _buildVar (name, value) {
+    return `$${name}: ${value};\n`
   }
 }
 
-module.exports = ScssConverter
+export default ScssConverter
