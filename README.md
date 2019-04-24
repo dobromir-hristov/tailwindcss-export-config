@@ -15,6 +15,12 @@
 
 Please use the [fix/tailwind-v1](https://github.com/dobromir-hristov/tailwindcss-export-config/tree/fix/tailwind_v1) branch to test with Tailwind above version 1.
 
+```bash
+npm install tailwindcss-export-config@next
+# or
+yarn add tailwindcss-export-config@next
+```
+
 ## Features
 
 * :rocket: Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
@@ -22,6 +28,9 @@ Please use the [fix/tailwind-v1](https://github.com/dobromir-hristov/tailwindcss
 * :muscle: Unit Tested
 
 ## Getting started
+
+Installing current stable version working with Tailwind 0.x
+
 1. Using npm:
 `npm install tailwindcss-export-config`
 
