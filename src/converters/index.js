@@ -1,8 +1,8 @@
-const Less = require('./Less')
-const Stylus = require('./Stylus')
-const Sass = require('./Sass')
-const Scss = require('./Scss')
+import Less from './Less'
+import Stylus from './Stylus'
+import Sass from './Sass'
+import Scss from './Scss'
 
-module.exports = {
+export default {
   Less, Sass, Scss, Stylus
 }

@@ -1,8 +1,6 @@
-const ScssConverter = require('../../src/converters/Scss')
 const ConvertTo = require('../../src/index')
 const path = require('path')
 
-let scssConverterSpy = jest.spyOn(ScssConverter.prototype, '_convertObjectToMap')
 const testConfig = require('../tailwind.config')
 const fse = require('fs-extra')
 
@@ -21,7 +19,6 @@ describe('Tailwind Options Exporter', () => {
         destination: 'doesnt_matter'
       })
     }).toThrowError(/not supported/)
-    expect(scssConverterSpy).not.toHaveBeenCalled()
   })
 
   it('converts the config by using the proper converter', () => {
@@ -31,8 +28,7 @@ describe('Tailwind Options Exporter', () => {
       destination: 'doesnt_matter'
     })
 
-    converterInstance.convert()
-    expect(scssConverterSpy).not.toHaveBeenCalled()
+    expect(converterInstance.converterInstance.format).toBe('styl')
 
     converterInstance = new ConvertTo({
       config: testConfig,
@@ -40,19 +36,21 @@ describe('Tailwind Options Exporter', () => {
       destination: 'doesnt_matter'
     })
 
-    converterInstance.convert()
-    expect(scssConverterSpy).toHaveBeenCalled()
+    expect(converterInstance.converterInstance.format).toBe('scss')
   })
 
-  it('allows using an object or a path as a config', () => {
+  it('allows using an object as a config', () => {
     let converterInstance = new ConvertTo({
-      config: testConfig,
+      config: {},
       format: 'scss',
       destination: 'doesnt_matter'
     })
 
     expect(converterInstance.convert()).toMatchSnapshot('scss format')
-    converterInstance = new ConvertTo({
+  })
+
+  it('allows using a path to an config', () => {
+    let converterInstance = new ConvertTo({
       config: path.join(__dirname, '..', 'tailwind.config.js'),
       format: 'scss',
       destination: 'doesnt_matter'

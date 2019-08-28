@@ -10,16 +10,9 @@
 <a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank"><img src="https://img.shields.io/npm/v/tailwindcss-export-config.svg"></a>
 </p>
 
+## Notice
 
-## Usage with Tailwind 1.x
-
-Please use the [fix/tailwind-v1](https://github.com/dobromir-hristov/tailwindcss-export-config/tree/fix/tailwind_v1) branch to test with Tailwind above version 1.
-
-```bash
-npm install tailwindcss-export-config@next
-# or
-yarn add tailwindcss-export-config@next
-```
+This branch works with v1.x of Tailwindcss. If you are using the older 0.x version, please use the master branch.
 
 ## Features
 
@@ -28,8 +21,6 @@ yarn add tailwindcss-export-config@next
 * :muscle: Unit Tested
 
 ## Getting started
-
-Installing current stable version working with Tailwind 0.x
 
 1. Using npm:
 `npm install tailwindcss-export-config`
