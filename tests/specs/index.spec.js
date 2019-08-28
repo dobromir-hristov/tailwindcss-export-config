@@ -39,6 +39,19 @@ describe('Tailwind Options Exporter', () => {
     expect(converterInstance.converterInstance.format).toBe('scss')
   })
 
+  it('it properly includes the provided configuration properties', () => {
+    let converterInstance = new ConvertTo({
+      config: testConfig,
+      format: 'scss',
+      destination: 'doesnt_matter',
+      flat: true
+    })
+
+    const scssConfig = converterInstance.convert()
+    expect(scssConfig).toContain('$fontFamily-display: (Gilroy,sans-serif)')
+    expect(scssConfig).toContain('$colors-cyan: #9cdbf')
+  })
+
   it('allows using an object as a config', () => {
     let converterInstance = new ConvertTo({
       config: {},
