@@ -25,8 +25,9 @@ const argv = yargs // eslint-disable-line
   })
   .option('format', {
     alias: 'f',
-    describe: 'SASS or SCSS format',
-    type: 'string', /* array | boolean | string */
+    describe: 'Format to generate - sass,less,stylus',
+    type: 'string',
+    choices: ['sass', 'scss', 'less', 'styl'],
     nargs: 1,
     demand: true
   })
@@ -38,6 +39,7 @@ const argv = yargs // eslint-disable-line
   .option('flat', {
     describe: 'Variable style (flat or nested map)',
     type: 'boolean', /* array | boolean | string */
+    boolean: true,
     nargs: 1
   })
   .argv
