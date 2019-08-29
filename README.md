@@ -12,7 +12,11 @@
 
 ## Notice
 
-This branch works with v1.x of Tailwindcss. If you are using the older 0.x version, please use the master branch.
+This branch works with v1.x of Tailwindcss. If you are using the older 0.x version, please use `legacy` version
+
+```bash
+npm install tailwindcss-export-config@legacy
+```
 
 ## Features
 
@@ -22,26 +26,33 @@ This branch works with v1.x of Tailwindcss. If you are using the older 0.x versi
 
 ## Getting started
 
-1. Using npm:
-`npm install tailwindcss-export-config`
+Using npm:
+
+```bash
+npm install tailwindcss-export-config
+```
 
 or with yarn:
  
-`yarn add tailwindcss-export-config`
+```bash
+yarn add tailwindcss-export-config
+```
 
-2. Make a package.json script and run it for convenience
+Make a package.json script and run it for convenience
+
 ```json
 {
   "scripts": {
-    "export-tailwind-config": "tailwindcss-export-config --config=src/styles/tailwind/tailwind.config.js --destination=src/styles/scss/tailwind-configs --format=scss"
+    "export-tailwind-config": "tailwindcss-export-config --config=path/to/tailwind.config.js --destination=destination/of/generated/tailwind-variables --format=scss"
   }
 }
 ```
 
-or import inside your own node script
+You can also use the Node API
 
 ```js
 import TailwindExportConfig from 'tailwindcss-export-config'
+
 const converter = new TailwindExportConfig({
   config: 'path/to/tailwind.config.js',
   destination: 'converted/file/destination',
@@ -49,12 +60,15 @@ const converter = new TailwindExportConfig({
   prefix: 'tw',
   flat: true
 })
+
 // writeToFile returns a promise so we can chain off it
-converter.writeToFile().then(() => {
-  console.log('Success')
-}).catch((error) => {
-  console.log('Oops', error.message)
-})
+converter.writeToFile()
+  .then(() => {
+    console.log('Success')
+  })
+  .catch((error) => {
+    console.log('Oops', error.message)
+  })
 ```
 
 ## Config Options
@@ -72,120 +86,133 @@ flat|Boolean|false| Optionally transforms the variables from nested maps to flat
 Lets get a portion of the Tailwind config
 ```js
 module.exports = {
-  colors: {
-    'transparent': 'transparent',
-    'black': '#22292f',
-    'grey-darkest': '#3d4852',
-    'grey-darker': '#606f7b',
-    'grey-dark': '#8795a1',
-    'grey': '#b8c2cc',
-    'grey-light': '#dae1e7',
-    'grey-lighter': '#f1f5f8',
-    'grey-lightest': '#f8fafc',
-    'white': '#ffffff',
+  theme: {
+    fontFamily: {
+      display: ['Gilroy', 'sans-serif'],
+      body: ['Graphik', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        cyan: '#9cdbff',
+      }
+    }
   }
 }
 ```
-How would this look in the various preprocessors? Whats does the flat param do?
+
+Using the CLI command
+
+```bash
+tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --flat
+```
+
+### How would this look when generated?
 
 ### SCSS
+
 Using the flat param we get:
+
 ```scss
-$colors-transparent: transparent;
-$colors-black: #22292f;
-$colors-grey-darkest: #3d4852;
-$colors-grey-darker: #606f7b;
-$colors-grey-dark: #8795a1;
-$colors-grey: #b8c2cc;
-$colors-grey-light: #dae1e7;
-$colors-grey-lighter: #f1f5f8;
-$colors-grey-lightest: #f8fafc;
-$colors-white: #ffffff;
+$screens-sm: 640px;
+$screens-md: 768px;
+$screens-lg: 1024px;
+$screens-xl: 1280px;
+
+$fontFamily-display: (Gilroy,sans-serif);
+$fontFamily-body: (Graphik,sans-serif);
+
+//... other vars
+$colors-pink-800: #97266d;
+$colors-pink-900: #702459;
+$colors-cyan: #9cdbff;
+
 ```
 or without with the flat param set to false
 
 ```scss
-$colors: (
-  transparent: transparent,
-  black: #22292f,
-  grey-darkest: #3d4852,
-  grey-darker: #606f7b,
-  grey-dark: #8795a1,
-  grey: #b8c2cc,
-  grey-light: #dae1e7,
-  grey-lighter: #f1f5f8,
-  grey-lightest: #f8fafc,
-  white: #ffffff
+$fontFamily: (
+  display: (Gilroy,sans-serif),
+  body: (Graphik,sans-serif),
 );
+
+$colors: (
+  //... other vars
+  pink-700: #b83280,
+  pink-800: #97266d,
+  pink-900: #702459,
+  cyan: #9cdbff,
+);
+
 ```
 
-The second (nested map) approach is a bit more annoying to work with as you have to do `map_get($colors, black)`  but things are easier to loop if you need to.
+When working with SASS, the second (nested map) approach is a bit more annoying to work with as you have to do `map_get($colors, black)`  but things are easier to loop if you need to.
 
 Sass is almost the same and you can import both sass and scss vars into the same project. We support them both if someone prefers one syntax over the other.
 
 ### LESS
+
 ```less
-@colors-transparent: transparent;
-@colors-black: #22292f;
-@colors-grey-darkest: #3d4852;
-@colors-grey-darker: #606f7b;
-@colors-grey-dark: #8795a1;
-@colors-grey: #b8c2cc;
-@colors-grey-light: #dae1e7;
-@colors-grey-lighter: #f1f5f8;
-@colors-grey-lightest: #f8fafc;
-@colors-white: #ffffff;
+@fontFamily-display: Gilroy, sans-serif;
+@fontFamily-body: Graphik, sans-serif;
+
+// other vas
+@colors-pink-600: #d53f8c;
+@colors-pink-700: #b83280;
+@colors-pink-800: #97266d;
+@colors-pink-900: #702459;
+@colors-cyan: #9cdbff;
 ```
 
-Less does not have nested maps so passing the `flat` param will not do anything
+**Note:** Less does not have nested maps, so passing the `flat` param will not do anything
 
 ### Stylus
 ```stylus
-$colors-transparent = transparent
-$colors-black = #22292f
-$colors-grey-darkest = #3d4852
-$colors-grey-darker = #606f7b
-$colors-grey-dark = #8795a1
-$colors-grey = #b8c2cc
-$colors-grey-light = #dae1e7
-$colors-grey-lighter = #f1f5f8
-$colors-grey-lightest = #f8fafc
-$colors-white = #ffffff
+$fontFamily-display = (Gilroy,sans-serif);
+$fontFamily-body = (Graphik,sans-serif);
+
+// ...other vars
+
+$colors-pink-800 = #97266d;
+$colors-pink-900 = #702459;
+$colors-cyan = #9cdbff;
 ```
 
 or with the flat param to false 
 
 ```stylus
+$fontFamily = {
+  display: (Gilroy,sans-serif),
+  body: (Graphik,sans-serif),
+};
+
+// ...other vars
+
 $colors = {
-  transparent: transparent,
-  black: #22292f,
-  grey-darkest: #3d4852,
-  grey-darker: #606f7b,
-  grey-dark: #8795a1,
-  grey: #b8c2cc,
-  grey-light: #dae1e7,
-  grey-lighter: #f1f5f8,
-  grey-lightest: #f8fafc,
-  white: #ffffff
+   // ...other vars
+  "pink-600": #d53f8c,
+  "pink-700": #b83280,
+  "pink-800": #97266d,
+  "pink-900": #702459,
+  cyan: #9cdbff,
 }
 ```
 
-Using the colors is a matter of reaching using dot notation `$colors.black` or `$colors[black]`.
+With stylus, using nested maps is a matter of reaching using dot notation `$colors.black` or `$colors[black]`. JavaScript anyone?
 
 ### Prefix
-You can prefix the colors to escape naming collisions by using the `prefix` param
+You can prefix variables to escape naming collisions by using the `prefix` param
 
-`--prefix=tw`
+```bash
+tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --flat --prefix=tw
+```
 
 ```scss
-$tw-colors-transparent: transparent;
-$tw-colors-black: #22292f;
-$tw-colors-grey-darkest: #3d4852;
-$tw-colors-grey-darker: #606f7b;
-$tw-colors-grey-dark: #8795a1;
-$tw-colors-grey: #b8c2cc;
-$tw-colors-grey-light: #dae1e7;
-$tw-colors-grey-lighter: #f1f5f8;
-$tw-colors-grey-lightest: #f8fafc;
-$tw-colors-white: #ffffff;
+$tw-fontFamily-display: (Gilroy,sans-serif);
+$tw-fontFamily-body: (Graphik,sans-serif);
+
+$tw-colors-pink-600: #d53f8c;
+$tw-colors-pink-700: #b83280;
+$tw-colors-pink-800: #97266d;
+$tw-colors-pink-900: #702459;
+$tw-colors-cyan: #9cdbff;
 ```
