@@ -10,14 +10,6 @@
 <a href="https://www.npmjs.com/package/tailwindcss-export-config" target="_blank"><img src="https://img.shields.io/npm/v/tailwindcss-export-config.svg"></a>
 </p>
 
-## Notice
-
-This branch works with v1.x of Tailwindcss. If you are using the older 0.x version, please use `legacy` version
-
-```bash
-npm install tailwindcss-export-config@legacy
-```
-
 ## Features
 
 * :rocket: Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
@@ -215,4 +207,12 @@ $tw-colors-pink-700: #b83280;
 $tw-colors-pink-800: #97266d;
 $tw-colors-pink-900: #702459;
 $tw-colors-cyan: #9cdbff;
+```
+
+## Notice
+
+This branch works with v1.x of Tailwindcss. If you are using the older 0.x version, please use `legacy` version
+
+```bash
+npm install tailwindcss-export-config@legacy
 ```
