@@ -184,6 +184,7 @@ class Converter {
    * @private
    */
   _objectEntryKeySanitizer (key) {
+    if (/[^A-Za-z0-9]/.test(key)) key = `'${key}'`;
     return key
   }
 }
