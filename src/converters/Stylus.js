@@ -11,7 +11,7 @@ class StylusConverter extends Converter {
   }
 
   _objectEntryKeySanitizer (prop) {
-    if (/\d/.test(prop)) return `"${prop}"`
+    if (/\d/.test(prop) || this.quotedKeys) return `"${prop}"`
     return prop
   }
 }

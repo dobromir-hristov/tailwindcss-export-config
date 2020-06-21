@@ -10,6 +10,16 @@ describe('Scss converter', () => {
     expect(converter.convert()).toMatchSnapshot()
   })
 
+  it('converts a nested map with quoted keys', () => {
+    const converter = new ScssConverter({
+      config: resolveConfig(testConfig),
+      quotedKeys: true
+    })
+    const result = converter.convert()
+    expect(result).toContain('"sm": 640px')
+    expect(result).toMatchSnapshot()
+  })
+
   it('Converts to flat variables', () => {
     const converter = new ScssConverter({
       config: resolveConfig(testConfig),

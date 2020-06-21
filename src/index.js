@@ -22,6 +22,7 @@ class ConvertTo {
    * @param {String} options.destination - Output destination
    * @param {Boolean} [options.flat] - Whether the variables should be nested maps or flat level variables
    * @param {String} options.format - The desired format
+   * @param {Boolean} options.quotedSassKeys - Whether SASS keys should be quoted. Both for Sass and SCSS.
    */
   constructor (options) {
     if (!allowedFormatsMap.hasOwnProperty(options.format)) {
@@ -32,7 +33,7 @@ class ConvertTo {
     const Converter = allowedFormatsMap[options.format]
     const config = resolveConfig(options.config)
 
-    this.converterInstance = new Converter({ config, prefix: options.prefix, flat: options.flat })
+    this.converterInstance = new Converter({ ...options, config })
   }
 
   /**

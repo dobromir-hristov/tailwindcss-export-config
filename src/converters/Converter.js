@@ -14,18 +14,21 @@ class Converter {
   mapOpener = '(\n'
   /** @type {string} - the symbol that ends a map */
   mapCloser = ')'
+  /** @type {boolean} - should map keys be quoted */
+  quotedKeys = false
 
   /**
    * @param opts
    * @param {Object} opts.config - Tailwind config object
    * @param {Boolean} opts.flat - Is flat or not
    * @param {String} opts.prefix - If we want a variable prefix
+   * @param {Boolean} [opts.quotedKeys] - Should map keys be quoted
    */
   constructor (opts) {
     this.config = opts.config.theme
     this.flat = opts.flat
-
     this.prefix = opts.prefix || ''
+    this.quotedKeys = opts.quotedKeys || false
   }
 
   /**
@@ -184,7 +187,7 @@ class Converter {
    * @private
    */
   _objectEntryKeySanitizer (key) {
-    return key
+    return this.quotedKeys ? `"${key}"` : key
   }
 }
 

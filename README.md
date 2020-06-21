@@ -35,7 +35,7 @@ Make a package.json script and run it for convenience
 ```json
 {
   "scripts": {
-    "export-tailwind-config": "tailwindcss-export-config --config=path/to/tailwind.config.js --destination=destination/of/generated/tailwind-variables --format=scss"
+    "export-tailwind-config": "tailwindcss-export-config --config=path/to/tailwind.config.js --destination=destination/of/generated/tailwind-variables --format=scss --quoted-keys=true"
   }
 }
 ```
@@ -50,7 +50,8 @@ const converter = new TailwindExportConfig({
   destination: 'converted/file/destination',
   format: 'scss',
   prefix: 'tw',
-  flat: true
+  flat: true,
+  quotedKeys: true
 })
 
 // writeToFile returns a promise so we can chain off it
@@ -72,7 +73,8 @@ config|String,Object|true| Tailwindcss config path or config object to transform
 destination|String|true| Destination to save converted file
 format|String|true| The format in which to convert the file
 prefix|String|false| An optional prefix for each variable name
-flat|Boolean|false| Optionally transforms the variables from nested maps to flat level variables. Less does not support nested maps so we default to flat for them always.
+flat|Boolean|false| Optionally transforms the variables from nested maps to flat level variables. Less does not support nested maps so we default to flat for them always. Defaults to `false`.
+quoted-keys|Boolean|false| (`quotedKeys` in the Node API) - Whether keys in maps should be quoted or not. We recommend to have this set to `true`. Defaults to `false`.
 
 ## Example export
 Lets get a portion of the Tailwind config
@@ -207,6 +209,30 @@ $tw-colors-pink-700: #b83280;
 $tw-colors-pink-800: #97266d;
 $tw-colors-pink-900: #702459;
 $tw-colors-cyan: #9cdbff;
+```
+
+### Quoted Keys
+
+SASS and other preprocessors recommend defining map keys in quotes. It is possible comply with that, by using the optional `quotedKeys` setting.
+
+```bash
+tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --quoted-keys=true
+```
+
+```scss
+$fontFamily: (
+  "display": (Gilroy,sans-serif),
+  "body": (Graphik,sans-serif),
+);
+
+$colors: (
+  //... other vars
+  "pink-700": #b83280,
+  "pink-800": #97266d,
+  "pink-900": #702459,
+  "cyan": #9cdbff,
+);
+
 ```
 
 ## Notice
