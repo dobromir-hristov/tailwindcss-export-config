@@ -2,6 +2,7 @@ const ConvertTo = require('../../src/index')
 const path = require('path')
 
 const testConfig = require('../tailwind.config')
+const testConfigDisabledPlugins = require('../tailwind-disabled-plugins.config')
 const fse = require('fs-extra')
 
 jest.mock('fs-extra')
@@ -37,6 +38,37 @@ describe('Tailwind Options Exporter', () => {
     })
 
     expect(converterInstance.converterInstance.format).toBe('scss')
+  })
+
+  it('skips options that are disabled in `corePlugins` using the object pattern', () => {
+    let converterInstance = new ConvertTo({
+      config: testConfigDisabledPlugins,
+      format: 'scss'
+    })
+
+    const scssConfig = converterInstance.convert()
+    // assert it does not contain a few properties
+    expect(scssConfig).not.toContain('borderRadius')
+    expect(scssConfig).not.toContain('backgroundSize')
+    // assert the whole snapshot
+    expect(scssConfig).toMatchSnapshot()
+  })
+
+  it('skips options that are disabled in `corePlugins` using the array pattern', () => {
+    let converterInstance = new ConvertTo({
+      config: {
+        ...testConfig,
+        corePlugins: ['cursor']
+      },
+      format: 'scss'
+    })
+
+    const scssConfig = converterInstance.convert()
+    // assert it does not contain a few properties
+    expect(scssConfig).toContain('cursor')
+    expect(scssConfig).not.toContain('backgroundSize')
+    // assert the whole snapshot
+    expect(scssConfig).toMatchSnapshot()
   })
 
   it('it properly includes the provided configuration properties', () => {

@@ -9,6 +9,10 @@ class Converter {
 
   /** @type {string} - the format and file extension */
   format
+  /** @type {object} - the resolved theme configuration settings */
+  theme = {}
+  /** @type {object} - tailwind configurations */
+  configs = {}
 
   /** @type {string} - the symbol that starts a map */
   mapOpener = '(\n'
@@ -25,7 +29,10 @@ class Converter {
    * @param {Boolean} [opts.quotedKeys] - Should map keys be quoted
    */
   constructor (opts) {
-    this.config = opts.config.theme
+    const { theme, ...rest } = opts.config
+    this.theme = theme
+    this.configs = rest
+
     this.flat = opts.flat
     this.prefix = opts.prefix || ''
     this.quotedKeys = opts.quotedKeys || false
@@ -136,21 +143,33 @@ class Converter {
    * @returns {string}
    */
   convert () {
-    let metric
+    let setting
     let buffer = ''
-    for (metric in this.config) {
-      if (this.config.hasOwnProperty(metric)) {
-        const data = this.config[metric]
+    for (setting in this.theme) {
+      if (this.theme.hasOwnProperty(setting) && this._isSettingEnabled(setting)) {
+        const data = this.theme[setting]
 
         const body = this.flat
-          ? this._convertObjectToVar(metric, data)
-          : this._convertObjectToMap(metric, data)
+          ? this._convertObjectToVar(setting, data)
+          : this._convertObjectToMap(setting, data)
 
         buffer += '\n'
         buffer += body
       }
     }
     return buffer
+  }
+
+  /**
+   * Checks whether a setting is enabled or not.
+   * @param {string} key
+   * @return {boolean}
+   * @private
+   */
+  _isSettingEnabled (key) {
+    const { corePlugins } = this.configs
+    if (!corePlugins) return true
+    return Array.isArray(corePlugins) ? corePlugins.includes(key) : corePlugins[key] !== false
   }
 
   /**
