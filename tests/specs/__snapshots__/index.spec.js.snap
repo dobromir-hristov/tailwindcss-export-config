@@ -1762,3 +1762,42 @@ $zIndex: (
 );
 "
 `;
+
+exports[`Tailwind Options Exporter skips options that are disabled in \`corePlugins\` using the array pattern 1`] = `
+"/* Converted Tailwind Config to scss */
+$cursor: (
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  wait: wait,
+  text: text,
+  move: move,
+  not-allowed: not-allowed,
+);
+"
+`;
+
+exports[`Tailwind Options Exporter skips options that are disabled in \`corePlugins\` using the object pattern 1`] = `
+"/* Converted Tailwind Config to scss */
+$screens: (
+  sm: 640px,
+  md: 768px,
+);
+
+$fontFamily: (
+  display: (Gilroy,sans-serif),
+  body: (Graphik,sans-serif),
+);
+
+$borderWidth: (
+  0: 0,
+  default: 1px,
+);
+
+$minWidth: (
+  0: 0,
+  full: 100%,
+  half: 50%,
+);
+"
+`;

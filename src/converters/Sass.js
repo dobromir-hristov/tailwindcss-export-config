@@ -12,7 +12,7 @@ class SassConverter extends Converter {
   }
 
   _buildObjectEntry (key, value, indent, index, metricIndex = 0) {
-    return indentWith(`${key}: ${this._sanitizePropValue(value)},`, indent + ((!index && !metricIndex) ? 0 : 1))
+    return indentWith(`${this._objectEntryKeySanitizer(key)}: ${this._sanitizePropValue(value)},`, indent + ((!index && !metricIndex) ? 0 : 1))
   }
 }
 

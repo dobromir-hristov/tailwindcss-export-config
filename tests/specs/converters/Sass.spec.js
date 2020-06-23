@@ -11,6 +11,16 @@ describe('Sass converter', () => {
     expect(converter.convert()).toMatchSnapshot()
   })
 
+  it('wraps keys in quotes', () => {
+    const converter = new SassConverter({
+      config: resolveConfig(testConfig),
+      quotedKeys: true
+    })
+    const result = converter.convert()
+    expect(result).toContain('$screens: ("sm":')
+    expect(result).toMatchSnapshot()
+  })
+
   it('Converts to flat variables', () => {
     const converter = new SassConverter({
       config: resolveConfig(testConfig),

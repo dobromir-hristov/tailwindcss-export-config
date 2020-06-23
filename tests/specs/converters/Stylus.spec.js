@@ -11,6 +11,16 @@ describe('Stylus converter', () => {
     expect(converter.convert()).toMatchSnapshot()
   })
 
+  it('Converts to nested map and wraps keys in quotes', () => {
+    const converter = new StylusConverter({
+      config: resolveConfig(testConfig),
+      quotedKeys: true
+    })
+    const result = converter.convert()
+    expect(result).toContain('"sm": 640px')
+    expect(result).toMatchSnapshot()
+  })
+
   it('Converts to flat variables', () => {
     const converter = new StylusConverter({
       config: resolveConfig(testConfig)

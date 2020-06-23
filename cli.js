@@ -42,6 +42,12 @@ const argv = yargs // eslint-disable-line
     boolean: true,
     nargs: 1
   })
+  .option('quoted-keys', {
+    describe: 'Should map keys be quoted',
+    type: 'boolean', /* array | boolean | string */
+    boolean: true,
+    nargs: 1
+  })
   .argv
 
 try {
@@ -50,7 +56,8 @@ try {
     destination: argv.destination,
     format: argv.format,
     prefix: argv.prefix,
-    flat: argv.flat
+    flat: argv.flat,
+    quotedKeys: argv['quoted-keys']
   })
   converter.writeToFile()
     .then((options) => {
