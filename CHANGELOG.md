@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.0.2...v2.1.0) (2020-06-23)
+
+
+### Features
+
+* add quoting keys ([2d4308b](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/2d4308b))
+* enable reading corePlugins settings, to disable generating unnecessary variables. ([#15](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/15)) ([f9527d1](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/f9527d1))
+
 ### [2.0.2](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.0.1...v2.0.2) (2019-08-29)
 
 ### [2.0.1](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.0.0...v2.0.1) (2019-08-29)
