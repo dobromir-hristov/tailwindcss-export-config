@@ -4,6 +4,12 @@ export function indentWith (value, size) {
   return ' '.repeat(size) + value
 }
 
+/**
+ * Resolves a config.
+ * If passed a string, imports it first.
+ * @param {String | Object} config
+ * @return {Object}
+ */
 export function resolveConfig (config) {
   if (typeof config === 'string') {
     config = require(config)

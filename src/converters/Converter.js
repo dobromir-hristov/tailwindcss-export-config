@@ -2,6 +2,8 @@ import reduce from 'lodash.reduce'
 import { indentWith } from './utils.js'
 import { isObject } from './utils'
 
+const INDENT_BY = 2
+
 /**
  * General converter class. To be extended by any specific format converter.
  */
@@ -11,7 +13,7 @@ class Converter {
   format
   /** @type {object} - the resolved theme configuration settings */
   theme = {}
-  /** @type {object} - tailwind configurations */
+  /** @type {object} - tailwind specific configurations */
   configs = {}
 
   /** @type {string} - the symbol that starts a map */
@@ -20,6 +22,8 @@ class Converter {
   mapCloser = ')'
   /** @type {boolean} - should map keys be quoted */
   quotedKeys = false
+  /** @type {number} - should try to flatten deep maps after N level */
+  flattenMapsAfter = -1
 
   /**
    * @param opts
@@ -27,6 +31,7 @@ class Converter {
    * @param {Boolean} opts.flat - Is flat or not
    * @param {String} opts.prefix - If we want a variable prefix
    * @param {Boolean} [opts.quotedKeys] - Should map keys be quoted
+   * @param {Number} [opts.flattenMapsAfter] - Should flatten maps after N level
    */
   constructor (opts) {
     const { theme, ...rest } = opts.config
@@ -35,7 +40,8 @@ class Converter {
 
     this.flat = opts.flat
     this.prefix = opts.prefix || ''
-    this.quotedKeys = opts.quotedKeys || false
+    if (opts.quotedKeys) this.quotedKeys = opts.quotedKeys
+    if (typeof opts.flattenMapsAfter !== 'undefined') this.flattenMapsAfter = opts.flattenMapsAfter
   }
 
   /**
@@ -96,7 +102,7 @@ class Converter {
     return [
       `${this.mapOpener}`,
       // loop over each element
-      ...Object.entries(data).map(([metric, value], index) => {
+      ...Object.entries(data).filter(([metric]) => !!metric).map(([metric, value], index) => {
         return this._buildMapData(metric, value, indent, index)
       }),
       // close map
@@ -118,10 +124,25 @@ class Converter {
       // not an object so we can directly build an entry
       return this._buildObjectEntry(metric, value, indent, metricIndex)
     }
+    const nestLevel = indent / INDENT_BY
+    // should deeply nested maps be flattened out, or resolved deeply
+    if (nestLevel <= this.flattenMapsAfter) {
+      return this._buildObjectEntry(metric, this._buildMap(value, indent + INDENT_BY), indent, metricIndex)
+    }
     // its an object so we need to flatten it out
-    return Object.entries(value).map(([propertyName, propertyValue], index) => {
-      return this._buildObjectEntry(`${metric}-${propertyName}`, propertyValue, indent, index, metricIndex)
-    }).join('')
+    return this._walkRecursively(value, metric, indent, metricIndex).join('')
+  }
+
+  _walkRecursively (value, parentPropertyName, indent, metricIndex) {
+    return Object.entries(value)
+      .reduce((all, [propertyName, propertyValue], index) => {
+        const property = [parentPropertyName, propertyName].filter(Boolean).join('-')
+        const val = isObject(propertyValue)
+          ? this._walkRecursively(propertyValue, property, indent, metricIndex)
+          : this._buildObjectEntry(property, propertyValue, indent, index, metricIndex)
+
+        return all.concat(val)
+      }, [])
   }
 
   /**
@@ -135,7 +156,7 @@ class Converter {
    * @private
    */
   _buildObjectEntry (key, value, indent, index = 0, metricIndex) {
-    return indentWith(`${this._objectEntryKeySanitizer(key)}: ${this._sanitizePropValue(value)},\n`, indent + 2)
+    return indentWith(`${this._objectEntryKeySanitizer(key)}: ${this._sanitizePropValue(value)},\n`, indent + INDENT_BY)
   }
 
   /**
@@ -180,7 +201,14 @@ class Converter {
    */
   _sanitizePropValue (value) {
     if (Array.isArray(value)) return `(${value})`.replace(/\\"/g, '"')
-    if (typeof value === 'string' && value.includes(',')) return `(${value})`
+    if (
+      // if its a string
+      typeof value === 'string'
+      // and has comma's in it
+      && value.includes(',')
+      // but is not a concatenated map
+      && !value.startsWith(this.mapOpener)
+    ) return `(${value})`
     return value
   }
 
