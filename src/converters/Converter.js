@@ -1,4 +1,3 @@
-import reduce from 'lodash.reduce'
 import { indentWith } from './utils.js'
 import { isObject } from './utils'
 
@@ -59,21 +58,22 @@ class Converter {
    * @private
    */
   _convertObjectToVar (prop, data) {
-    return reduce(data, (all, value, metric) => {
-      if (isObject(value)) {
-        return all + Object.entries(value).map(([propKey, propValue]) => {
-          return this._buildVar(
-            this._propertyNameSanitizer(prop, `${metric}-${propKey}`),
-            this._sanitizePropValue(propValue)
+    return this._walkFlatRecursively(data, prop).join('')
+  }
+
+  _walkFlatRecursively (value, parentPropertyName) {
+    return Object.entries(value)
+      .reduce((all, [propertyName, propertyValue]) => {
+        const property = [parentPropertyName, propertyName].filter(Boolean).join('-')
+        const val = isObject(propertyValue)
+          ? this._walkFlatRecursively(propertyValue, property)
+          : this._buildVar(
+            this._propertyNameSanitizer(property),
+            this._sanitizePropValue(propertyValue)
           )
-        }).join('')
-      } else {
-        return all + this._buildVar(
-          this._propertyNameSanitizer(prop, metric),
-          this._sanitizePropValue(value)
-        )
-      }
-    }, '')
+
+        return all.concat(val)
+      }, [])
   }
 
   /**
@@ -216,15 +216,12 @@ class Converter {
    * Sanitizes a property name by escaping characters
    * Adds prefix
    * @param {string} property - the property (colors, backgroundColors)
-   * @param {string} [metric] - the property's metric (purple, red, 1/4, 24 etc..)
    * @return {string}
    * @private
    */
-  _propertyNameSanitizer (property, metric = '') {
-    if (metric) {
-      metric = metric.replace('/', '\\/')
-    }
-    return [this.prefix, property, metric].filter(v => v).join('-')
+  _propertyNameSanitizer (property) {
+    property = property.replace('/', '\\/')
+    return [this.prefix, property].filter(v => v).join('-')
   }
 
   /**

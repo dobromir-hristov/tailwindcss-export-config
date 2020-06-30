@@ -26,6 +26,12 @@ module.exports = {
           }
         }
       }
+    },
+    customColors: {
+      colors: {
+        blue: 'NotBlue',
+        green: 'notGreen'
+      }
     }
   }
 }

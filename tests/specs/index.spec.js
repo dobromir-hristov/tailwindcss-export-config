@@ -116,7 +116,7 @@ describe('Tailwind Options Exporter', () => {
     })
   })
 
-  it('converts deeply nested configs', () => {
+  it('converts deeply nested configs, with flat:false', () => {
     const config = require('../tailwind-deeply-nested.config.js')
 
     let converterInstance = new ConvertTo({
@@ -149,5 +149,16 @@ describe('Tailwind Options Exporter', () => {
       flattenMapsAfter: 3
     })
     expect(converterInstance.convert()).toMatchSnapshot('level3')
+  })
+
+  it('converts deeply nested configs, with flat:true', () => {
+    const config = require('../tailwind-deeply-nested.config.js')
+
+    let converterInstance = new ConvertTo({
+      config: config,
+      format: 'scss',
+      flat: true
+    })
+    expect(converterInstance.convert()).toMatchSnapshot()
   })
 })
