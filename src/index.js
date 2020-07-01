@@ -19,10 +19,11 @@ class ConvertTo {
    * @param options
    * @param {Object | String} options.config - Tailwind config. Could be either the tailwind config object or path to it
    * @param {String} [options.prefix] - Variable prefix
-   * @param {String} options.destination - Output destination
+   * @param {String} [options.destination] - Output destination
    * @param {Boolean} [options.flat] - Whether the variables should be nested maps or flat level variables
    * @param {String} options.format - The desired format
-   * @param {Boolean} options.quotedSassKeys - Whether SASS keys should be quoted. Both for Sass and SCSS.
+   * @param {Boolean} [options.quotedKeys] - Whether SASS keys should be quoted. Both for Sass and SCSS.
+   * @param {Number} [options.flattenMapsAfter] - After what nest level, do we want to flatten out nested maps.
    */
   constructor (options) {
     if (!allowedFormatsMap.hasOwnProperty(options.format)) {

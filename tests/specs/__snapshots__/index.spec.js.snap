@@ -1763,6 +1763,4719 @@ $zIndex: (
 "
 `;
 
+exports[`Tailwind Options Exporter converts deeply nested configs, with flat:false: level-default 1`] = `
+"/* Converted Tailwind Config to scss */
+$customForms: (
+  colors-blue: blue,
+  colors-green: green,
+  somethingElse-level1-color: pink,
+  somethingElse-level1-arrayValue: (a,b,c),
+  somethingElse-level1-nestedB-color: nested,
+  somethingElse-level1-nestedB-padding: much,
+  somethingElse-level1-nestedB-thing: thing,
+  somethingElse-level1-nestedB-nestedC-color: nestedC,
+  somethingElse-level1-nestedB-nestedC-nestedD-color: nestedD,
+  somethingElse-level1-nestedB-nestedC-nestedD-color2: color2,
+  somethingElse-level1-nestedB-nestedC-nestedD-nestedE-color: nestedE,
+);
+
+$customColors: (
+  colors-blue: NotBlue,
+  colors-green: notGreen,
+);
+
+$screens: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+$colors: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray-100: #f7fafc,
+  gray-200: #edf2f7,
+  gray-300: #e2e8f0,
+  gray-400: #cbd5e0,
+  gray-500: #a0aec0,
+  gray-600: #718096,
+  gray-700: #4a5568,
+  gray-800: #2d3748,
+  gray-900: #1a202c,
+  red-100: #fff5f5,
+  red-200: #fed7d7,
+  red-300: #feb2b2,
+  red-400: #fc8181,
+  red-500: #f56565,
+  red-600: #e53e3e,
+  red-700: #c53030,
+  red-800: #9b2c2c,
+  red-900: #742a2a,
+  orange-100: #fffaf0,
+  orange-200: #feebc8,
+  orange-300: #fbd38d,
+  orange-400: #f6ad55,
+  orange-500: #ed8936,
+  orange-600: #dd6b20,
+  orange-700: #c05621,
+  orange-800: #9c4221,
+  orange-900: #7b341e,
+  yellow-100: #fffff0,
+  yellow-200: #fefcbf,
+  yellow-300: #faf089,
+  yellow-400: #f6e05e,
+  yellow-500: #ecc94b,
+  yellow-600: #d69e2e,
+  yellow-700: #b7791f,
+  yellow-800: #975a16,
+  yellow-900: #744210,
+  green-100: #f0fff4,
+  green-200: #c6f6d5,
+  green-300: #9ae6b4,
+  green-400: #68d391,
+  green-500: #48bb78,
+  green-600: #38a169,
+  green-700: #2f855a,
+  green-800: #276749,
+  green-900: #22543d,
+  teal-100: #e6fffa,
+  teal-200: #b2f5ea,
+  teal-300: #81e6d9,
+  teal-400: #4fd1c5,
+  teal-500: #38b2ac,
+  teal-600: #319795,
+  teal-700: #2c7a7b,
+  teal-800: #285e61,
+  teal-900: #234e52,
+  blue-100: #ebf8ff,
+  blue-200: #bee3f8,
+  blue-300: #90cdf4,
+  blue-400: #63b3ed,
+  blue-500: #4299e1,
+  blue-600: #3182ce,
+  blue-700: #2b6cb0,
+  blue-800: #2c5282,
+  blue-900: #2a4365,
+  indigo-100: #ebf4ff,
+  indigo-200: #c3dafe,
+  indigo-300: #a3bffa,
+  indigo-400: #7f9cf5,
+  indigo-500: #667eea,
+  indigo-600: #5a67d8,
+  indigo-700: #4c51bf,
+  indigo-800: #434190,
+  indigo-900: #3c366b,
+  purple-100: #faf5ff,
+  purple-200: #e9d8fd,
+  purple-300: #d6bcfa,
+  purple-400: #b794f4,
+  purple-500: #9f7aea,
+  purple-600: #805ad5,
+  purple-700: #6b46c1,
+  purple-800: #553c9a,
+  purple-900: #44337a,
+  pink-100: #fff5f7,
+  pink-200: #fed7e2,
+  pink-300: #fbb6ce,
+  pink-400: #f687b3,
+  pink-500: #ed64a6,
+  pink-600: #d53f8c,
+  pink-700: #b83280,
+  pink-800: #97266d,
+  pink-900: #702459,
+);
+
+$spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$backgroundColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray-100: #f7fafc,
+  gray-200: #edf2f7,
+  gray-300: #e2e8f0,
+  gray-400: #cbd5e0,
+  gray-500: #a0aec0,
+  gray-600: #718096,
+  gray-700: #4a5568,
+  gray-800: #2d3748,
+  gray-900: #1a202c,
+  red-100: #fff5f5,
+  red-200: #fed7d7,
+  red-300: #feb2b2,
+  red-400: #fc8181,
+  red-500: #f56565,
+  red-600: #e53e3e,
+  red-700: #c53030,
+  red-800: #9b2c2c,
+  red-900: #742a2a,
+  orange-100: #fffaf0,
+  orange-200: #feebc8,
+  orange-300: #fbd38d,
+  orange-400: #f6ad55,
+  orange-500: #ed8936,
+  orange-600: #dd6b20,
+  orange-700: #c05621,
+  orange-800: #9c4221,
+  orange-900: #7b341e,
+  yellow-100: #fffff0,
+  yellow-200: #fefcbf,
+  yellow-300: #faf089,
+  yellow-400: #f6e05e,
+  yellow-500: #ecc94b,
+  yellow-600: #d69e2e,
+  yellow-700: #b7791f,
+  yellow-800: #975a16,
+  yellow-900: #744210,
+  green-100: #f0fff4,
+  green-200: #c6f6d5,
+  green-300: #9ae6b4,
+  green-400: #68d391,
+  green-500: #48bb78,
+  green-600: #38a169,
+  green-700: #2f855a,
+  green-800: #276749,
+  green-900: #22543d,
+  teal-100: #e6fffa,
+  teal-200: #b2f5ea,
+  teal-300: #81e6d9,
+  teal-400: #4fd1c5,
+  teal-500: #38b2ac,
+  teal-600: #319795,
+  teal-700: #2c7a7b,
+  teal-800: #285e61,
+  teal-900: #234e52,
+  blue-100: #ebf8ff,
+  blue-200: #bee3f8,
+  blue-300: #90cdf4,
+  blue-400: #63b3ed,
+  blue-500: #4299e1,
+  blue-600: #3182ce,
+  blue-700: #2b6cb0,
+  blue-800: #2c5282,
+  blue-900: #2a4365,
+  indigo-100: #ebf4ff,
+  indigo-200: #c3dafe,
+  indigo-300: #a3bffa,
+  indigo-400: #7f9cf5,
+  indigo-500: #667eea,
+  indigo-600: #5a67d8,
+  indigo-700: #4c51bf,
+  indigo-800: #434190,
+  indigo-900: #3c366b,
+  purple-100: #faf5ff,
+  purple-200: #e9d8fd,
+  purple-300: #d6bcfa,
+  purple-400: #b794f4,
+  purple-500: #9f7aea,
+  purple-600: #805ad5,
+  purple-700: #6b46c1,
+  purple-800: #553c9a,
+  purple-900: #44337a,
+  pink-100: #fff5f7,
+  pink-200: #fed7e2,
+  pink-300: #fbb6ce,
+  pink-400: #f687b3,
+  pink-500: #ed64a6,
+  pink-600: #d53f8c,
+  pink-700: #b83280,
+  pink-800: #97266d,
+  pink-900: #702459,
+);
+
+$backgroundPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$backgroundSize: (
+  auto: auto,
+  cover: cover,
+  contain: contain,
+);
+
+$borderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray-100: #f7fafc,
+  gray-200: #edf2f7,
+  gray-300: #e2e8f0,
+  gray-400: #cbd5e0,
+  gray-500: #a0aec0,
+  gray-600: #718096,
+  gray-700: #4a5568,
+  gray-800: #2d3748,
+  gray-900: #1a202c,
+  red-100: #fff5f5,
+  red-200: #fed7d7,
+  red-300: #feb2b2,
+  red-400: #fc8181,
+  red-500: #f56565,
+  red-600: #e53e3e,
+  red-700: #c53030,
+  red-800: #9b2c2c,
+  red-900: #742a2a,
+  orange-100: #fffaf0,
+  orange-200: #feebc8,
+  orange-300: #fbd38d,
+  orange-400: #f6ad55,
+  orange-500: #ed8936,
+  orange-600: #dd6b20,
+  orange-700: #c05621,
+  orange-800: #9c4221,
+  orange-900: #7b341e,
+  yellow-100: #fffff0,
+  yellow-200: #fefcbf,
+  yellow-300: #faf089,
+  yellow-400: #f6e05e,
+  yellow-500: #ecc94b,
+  yellow-600: #d69e2e,
+  yellow-700: #b7791f,
+  yellow-800: #975a16,
+  yellow-900: #744210,
+  green-100: #f0fff4,
+  green-200: #c6f6d5,
+  green-300: #9ae6b4,
+  green-400: #68d391,
+  green-500: #48bb78,
+  green-600: #38a169,
+  green-700: #2f855a,
+  green-800: #276749,
+  green-900: #22543d,
+  teal-100: #e6fffa,
+  teal-200: #b2f5ea,
+  teal-300: #81e6d9,
+  teal-400: #4fd1c5,
+  teal-500: #38b2ac,
+  teal-600: #319795,
+  teal-700: #2c7a7b,
+  teal-800: #285e61,
+  teal-900: #234e52,
+  blue-100: #ebf8ff,
+  blue-200: #bee3f8,
+  blue-300: #90cdf4,
+  blue-400: #63b3ed,
+  blue-500: #4299e1,
+  blue-600: #3182ce,
+  blue-700: #2b6cb0,
+  blue-800: #2c5282,
+  blue-900: #2a4365,
+  indigo-100: #ebf4ff,
+  indigo-200: #c3dafe,
+  indigo-300: #a3bffa,
+  indigo-400: #7f9cf5,
+  indigo-500: #667eea,
+  indigo-600: #5a67d8,
+  indigo-700: #4c51bf,
+  indigo-800: #434190,
+  indigo-900: #3c366b,
+  purple-100: #faf5ff,
+  purple-200: #e9d8fd,
+  purple-300: #d6bcfa,
+  purple-400: #b794f4,
+  purple-500: #9f7aea,
+  purple-600: #805ad5,
+  purple-700: #6b46c1,
+  purple-800: #553c9a,
+  purple-900: #44337a,
+  pink-100: #fff5f7,
+  pink-200: #fed7e2,
+  pink-300: #fbb6ce,
+  pink-400: #f687b3,
+  pink-500: #ed64a6,
+  pink-600: #d53f8c,
+  pink-700: #b83280,
+  pink-800: #97266d,
+  pink-900: #702459,
+  default: #e2e8f0,
+);
+
+$borderRadius: (
+  none: 0,
+  sm: 0.125rem,
+  default: 0.25rem,
+  lg: 0.5rem,
+  full: 9999px,
+);
+
+$borderWidth: (
+  0: 0,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  default: 1px,
+);
+
+$boxShadow: (
+  default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)),
+  md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)),
+  lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+  xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)),
+  2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)),
+  inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)),
+  outline: (0 0 0 3px rgba(66, 153, 225, 0.5)),
+  none: none,
+);
+
+$container: (
+);
+
+$cursor: (
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  wait: wait,
+  text: text,
+  move: move,
+  not-allowed: not-allowed,
+);
+
+$fill: (
+  current: currentColor,
+);
+
+$flex: (
+  1: 1 1 0%,
+  auto: 1 1 auto,
+  initial: 0 1 auto,
+  none: none,
+);
+
+$flexGrow: (
+  0: 0,
+  default: 1,
+);
+
+$flexShrink: (
+  0: 0,
+  default: 1,
+);
+
+$fontFamily: (
+  sans: (-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,\\"Helvetica Neue\\",Arial,\\"Noto Sans\\",sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\",\\"Noto Color Emoji\\"),
+  serif: (Georgia,Cambria,\\"Times New Roman\\",Times,serif),
+  mono: (Menlo,Monaco,Consolas,\\"Liberation Mono\\",\\"Courier New\\",monospace),
+);
+
+$fontSize: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem,
+  5xl: 3rem,
+  6xl: 4rem,
+);
+
+$fontWeight: (
+  hairline: 100,
+  thin: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+);
+
+$height: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  full: 100%,
+  screen: 100vh,
+);
+
+$inset: (
+  0: 0,
+  auto: auto,
+);
+
+$letterSpacing: (
+  tighter: -0.05em,
+  tight: -0.025em,
+  normal: 0,
+  wide: 0.025em,
+  wider: 0.05em,
+  widest: 0.1em,
+);
+
+$lineHeight: (
+  none: 1,
+  tight: 1.25,
+  snug: 1.375,
+  normal: 1.5,
+  relaxed: 1.625,
+  loose: 2,
+);
+
+$listStyleType: (
+  none: none,
+  disc: disc,
+  decimal: decimal,
+);
+
+$margin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  -1: -0.25rem,
+  -2: -0.5rem,
+  -3: -0.75rem,
+  -4: -1rem,
+  -5: -1.25rem,
+  -6: -1.5rem,
+  -8: -2rem,
+  -10: -2.5rem,
+  -12: -3rem,
+  -16: -4rem,
+  -20: -5rem,
+  -24: -6rem,
+  -32: -8rem,
+  -40: -10rem,
+  -48: -12rem,
+  -56: -14rem,
+  -64: -16rem,
+  -px: -1px,
+);
+
+$maxHeight: (
+  full: 100%,
+  screen: 100vh,
+);
+
+$maxWidth: (
+  xs: 20rem,
+  sm: 24rem,
+  md: 28rem,
+  lg: 32rem,
+  xl: 36rem,
+  2xl: 42rem,
+  3xl: 48rem,
+  4xl: 56rem,
+  5xl: 64rem,
+  6xl: 72rem,
+  full: 100%,
+);
+
+$minHeight: (
+  0: 0,
+  full: 100%,
+  screen: 100vh,
+);
+
+$minWidth: (
+  0: 0,
+  full: 100%,
+);
+
+$objectPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$opacity: (
+  0: 0,
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  100: 1,
+);
+
+$order: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12,
+  first: -9999,
+  last: 9999,
+  none: 0,
+);
+
+$padding: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$placeholderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray-100: #f7fafc,
+  gray-200: #edf2f7,
+  gray-300: #e2e8f0,
+  gray-400: #cbd5e0,
+  gray-500: #a0aec0,
+  gray-600: #718096,
+  gray-700: #4a5568,
+  gray-800: #2d3748,
+  gray-900: #1a202c,
+  red-100: #fff5f5,
+  red-200: #fed7d7,
+  red-300: #feb2b2,
+  red-400: #fc8181,
+  red-500: #f56565,
+  red-600: #e53e3e,
+  red-700: #c53030,
+  red-800: #9b2c2c,
+  red-900: #742a2a,
+  orange-100: #fffaf0,
+  orange-200: #feebc8,
+  orange-300: #fbd38d,
+  orange-400: #f6ad55,
+  orange-500: #ed8936,
+  orange-600: #dd6b20,
+  orange-700: #c05621,
+  orange-800: #9c4221,
+  orange-900: #7b341e,
+  yellow-100: #fffff0,
+  yellow-200: #fefcbf,
+  yellow-300: #faf089,
+  yellow-400: #f6e05e,
+  yellow-500: #ecc94b,
+  yellow-600: #d69e2e,
+  yellow-700: #b7791f,
+  yellow-800: #975a16,
+  yellow-900: #744210,
+  green-100: #f0fff4,
+  green-200: #c6f6d5,
+  green-300: #9ae6b4,
+  green-400: #68d391,
+  green-500: #48bb78,
+  green-600: #38a169,
+  green-700: #2f855a,
+  green-800: #276749,
+  green-900: #22543d,
+  teal-100: #e6fffa,
+  teal-200: #b2f5ea,
+  teal-300: #81e6d9,
+  teal-400: #4fd1c5,
+  teal-500: #38b2ac,
+  teal-600: #319795,
+  teal-700: #2c7a7b,
+  teal-800: #285e61,
+  teal-900: #234e52,
+  blue-100: #ebf8ff,
+  blue-200: #bee3f8,
+  blue-300: #90cdf4,
+  blue-400: #63b3ed,
+  blue-500: #4299e1,
+  blue-600: #3182ce,
+  blue-700: #2b6cb0,
+  blue-800: #2c5282,
+  blue-900: #2a4365,
+  indigo-100: #ebf4ff,
+  indigo-200: #c3dafe,
+  indigo-300: #a3bffa,
+  indigo-400: #7f9cf5,
+  indigo-500: #667eea,
+  indigo-600: #5a67d8,
+  indigo-700: #4c51bf,
+  indigo-800: #434190,
+  indigo-900: #3c366b,
+  purple-100: #faf5ff,
+  purple-200: #e9d8fd,
+  purple-300: #d6bcfa,
+  purple-400: #b794f4,
+  purple-500: #9f7aea,
+  purple-600: #805ad5,
+  purple-700: #6b46c1,
+  purple-800: #553c9a,
+  purple-900: #44337a,
+  pink-100: #fff5f7,
+  pink-200: #fed7e2,
+  pink-300: #fbb6ce,
+  pink-400: #f687b3,
+  pink-500: #ed64a6,
+  pink-600: #d53f8c,
+  pink-700: #b83280,
+  pink-800: #97266d,
+  pink-900: #702459,
+);
+
+$stroke: (
+  current: currentColor,
+);
+
+$textColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray-100: #f7fafc,
+  gray-200: #edf2f7,
+  gray-300: #e2e8f0,
+  gray-400: #cbd5e0,
+  gray-500: #a0aec0,
+  gray-600: #718096,
+  gray-700: #4a5568,
+  gray-800: #2d3748,
+  gray-900: #1a202c,
+  red-100: #fff5f5,
+  red-200: #fed7d7,
+  red-300: #feb2b2,
+  red-400: #fc8181,
+  red-500: #f56565,
+  red-600: #e53e3e,
+  red-700: #c53030,
+  red-800: #9b2c2c,
+  red-900: #742a2a,
+  orange-100: #fffaf0,
+  orange-200: #feebc8,
+  orange-300: #fbd38d,
+  orange-400: #f6ad55,
+  orange-500: #ed8936,
+  orange-600: #dd6b20,
+  orange-700: #c05621,
+  orange-800: #9c4221,
+  orange-900: #7b341e,
+  yellow-100: #fffff0,
+  yellow-200: #fefcbf,
+  yellow-300: #faf089,
+  yellow-400: #f6e05e,
+  yellow-500: #ecc94b,
+  yellow-600: #d69e2e,
+  yellow-700: #b7791f,
+  yellow-800: #975a16,
+  yellow-900: #744210,
+  green-100: #f0fff4,
+  green-200: #c6f6d5,
+  green-300: #9ae6b4,
+  green-400: #68d391,
+  green-500: #48bb78,
+  green-600: #38a169,
+  green-700: #2f855a,
+  green-800: #276749,
+  green-900: #22543d,
+  teal-100: #e6fffa,
+  teal-200: #b2f5ea,
+  teal-300: #81e6d9,
+  teal-400: #4fd1c5,
+  teal-500: #38b2ac,
+  teal-600: #319795,
+  teal-700: #2c7a7b,
+  teal-800: #285e61,
+  teal-900: #234e52,
+  blue-100: #ebf8ff,
+  blue-200: #bee3f8,
+  blue-300: #90cdf4,
+  blue-400: #63b3ed,
+  blue-500: #4299e1,
+  blue-600: #3182ce,
+  blue-700: #2b6cb0,
+  blue-800: #2c5282,
+  blue-900: #2a4365,
+  indigo-100: #ebf4ff,
+  indigo-200: #c3dafe,
+  indigo-300: #a3bffa,
+  indigo-400: #7f9cf5,
+  indigo-500: #667eea,
+  indigo-600: #5a67d8,
+  indigo-700: #4c51bf,
+  indigo-800: #434190,
+  indigo-900: #3c366b,
+  purple-100: #faf5ff,
+  purple-200: #e9d8fd,
+  purple-300: #d6bcfa,
+  purple-400: #b794f4,
+  purple-500: #9f7aea,
+  purple-600: #805ad5,
+  purple-700: #6b46c1,
+  purple-800: #553c9a,
+  purple-900: #44337a,
+  pink-100: #fff5f7,
+  pink-200: #fed7e2,
+  pink-300: #fbb6ce,
+  pink-400: #f687b3,
+  pink-500: #ed64a6,
+  pink-600: #d53f8c,
+  pink-700: #b83280,
+  pink-800: #97266d,
+  pink-900: #702459,
+);
+
+$width: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  1/2: 50%,
+  1/3: 33.333333%,
+  2/3: 66.666667%,
+  1/4: 25%,
+  2/4: 50%,
+  3/4: 75%,
+  1/5: 20%,
+  2/5: 40%,
+  3/5: 60%,
+  4/5: 80%,
+  1/6: 16.666667%,
+  2/6: 33.333333%,
+  3/6: 50%,
+  4/6: 66.666667%,
+  5/6: 83.333333%,
+  1/12: 8.333333%,
+  2/12: 16.666667%,
+  3/12: 25%,
+  4/12: 33.333333%,
+  5/12: 41.666667%,
+  6/12: 50%,
+  7/12: 58.333333%,
+  8/12: 66.666667%,
+  9/12: 75%,
+  10/12: 83.333333%,
+  11/12: 91.666667%,
+  full: 100%,
+  screen: 100vw,
+);
+
+$zIndex: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+);
+"
+`;
+
+exports[`Tailwind Options Exporter converts deeply nested configs, with flat:false: level0 1`] = `
+"/* Converted Tailwind Config to scss */
+$customForms: (
+  colors: (
+    blue: blue,
+    green: green,
+  ),
+  somethingElse: (
+    level1-color: pink,
+    level1-arrayValue: (a,b,c),
+    level1-nestedB-color: nested,
+    level1-nestedB-padding: much,
+    level1-nestedB-thing: thing,
+    level1-nestedB-nestedC-color: nestedC,
+    level1-nestedB-nestedC-nestedD-color: nestedD,
+    level1-nestedB-nestedC-nestedD-color2: color2,
+    level1-nestedB-nestedC-nestedD-nestedE-color: nestedE,
+  ),
+);
+
+$customColors: (
+  colors: (
+    blue: NotBlue,
+    green: notGreen,
+  ),
+);
+
+$screens: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+$colors: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$backgroundColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$backgroundPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$backgroundSize: (
+  auto: auto,
+  cover: cover,
+  contain: contain,
+);
+
+$borderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+  default: #e2e8f0,
+);
+
+$borderRadius: (
+  none: 0,
+  sm: 0.125rem,
+  default: 0.25rem,
+  lg: 0.5rem,
+  full: 9999px,
+);
+
+$borderWidth: (
+  0: 0,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  default: 1px,
+);
+
+$boxShadow: (
+  default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)),
+  md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)),
+  lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+  xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)),
+  2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)),
+  inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)),
+  outline: (0 0 0 3px rgba(66, 153, 225, 0.5)),
+  none: none,
+);
+
+$container: (
+);
+
+$cursor: (
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  wait: wait,
+  text: text,
+  move: move,
+  not-allowed: not-allowed,
+);
+
+$fill: (
+  current: currentColor,
+);
+
+$flex: (
+  1: 1 1 0%,
+  auto: 1 1 auto,
+  initial: 0 1 auto,
+  none: none,
+);
+
+$flexGrow: (
+  0: 0,
+  default: 1,
+);
+
+$flexShrink: (
+  0: 0,
+  default: 1,
+);
+
+$fontFamily: (
+  sans: (-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,\\"Helvetica Neue\\",Arial,\\"Noto Sans\\",sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\",\\"Noto Color Emoji\\"),
+  serif: (Georgia,Cambria,\\"Times New Roman\\",Times,serif),
+  mono: (Menlo,Monaco,Consolas,\\"Liberation Mono\\",\\"Courier New\\",monospace),
+);
+
+$fontSize: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem,
+  5xl: 3rem,
+  6xl: 4rem,
+);
+
+$fontWeight: (
+  hairline: 100,
+  thin: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+);
+
+$height: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  full: 100%,
+  screen: 100vh,
+);
+
+$inset: (
+  0: 0,
+  auto: auto,
+);
+
+$letterSpacing: (
+  tighter: -0.05em,
+  tight: -0.025em,
+  normal: 0,
+  wide: 0.025em,
+  wider: 0.05em,
+  widest: 0.1em,
+);
+
+$lineHeight: (
+  none: 1,
+  tight: 1.25,
+  snug: 1.375,
+  normal: 1.5,
+  relaxed: 1.625,
+  loose: 2,
+);
+
+$listStyleType: (
+  none: none,
+  disc: disc,
+  decimal: decimal,
+);
+
+$margin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  -1: -0.25rem,
+  -2: -0.5rem,
+  -3: -0.75rem,
+  -4: -1rem,
+  -5: -1.25rem,
+  -6: -1.5rem,
+  -8: -2rem,
+  -10: -2.5rem,
+  -12: -3rem,
+  -16: -4rem,
+  -20: -5rem,
+  -24: -6rem,
+  -32: -8rem,
+  -40: -10rem,
+  -48: -12rem,
+  -56: -14rem,
+  -64: -16rem,
+  -px: -1px,
+);
+
+$maxHeight: (
+  full: 100%,
+  screen: 100vh,
+);
+
+$maxWidth: (
+  xs: 20rem,
+  sm: 24rem,
+  md: 28rem,
+  lg: 32rem,
+  xl: 36rem,
+  2xl: 42rem,
+  3xl: 48rem,
+  4xl: 56rem,
+  5xl: 64rem,
+  6xl: 72rem,
+  full: 100%,
+);
+
+$minHeight: (
+  0: 0,
+  full: 100%,
+  screen: 100vh,
+);
+
+$minWidth: (
+  0: 0,
+  full: 100%,
+);
+
+$objectPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$opacity: (
+  0: 0,
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  100: 1,
+);
+
+$order: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12,
+  first: -9999,
+  last: 9999,
+  none: 0,
+);
+
+$padding: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$placeholderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$stroke: (
+  current: currentColor,
+);
+
+$textColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$width: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  1/2: 50%,
+  1/3: 33.333333%,
+  2/3: 66.666667%,
+  1/4: 25%,
+  2/4: 50%,
+  3/4: 75%,
+  1/5: 20%,
+  2/5: 40%,
+  3/5: 60%,
+  4/5: 80%,
+  1/6: 16.666667%,
+  2/6: 33.333333%,
+  3/6: 50%,
+  4/6: 66.666667%,
+  5/6: 83.333333%,
+  1/12: 8.333333%,
+  2/12: 16.666667%,
+  3/12: 25%,
+  4/12: 33.333333%,
+  5/12: 41.666667%,
+  6/12: 50%,
+  7/12: 58.333333%,
+  8/12: 66.666667%,
+  9/12: 75%,
+  10/12: 83.333333%,
+  11/12: 91.666667%,
+  full: 100%,
+  screen: 100vw,
+);
+
+$zIndex: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+);
+"
+`;
+
+exports[`Tailwind Options Exporter converts deeply nested configs, with flat:false: level2 1`] = `
+"/* Converted Tailwind Config to scss */
+$customForms: (
+  colors: (
+    blue: blue,
+    green: green,
+  ),
+  somethingElse: (
+    level1: (
+      color: pink,
+      arrayValue: (a,b,c),
+      nestedB: (
+        color: nested,
+        padding: much,
+        thing: thing,
+        nestedC-color: nestedC,
+        nestedC-nestedD-color: nestedD,
+        nestedC-nestedD-color2: color2,
+        nestedC-nestedD-nestedE-color: nestedE,
+      ),
+    ),
+  ),
+);
+
+$customColors: (
+  colors: (
+    blue: NotBlue,
+    green: notGreen,
+  ),
+);
+
+$screens: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+$colors: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$backgroundColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$backgroundPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$backgroundSize: (
+  auto: auto,
+  cover: cover,
+  contain: contain,
+);
+
+$borderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+  default: #e2e8f0,
+);
+
+$borderRadius: (
+  none: 0,
+  sm: 0.125rem,
+  default: 0.25rem,
+  lg: 0.5rem,
+  full: 9999px,
+);
+
+$borderWidth: (
+  0: 0,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  default: 1px,
+);
+
+$boxShadow: (
+  default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)),
+  md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)),
+  lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+  xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)),
+  2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)),
+  inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)),
+  outline: (0 0 0 3px rgba(66, 153, 225, 0.5)),
+  none: none,
+);
+
+$container: (
+);
+
+$cursor: (
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  wait: wait,
+  text: text,
+  move: move,
+  not-allowed: not-allowed,
+);
+
+$fill: (
+  current: currentColor,
+);
+
+$flex: (
+  1: 1 1 0%,
+  auto: 1 1 auto,
+  initial: 0 1 auto,
+  none: none,
+);
+
+$flexGrow: (
+  0: 0,
+  default: 1,
+);
+
+$flexShrink: (
+  0: 0,
+  default: 1,
+);
+
+$fontFamily: (
+  sans: (-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,\\"Helvetica Neue\\",Arial,\\"Noto Sans\\",sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\",\\"Noto Color Emoji\\"),
+  serif: (Georgia,Cambria,\\"Times New Roman\\",Times,serif),
+  mono: (Menlo,Monaco,Consolas,\\"Liberation Mono\\",\\"Courier New\\",monospace),
+);
+
+$fontSize: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem,
+  5xl: 3rem,
+  6xl: 4rem,
+);
+
+$fontWeight: (
+  hairline: 100,
+  thin: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+);
+
+$height: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  full: 100%,
+  screen: 100vh,
+);
+
+$inset: (
+  0: 0,
+  auto: auto,
+);
+
+$letterSpacing: (
+  tighter: -0.05em,
+  tight: -0.025em,
+  normal: 0,
+  wide: 0.025em,
+  wider: 0.05em,
+  widest: 0.1em,
+);
+
+$lineHeight: (
+  none: 1,
+  tight: 1.25,
+  snug: 1.375,
+  normal: 1.5,
+  relaxed: 1.625,
+  loose: 2,
+);
+
+$listStyleType: (
+  none: none,
+  disc: disc,
+  decimal: decimal,
+);
+
+$margin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  -1: -0.25rem,
+  -2: -0.5rem,
+  -3: -0.75rem,
+  -4: -1rem,
+  -5: -1.25rem,
+  -6: -1.5rem,
+  -8: -2rem,
+  -10: -2.5rem,
+  -12: -3rem,
+  -16: -4rem,
+  -20: -5rem,
+  -24: -6rem,
+  -32: -8rem,
+  -40: -10rem,
+  -48: -12rem,
+  -56: -14rem,
+  -64: -16rem,
+  -px: -1px,
+);
+
+$maxHeight: (
+  full: 100%,
+  screen: 100vh,
+);
+
+$maxWidth: (
+  xs: 20rem,
+  sm: 24rem,
+  md: 28rem,
+  lg: 32rem,
+  xl: 36rem,
+  2xl: 42rem,
+  3xl: 48rem,
+  4xl: 56rem,
+  5xl: 64rem,
+  6xl: 72rem,
+  full: 100%,
+);
+
+$minHeight: (
+  0: 0,
+  full: 100%,
+  screen: 100vh,
+);
+
+$minWidth: (
+  0: 0,
+  full: 100%,
+);
+
+$objectPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$opacity: (
+  0: 0,
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  100: 1,
+);
+
+$order: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12,
+  first: -9999,
+  last: 9999,
+  none: 0,
+);
+
+$padding: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$placeholderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$stroke: (
+  current: currentColor,
+);
+
+$textColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$width: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  1/2: 50%,
+  1/3: 33.333333%,
+  2/3: 66.666667%,
+  1/4: 25%,
+  2/4: 50%,
+  3/4: 75%,
+  1/5: 20%,
+  2/5: 40%,
+  3/5: 60%,
+  4/5: 80%,
+  1/6: 16.666667%,
+  2/6: 33.333333%,
+  3/6: 50%,
+  4/6: 66.666667%,
+  5/6: 83.333333%,
+  1/12: 8.333333%,
+  2/12: 16.666667%,
+  3/12: 25%,
+  4/12: 33.333333%,
+  5/12: 41.666667%,
+  6/12: 50%,
+  7/12: 58.333333%,
+  8/12: 66.666667%,
+  9/12: 75%,
+  10/12: 83.333333%,
+  11/12: 91.666667%,
+  full: 100%,
+  screen: 100vw,
+);
+
+$zIndex: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+);
+"
+`;
+
+exports[`Tailwind Options Exporter converts deeply nested configs, with flat:false: level3 1`] = `
+"/* Converted Tailwind Config to scss */
+$customForms: (
+  colors: (
+    blue: blue,
+    green: green,
+  ),
+  somethingElse: (
+    level1: (
+      color: pink,
+      arrayValue: (a,b,c),
+      nestedB: (
+        color: nested,
+        padding: much,
+        thing: thing,
+        nestedC: (
+          color: nestedC,
+          nestedD-color: nestedD,
+          nestedD-color2: color2,
+          nestedD-nestedE-color: nestedE,
+        ),
+      ),
+    ),
+  ),
+);
+
+$customColors: (
+  colors: (
+    blue: NotBlue,
+    green: notGreen,
+  ),
+);
+
+$screens: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+);
+
+$colors: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$backgroundColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$backgroundPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$backgroundSize: (
+  auto: auto,
+  cover: cover,
+  contain: contain,
+);
+
+$borderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+  default: #e2e8f0,
+);
+
+$borderRadius: (
+  none: 0,
+  sm: 0.125rem,
+  default: 0.25rem,
+  lg: 0.5rem,
+  full: 9999px,
+);
+
+$borderWidth: (
+  0: 0,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  default: 1px,
+);
+
+$boxShadow: (
+  default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)),
+  md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)),
+  lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+  xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)),
+  2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)),
+  inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)),
+  outline: (0 0 0 3px rgba(66, 153, 225, 0.5)),
+  none: none,
+);
+
+$container: (
+);
+
+$cursor: (
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  wait: wait,
+  text: text,
+  move: move,
+  not-allowed: not-allowed,
+);
+
+$fill: (
+  current: currentColor,
+);
+
+$flex: (
+  1: 1 1 0%,
+  auto: 1 1 auto,
+  initial: 0 1 auto,
+  none: none,
+);
+
+$flexGrow: (
+  0: 0,
+  default: 1,
+);
+
+$flexShrink: (
+  0: 0,
+  default: 1,
+);
+
+$fontFamily: (
+  sans: (-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,\\"Helvetica Neue\\",Arial,\\"Noto Sans\\",sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\",\\"Noto Color Emoji\\"),
+  serif: (Georgia,Cambria,\\"Times New Roman\\",Times,serif),
+  mono: (Menlo,Monaco,Consolas,\\"Liberation Mono\\",\\"Courier New\\",monospace),
+);
+
+$fontSize: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem,
+  5xl: 3rem,
+  6xl: 4rem,
+);
+
+$fontWeight: (
+  hairline: 100,
+  thin: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900,
+);
+
+$height: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  full: 100%,
+  screen: 100vh,
+);
+
+$inset: (
+  0: 0,
+  auto: auto,
+);
+
+$letterSpacing: (
+  tighter: -0.05em,
+  tight: -0.025em,
+  normal: 0,
+  wide: 0.025em,
+  wider: 0.05em,
+  widest: 0.1em,
+);
+
+$lineHeight: (
+  none: 1,
+  tight: 1.25,
+  snug: 1.375,
+  normal: 1.5,
+  relaxed: 1.625,
+  loose: 2,
+);
+
+$listStyleType: (
+  none: none,
+  disc: disc,
+  decimal: decimal,
+);
+
+$margin: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  -1: -0.25rem,
+  -2: -0.5rem,
+  -3: -0.75rem,
+  -4: -1rem,
+  -5: -1.25rem,
+  -6: -1.5rem,
+  -8: -2rem,
+  -10: -2.5rem,
+  -12: -3rem,
+  -16: -4rem,
+  -20: -5rem,
+  -24: -6rem,
+  -32: -8rem,
+  -40: -10rem,
+  -48: -12rem,
+  -56: -14rem,
+  -64: -16rem,
+  -px: -1px,
+);
+
+$maxHeight: (
+  full: 100%,
+  screen: 100vh,
+);
+
+$maxWidth: (
+  xs: 20rem,
+  sm: 24rem,
+  md: 28rem,
+  lg: 32rem,
+  xl: 36rem,
+  2xl: 42rem,
+  3xl: 48rem,
+  4xl: 56rem,
+  5xl: 64rem,
+  6xl: 72rem,
+  full: 100%,
+);
+
+$minHeight: (
+  0: 0,
+  full: 100%,
+  screen: 100vh,
+);
+
+$minWidth: (
+  0: 0,
+  full: 100%,
+);
+
+$objectPosition: (
+  bottom: bottom,
+  center: center,
+  left: left,
+  left-bottom: left bottom,
+  left-top: left top,
+  right: right,
+  right-bottom: right bottom,
+  right-top: right top,
+  top: top,
+);
+
+$opacity: (
+  0: 0,
+  25: 0.25,
+  50: 0.5,
+  75: 0.75,
+  100: 1,
+);
+
+$order: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12,
+  first: -9999,
+  last: 9999,
+  none: 0,
+);
+
+$padding: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  px: 1px,
+);
+
+$placeholderColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$stroke: (
+  current: currentColor,
+);
+
+$textColor: (
+  transparent: transparent,
+  black: #000,
+  white: #fff,
+  gray: (
+    100: #f7fafc,
+    200: #edf2f7,
+    300: #e2e8f0,
+    400: #cbd5e0,
+    500: #a0aec0,
+    600: #718096,
+    700: #4a5568,
+    800: #2d3748,
+    900: #1a202c,
+  ),
+  red: (
+    100: #fff5f5,
+    200: #fed7d7,
+    300: #feb2b2,
+    400: #fc8181,
+    500: #f56565,
+    600: #e53e3e,
+    700: #c53030,
+    800: #9b2c2c,
+    900: #742a2a,
+  ),
+  orange: (
+    100: #fffaf0,
+    200: #feebc8,
+    300: #fbd38d,
+    400: #f6ad55,
+    500: #ed8936,
+    600: #dd6b20,
+    700: #c05621,
+    800: #9c4221,
+    900: #7b341e,
+  ),
+  yellow: (
+    100: #fffff0,
+    200: #fefcbf,
+    300: #faf089,
+    400: #f6e05e,
+    500: #ecc94b,
+    600: #d69e2e,
+    700: #b7791f,
+    800: #975a16,
+    900: #744210,
+  ),
+  green: (
+    100: #f0fff4,
+    200: #c6f6d5,
+    300: #9ae6b4,
+    400: #68d391,
+    500: #48bb78,
+    600: #38a169,
+    700: #2f855a,
+    800: #276749,
+    900: #22543d,
+  ),
+  teal: (
+    100: #e6fffa,
+    200: #b2f5ea,
+    300: #81e6d9,
+    400: #4fd1c5,
+    500: #38b2ac,
+    600: #319795,
+    700: #2c7a7b,
+    800: #285e61,
+    900: #234e52,
+  ),
+  blue: (
+    100: #ebf8ff,
+    200: #bee3f8,
+    300: #90cdf4,
+    400: #63b3ed,
+    500: #4299e1,
+    600: #3182ce,
+    700: #2b6cb0,
+    800: #2c5282,
+    900: #2a4365,
+  ),
+  indigo: (
+    100: #ebf4ff,
+    200: #c3dafe,
+    300: #a3bffa,
+    400: #7f9cf5,
+    500: #667eea,
+    600: #5a67d8,
+    700: #4c51bf,
+    800: #434190,
+    900: #3c366b,
+  ),
+  purple: (
+    100: #faf5ff,
+    200: #e9d8fd,
+    300: #d6bcfa,
+    400: #b794f4,
+    500: #9f7aea,
+    600: #805ad5,
+    700: #6b46c1,
+    800: #553c9a,
+    900: #44337a,
+  ),
+  pink: (
+    100: #fff5f7,
+    200: #fed7e2,
+    300: #fbb6ce,
+    400: #f687b3,
+    500: #ed64a6,
+    600: #d53f8c,
+    700: #b83280,
+    800: #97266d,
+    900: #702459,
+  ),
+);
+
+$width: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem,
+  20: 5rem,
+  24: 6rem,
+  32: 8rem,
+  40: 10rem,
+  48: 12rem,
+  56: 14rem,
+  64: 16rem,
+  auto: auto,
+  px: 1px,
+  1/2: 50%,
+  1/3: 33.333333%,
+  2/3: 66.666667%,
+  1/4: 25%,
+  2/4: 50%,
+  3/4: 75%,
+  1/5: 20%,
+  2/5: 40%,
+  3/5: 60%,
+  4/5: 80%,
+  1/6: 16.666667%,
+  2/6: 33.333333%,
+  3/6: 50%,
+  4/6: 66.666667%,
+  5/6: 83.333333%,
+  1/12: 8.333333%,
+  2/12: 16.666667%,
+  3/12: 25%,
+  4/12: 33.333333%,
+  5/12: 41.666667%,
+  6/12: 50%,
+  7/12: 58.333333%,
+  8/12: 66.666667%,
+  9/12: 75%,
+  10/12: 83.333333%,
+  11/12: 91.666667%,
+  full: 100%,
+  screen: 100vw,
+);
+
+$zIndex: (
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  auto: auto,
+);
+"
+`;
+
+exports[`Tailwind Options Exporter converts deeply nested configs, with flat:true 1`] = `
+"/* Converted Tailwind Config to scss */
+$customForms-colors-blue: blue;
+$customForms-colors-green: green;
+$customForms-somethingElse-level1-color: pink;
+$customForms-somethingElse-level1-arrayValue: (a,b,c);
+$customForms-somethingElse-level1-nestedB-color: nested;
+$customForms-somethingElse-level1-nestedB-padding: much;
+$customForms-somethingElse-level1-nestedB-thing: thing;
+$customForms-somethingElse-level1-nestedB-nestedC-color: nestedC;
+$customForms-somethingElse-level1-nestedB-nestedC-nestedD-color: nestedD;
+$customForms-somethingElse-level1-nestedB-nestedC-nestedD-color2: color2;
+$customForms-somethingElse-level1-nestedB-nestedC-nestedD-nestedE-color: nestedE;
+
+$customColors-colors-blue: NotBlue;
+$customColors-colors-green: notGreen;
+
+$screens-sm: 640px;
+$screens-md: 768px;
+$screens-lg: 1024px;
+$screens-xl: 1280px;
+
+$colors-transparent: transparent;
+$colors-black: #000;
+$colors-white: #fff;
+$colors-gray-100: #f7fafc;
+$colors-gray-200: #edf2f7;
+$colors-gray-300: #e2e8f0;
+$colors-gray-400: #cbd5e0;
+$colors-gray-500: #a0aec0;
+$colors-gray-600: #718096;
+$colors-gray-700: #4a5568;
+$colors-gray-800: #2d3748;
+$colors-gray-900: #1a202c;
+$colors-red-100: #fff5f5;
+$colors-red-200: #fed7d7;
+$colors-red-300: #feb2b2;
+$colors-red-400: #fc8181;
+$colors-red-500: #f56565;
+$colors-red-600: #e53e3e;
+$colors-red-700: #c53030;
+$colors-red-800: #9b2c2c;
+$colors-red-900: #742a2a;
+$colors-orange-100: #fffaf0;
+$colors-orange-200: #feebc8;
+$colors-orange-300: #fbd38d;
+$colors-orange-400: #f6ad55;
+$colors-orange-500: #ed8936;
+$colors-orange-600: #dd6b20;
+$colors-orange-700: #c05621;
+$colors-orange-800: #9c4221;
+$colors-orange-900: #7b341e;
+$colors-yellow-100: #fffff0;
+$colors-yellow-200: #fefcbf;
+$colors-yellow-300: #faf089;
+$colors-yellow-400: #f6e05e;
+$colors-yellow-500: #ecc94b;
+$colors-yellow-600: #d69e2e;
+$colors-yellow-700: #b7791f;
+$colors-yellow-800: #975a16;
+$colors-yellow-900: #744210;
+$colors-green-100: #f0fff4;
+$colors-green-200: #c6f6d5;
+$colors-green-300: #9ae6b4;
+$colors-green-400: #68d391;
+$colors-green-500: #48bb78;
+$colors-green-600: #38a169;
+$colors-green-700: #2f855a;
+$colors-green-800: #276749;
+$colors-green-900: #22543d;
+$colors-teal-100: #e6fffa;
+$colors-teal-200: #b2f5ea;
+$colors-teal-300: #81e6d9;
+$colors-teal-400: #4fd1c5;
+$colors-teal-500: #38b2ac;
+$colors-teal-600: #319795;
+$colors-teal-700: #2c7a7b;
+$colors-teal-800: #285e61;
+$colors-teal-900: #234e52;
+$colors-blue-100: #ebf8ff;
+$colors-blue-200: #bee3f8;
+$colors-blue-300: #90cdf4;
+$colors-blue-400: #63b3ed;
+$colors-blue-500: #4299e1;
+$colors-blue-600: #3182ce;
+$colors-blue-700: #2b6cb0;
+$colors-blue-800: #2c5282;
+$colors-blue-900: #2a4365;
+$colors-indigo-100: #ebf4ff;
+$colors-indigo-200: #c3dafe;
+$colors-indigo-300: #a3bffa;
+$colors-indigo-400: #7f9cf5;
+$colors-indigo-500: #667eea;
+$colors-indigo-600: #5a67d8;
+$colors-indigo-700: #4c51bf;
+$colors-indigo-800: #434190;
+$colors-indigo-900: #3c366b;
+$colors-purple-100: #faf5ff;
+$colors-purple-200: #e9d8fd;
+$colors-purple-300: #d6bcfa;
+$colors-purple-400: #b794f4;
+$colors-purple-500: #9f7aea;
+$colors-purple-600: #805ad5;
+$colors-purple-700: #6b46c1;
+$colors-purple-800: #553c9a;
+$colors-purple-900: #44337a;
+$colors-pink-100: #fff5f7;
+$colors-pink-200: #fed7e2;
+$colors-pink-300: #fbb6ce;
+$colors-pink-400: #f687b3;
+$colors-pink-500: #ed64a6;
+$colors-pink-600: #d53f8c;
+$colors-pink-700: #b83280;
+$colors-pink-800: #97266d;
+$colors-pink-900: #702459;
+
+$spacing-0: 0;
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-5: 1.25rem;
+$spacing-6: 1.5rem;
+$spacing-8: 2rem;
+$spacing-10: 2.5rem;
+$spacing-12: 3rem;
+$spacing-16: 4rem;
+$spacing-20: 5rem;
+$spacing-24: 6rem;
+$spacing-32: 8rem;
+$spacing-40: 10rem;
+$spacing-48: 12rem;
+$spacing-56: 14rem;
+$spacing-64: 16rem;
+$spacing-px: 1px;
+
+$backgroundColor-transparent: transparent;
+$backgroundColor-black: #000;
+$backgroundColor-white: #fff;
+$backgroundColor-gray-100: #f7fafc;
+$backgroundColor-gray-200: #edf2f7;
+$backgroundColor-gray-300: #e2e8f0;
+$backgroundColor-gray-400: #cbd5e0;
+$backgroundColor-gray-500: #a0aec0;
+$backgroundColor-gray-600: #718096;
+$backgroundColor-gray-700: #4a5568;
+$backgroundColor-gray-800: #2d3748;
+$backgroundColor-gray-900: #1a202c;
+$backgroundColor-red-100: #fff5f5;
+$backgroundColor-red-200: #fed7d7;
+$backgroundColor-red-300: #feb2b2;
+$backgroundColor-red-400: #fc8181;
+$backgroundColor-red-500: #f56565;
+$backgroundColor-red-600: #e53e3e;
+$backgroundColor-red-700: #c53030;
+$backgroundColor-red-800: #9b2c2c;
+$backgroundColor-red-900: #742a2a;
+$backgroundColor-orange-100: #fffaf0;
+$backgroundColor-orange-200: #feebc8;
+$backgroundColor-orange-300: #fbd38d;
+$backgroundColor-orange-400: #f6ad55;
+$backgroundColor-orange-500: #ed8936;
+$backgroundColor-orange-600: #dd6b20;
+$backgroundColor-orange-700: #c05621;
+$backgroundColor-orange-800: #9c4221;
+$backgroundColor-orange-900: #7b341e;
+$backgroundColor-yellow-100: #fffff0;
+$backgroundColor-yellow-200: #fefcbf;
+$backgroundColor-yellow-300: #faf089;
+$backgroundColor-yellow-400: #f6e05e;
+$backgroundColor-yellow-500: #ecc94b;
+$backgroundColor-yellow-600: #d69e2e;
+$backgroundColor-yellow-700: #b7791f;
+$backgroundColor-yellow-800: #975a16;
+$backgroundColor-yellow-900: #744210;
+$backgroundColor-green-100: #f0fff4;
+$backgroundColor-green-200: #c6f6d5;
+$backgroundColor-green-300: #9ae6b4;
+$backgroundColor-green-400: #68d391;
+$backgroundColor-green-500: #48bb78;
+$backgroundColor-green-600: #38a169;
+$backgroundColor-green-700: #2f855a;
+$backgroundColor-green-800: #276749;
+$backgroundColor-green-900: #22543d;
+$backgroundColor-teal-100: #e6fffa;
+$backgroundColor-teal-200: #b2f5ea;
+$backgroundColor-teal-300: #81e6d9;
+$backgroundColor-teal-400: #4fd1c5;
+$backgroundColor-teal-500: #38b2ac;
+$backgroundColor-teal-600: #319795;
+$backgroundColor-teal-700: #2c7a7b;
+$backgroundColor-teal-800: #285e61;
+$backgroundColor-teal-900: #234e52;
+$backgroundColor-blue-100: #ebf8ff;
+$backgroundColor-blue-200: #bee3f8;
+$backgroundColor-blue-300: #90cdf4;
+$backgroundColor-blue-400: #63b3ed;
+$backgroundColor-blue-500: #4299e1;
+$backgroundColor-blue-600: #3182ce;
+$backgroundColor-blue-700: #2b6cb0;
+$backgroundColor-blue-800: #2c5282;
+$backgroundColor-blue-900: #2a4365;
+$backgroundColor-indigo-100: #ebf4ff;
+$backgroundColor-indigo-200: #c3dafe;
+$backgroundColor-indigo-300: #a3bffa;
+$backgroundColor-indigo-400: #7f9cf5;
+$backgroundColor-indigo-500: #667eea;
+$backgroundColor-indigo-600: #5a67d8;
+$backgroundColor-indigo-700: #4c51bf;
+$backgroundColor-indigo-800: #434190;
+$backgroundColor-indigo-900: #3c366b;
+$backgroundColor-purple-100: #faf5ff;
+$backgroundColor-purple-200: #e9d8fd;
+$backgroundColor-purple-300: #d6bcfa;
+$backgroundColor-purple-400: #b794f4;
+$backgroundColor-purple-500: #9f7aea;
+$backgroundColor-purple-600: #805ad5;
+$backgroundColor-purple-700: #6b46c1;
+$backgroundColor-purple-800: #553c9a;
+$backgroundColor-purple-900: #44337a;
+$backgroundColor-pink-100: #fff5f7;
+$backgroundColor-pink-200: #fed7e2;
+$backgroundColor-pink-300: #fbb6ce;
+$backgroundColor-pink-400: #f687b3;
+$backgroundColor-pink-500: #ed64a6;
+$backgroundColor-pink-600: #d53f8c;
+$backgroundColor-pink-700: #b83280;
+$backgroundColor-pink-800: #97266d;
+$backgroundColor-pink-900: #702459;
+
+$backgroundPosition-bottom: bottom;
+$backgroundPosition-center: center;
+$backgroundPosition-left: left;
+$backgroundPosition-left-bottom: left bottom;
+$backgroundPosition-left-top: left top;
+$backgroundPosition-right: right;
+$backgroundPosition-right-bottom: right bottom;
+$backgroundPosition-right-top: right top;
+$backgroundPosition-top: top;
+
+$backgroundSize-auto: auto;
+$backgroundSize-cover: cover;
+$backgroundSize-contain: contain;
+
+$borderColor-transparent: transparent;
+$borderColor-black: #000;
+$borderColor-white: #fff;
+$borderColor-gray-100: #f7fafc;
+$borderColor-gray-200: #edf2f7;
+$borderColor-gray-300: #e2e8f0;
+$borderColor-gray-400: #cbd5e0;
+$borderColor-gray-500: #a0aec0;
+$borderColor-gray-600: #718096;
+$borderColor-gray-700: #4a5568;
+$borderColor-gray-800: #2d3748;
+$borderColor-gray-900: #1a202c;
+$borderColor-red-100: #fff5f5;
+$borderColor-red-200: #fed7d7;
+$borderColor-red-300: #feb2b2;
+$borderColor-red-400: #fc8181;
+$borderColor-red-500: #f56565;
+$borderColor-red-600: #e53e3e;
+$borderColor-red-700: #c53030;
+$borderColor-red-800: #9b2c2c;
+$borderColor-red-900: #742a2a;
+$borderColor-orange-100: #fffaf0;
+$borderColor-orange-200: #feebc8;
+$borderColor-orange-300: #fbd38d;
+$borderColor-orange-400: #f6ad55;
+$borderColor-orange-500: #ed8936;
+$borderColor-orange-600: #dd6b20;
+$borderColor-orange-700: #c05621;
+$borderColor-orange-800: #9c4221;
+$borderColor-orange-900: #7b341e;
+$borderColor-yellow-100: #fffff0;
+$borderColor-yellow-200: #fefcbf;
+$borderColor-yellow-300: #faf089;
+$borderColor-yellow-400: #f6e05e;
+$borderColor-yellow-500: #ecc94b;
+$borderColor-yellow-600: #d69e2e;
+$borderColor-yellow-700: #b7791f;
+$borderColor-yellow-800: #975a16;
+$borderColor-yellow-900: #744210;
+$borderColor-green-100: #f0fff4;
+$borderColor-green-200: #c6f6d5;
+$borderColor-green-300: #9ae6b4;
+$borderColor-green-400: #68d391;
+$borderColor-green-500: #48bb78;
+$borderColor-green-600: #38a169;
+$borderColor-green-700: #2f855a;
+$borderColor-green-800: #276749;
+$borderColor-green-900: #22543d;
+$borderColor-teal-100: #e6fffa;
+$borderColor-teal-200: #b2f5ea;
+$borderColor-teal-300: #81e6d9;
+$borderColor-teal-400: #4fd1c5;
+$borderColor-teal-500: #38b2ac;
+$borderColor-teal-600: #319795;
+$borderColor-teal-700: #2c7a7b;
+$borderColor-teal-800: #285e61;
+$borderColor-teal-900: #234e52;
+$borderColor-blue-100: #ebf8ff;
+$borderColor-blue-200: #bee3f8;
+$borderColor-blue-300: #90cdf4;
+$borderColor-blue-400: #63b3ed;
+$borderColor-blue-500: #4299e1;
+$borderColor-blue-600: #3182ce;
+$borderColor-blue-700: #2b6cb0;
+$borderColor-blue-800: #2c5282;
+$borderColor-blue-900: #2a4365;
+$borderColor-indigo-100: #ebf4ff;
+$borderColor-indigo-200: #c3dafe;
+$borderColor-indigo-300: #a3bffa;
+$borderColor-indigo-400: #7f9cf5;
+$borderColor-indigo-500: #667eea;
+$borderColor-indigo-600: #5a67d8;
+$borderColor-indigo-700: #4c51bf;
+$borderColor-indigo-800: #434190;
+$borderColor-indigo-900: #3c366b;
+$borderColor-purple-100: #faf5ff;
+$borderColor-purple-200: #e9d8fd;
+$borderColor-purple-300: #d6bcfa;
+$borderColor-purple-400: #b794f4;
+$borderColor-purple-500: #9f7aea;
+$borderColor-purple-600: #805ad5;
+$borderColor-purple-700: #6b46c1;
+$borderColor-purple-800: #553c9a;
+$borderColor-purple-900: #44337a;
+$borderColor-pink-100: #fff5f7;
+$borderColor-pink-200: #fed7e2;
+$borderColor-pink-300: #fbb6ce;
+$borderColor-pink-400: #f687b3;
+$borderColor-pink-500: #ed64a6;
+$borderColor-pink-600: #d53f8c;
+$borderColor-pink-700: #b83280;
+$borderColor-pink-800: #97266d;
+$borderColor-pink-900: #702459;
+$borderColor-default: #e2e8f0;
+
+$borderRadius-none: 0;
+$borderRadius-sm: 0.125rem;
+$borderRadius-default: 0.25rem;
+$borderRadius-lg: 0.5rem;
+$borderRadius-full: 9999px;
+
+$borderWidth-0: 0;
+$borderWidth-2: 2px;
+$borderWidth-4: 4px;
+$borderWidth-8: 8px;
+$borderWidth-default: 1px;
+
+$boxShadow-default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06));
+$boxShadow-md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06));
+$boxShadow-lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05));
+$boxShadow-xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04));
+$boxShadow-2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25));
+$boxShadow-inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06));
+$boxShadow-outline: (0 0 0 3px rgba(66, 153, 225, 0.5));
+$boxShadow-none: none;
+
+
+$cursor-auto: auto;
+$cursor-default: default;
+$cursor-pointer: pointer;
+$cursor-wait: wait;
+$cursor-text: text;
+$cursor-move: move;
+$cursor-not-allowed: not-allowed;
+
+$fill-current: currentColor;
+
+$flex-1: 1 1 0%;
+$flex-auto: 1 1 auto;
+$flex-initial: 0 1 auto;
+$flex-none: none;
+
+$flexGrow-0: 0;
+$flexGrow-default: 1;
+
+$flexShrink-0: 0;
+$flexShrink-default: 1;
+
+$fontFamily-sans: (-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,\\"Helvetica Neue\\",Arial,\\"Noto Sans\\",sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\",\\"Segoe UI Symbol\\",\\"Noto Color Emoji\\");
+$fontFamily-serif: (Georgia,Cambria,\\"Times New Roman\\",Times,serif);
+$fontFamily-mono: (Menlo,Monaco,Consolas,\\"Liberation Mono\\",\\"Courier New\\",monospace);
+
+$fontSize-xs: 0.75rem;
+$fontSize-sm: 0.875rem;
+$fontSize-base: 1rem;
+$fontSize-lg: 1.125rem;
+$fontSize-xl: 1.25rem;
+$fontSize-2xl: 1.5rem;
+$fontSize-3xl: 1.875rem;
+$fontSize-4xl: 2.25rem;
+$fontSize-5xl: 3rem;
+$fontSize-6xl: 4rem;
+
+$fontWeight-hairline: 100;
+$fontWeight-thin: 200;
+$fontWeight-light: 300;
+$fontWeight-normal: 400;
+$fontWeight-medium: 500;
+$fontWeight-semibold: 600;
+$fontWeight-bold: 700;
+$fontWeight-extrabold: 800;
+$fontWeight-black: 900;
+
+$height-0: 0;
+$height-1: 0.25rem;
+$height-2: 0.5rem;
+$height-3: 0.75rem;
+$height-4: 1rem;
+$height-5: 1.25rem;
+$height-6: 1.5rem;
+$height-8: 2rem;
+$height-10: 2.5rem;
+$height-12: 3rem;
+$height-16: 4rem;
+$height-20: 5rem;
+$height-24: 6rem;
+$height-32: 8rem;
+$height-40: 10rem;
+$height-48: 12rem;
+$height-56: 14rem;
+$height-64: 16rem;
+$height-auto: auto;
+$height-px: 1px;
+$height-full: 100%;
+$height-screen: 100vh;
+
+$inset-0: 0;
+$inset-auto: auto;
+
+$letterSpacing-tighter: -0.05em;
+$letterSpacing-tight: -0.025em;
+$letterSpacing-normal: 0;
+$letterSpacing-wide: 0.025em;
+$letterSpacing-wider: 0.05em;
+$letterSpacing-widest: 0.1em;
+
+$lineHeight-none: 1;
+$lineHeight-tight: 1.25;
+$lineHeight-snug: 1.375;
+$lineHeight-normal: 1.5;
+$lineHeight-relaxed: 1.625;
+$lineHeight-loose: 2;
+
+$listStyleType-none: none;
+$listStyleType-disc: disc;
+$listStyleType-decimal: decimal;
+
+$margin-0: 0;
+$margin-1: 0.25rem;
+$margin-2: 0.5rem;
+$margin-3: 0.75rem;
+$margin-4: 1rem;
+$margin-5: 1.25rem;
+$margin-6: 1.5rem;
+$margin-8: 2rem;
+$margin-10: 2.5rem;
+$margin-12: 3rem;
+$margin-16: 4rem;
+$margin-20: 5rem;
+$margin-24: 6rem;
+$margin-32: 8rem;
+$margin-40: 10rem;
+$margin-48: 12rem;
+$margin-56: 14rem;
+$margin-64: 16rem;
+$margin-auto: auto;
+$margin-px: 1px;
+$margin--1: -0.25rem;
+$margin--2: -0.5rem;
+$margin--3: -0.75rem;
+$margin--4: -1rem;
+$margin--5: -1.25rem;
+$margin--6: -1.5rem;
+$margin--8: -2rem;
+$margin--10: -2.5rem;
+$margin--12: -3rem;
+$margin--16: -4rem;
+$margin--20: -5rem;
+$margin--24: -6rem;
+$margin--32: -8rem;
+$margin--40: -10rem;
+$margin--48: -12rem;
+$margin--56: -14rem;
+$margin--64: -16rem;
+$margin--px: -1px;
+
+$maxHeight-full: 100%;
+$maxHeight-screen: 100vh;
+
+$maxWidth-xs: 20rem;
+$maxWidth-sm: 24rem;
+$maxWidth-md: 28rem;
+$maxWidth-lg: 32rem;
+$maxWidth-xl: 36rem;
+$maxWidth-2xl: 42rem;
+$maxWidth-3xl: 48rem;
+$maxWidth-4xl: 56rem;
+$maxWidth-5xl: 64rem;
+$maxWidth-6xl: 72rem;
+$maxWidth-full: 100%;
+
+$minHeight-0: 0;
+$minHeight-full: 100%;
+$minHeight-screen: 100vh;
+
+$minWidth-0: 0;
+$minWidth-full: 100%;
+
+$objectPosition-bottom: bottom;
+$objectPosition-center: center;
+$objectPosition-left: left;
+$objectPosition-left-bottom: left bottom;
+$objectPosition-left-top: left top;
+$objectPosition-right: right;
+$objectPosition-right-bottom: right bottom;
+$objectPosition-right-top: right top;
+$objectPosition-top: top;
+
+$opacity-0: 0;
+$opacity-25: 0.25;
+$opacity-50: 0.5;
+$opacity-75: 0.75;
+$opacity-100: 1;
+
+$order-1: 1;
+$order-2: 2;
+$order-3: 3;
+$order-4: 4;
+$order-5: 5;
+$order-6: 6;
+$order-7: 7;
+$order-8: 8;
+$order-9: 9;
+$order-10: 10;
+$order-11: 11;
+$order-12: 12;
+$order-first: -9999;
+$order-last: 9999;
+$order-none: 0;
+
+$padding-0: 0;
+$padding-1: 0.25rem;
+$padding-2: 0.5rem;
+$padding-3: 0.75rem;
+$padding-4: 1rem;
+$padding-5: 1.25rem;
+$padding-6: 1.5rem;
+$padding-8: 2rem;
+$padding-10: 2.5rem;
+$padding-12: 3rem;
+$padding-16: 4rem;
+$padding-20: 5rem;
+$padding-24: 6rem;
+$padding-32: 8rem;
+$padding-40: 10rem;
+$padding-48: 12rem;
+$padding-56: 14rem;
+$padding-64: 16rem;
+$padding-px: 1px;
+
+$placeholderColor-transparent: transparent;
+$placeholderColor-black: #000;
+$placeholderColor-white: #fff;
+$placeholderColor-gray-100: #f7fafc;
+$placeholderColor-gray-200: #edf2f7;
+$placeholderColor-gray-300: #e2e8f0;
+$placeholderColor-gray-400: #cbd5e0;
+$placeholderColor-gray-500: #a0aec0;
+$placeholderColor-gray-600: #718096;
+$placeholderColor-gray-700: #4a5568;
+$placeholderColor-gray-800: #2d3748;
+$placeholderColor-gray-900: #1a202c;
+$placeholderColor-red-100: #fff5f5;
+$placeholderColor-red-200: #fed7d7;
+$placeholderColor-red-300: #feb2b2;
+$placeholderColor-red-400: #fc8181;
+$placeholderColor-red-500: #f56565;
+$placeholderColor-red-600: #e53e3e;
+$placeholderColor-red-700: #c53030;
+$placeholderColor-red-800: #9b2c2c;
+$placeholderColor-red-900: #742a2a;
+$placeholderColor-orange-100: #fffaf0;
+$placeholderColor-orange-200: #feebc8;
+$placeholderColor-orange-300: #fbd38d;
+$placeholderColor-orange-400: #f6ad55;
+$placeholderColor-orange-500: #ed8936;
+$placeholderColor-orange-600: #dd6b20;
+$placeholderColor-orange-700: #c05621;
+$placeholderColor-orange-800: #9c4221;
+$placeholderColor-orange-900: #7b341e;
+$placeholderColor-yellow-100: #fffff0;
+$placeholderColor-yellow-200: #fefcbf;
+$placeholderColor-yellow-300: #faf089;
+$placeholderColor-yellow-400: #f6e05e;
+$placeholderColor-yellow-500: #ecc94b;
+$placeholderColor-yellow-600: #d69e2e;
+$placeholderColor-yellow-700: #b7791f;
+$placeholderColor-yellow-800: #975a16;
+$placeholderColor-yellow-900: #744210;
+$placeholderColor-green-100: #f0fff4;
+$placeholderColor-green-200: #c6f6d5;
+$placeholderColor-green-300: #9ae6b4;
+$placeholderColor-green-400: #68d391;
+$placeholderColor-green-500: #48bb78;
+$placeholderColor-green-600: #38a169;
+$placeholderColor-green-700: #2f855a;
+$placeholderColor-green-800: #276749;
+$placeholderColor-green-900: #22543d;
+$placeholderColor-teal-100: #e6fffa;
+$placeholderColor-teal-200: #b2f5ea;
+$placeholderColor-teal-300: #81e6d9;
+$placeholderColor-teal-400: #4fd1c5;
+$placeholderColor-teal-500: #38b2ac;
+$placeholderColor-teal-600: #319795;
+$placeholderColor-teal-700: #2c7a7b;
+$placeholderColor-teal-800: #285e61;
+$placeholderColor-teal-900: #234e52;
+$placeholderColor-blue-100: #ebf8ff;
+$placeholderColor-blue-200: #bee3f8;
+$placeholderColor-blue-300: #90cdf4;
+$placeholderColor-blue-400: #63b3ed;
+$placeholderColor-blue-500: #4299e1;
+$placeholderColor-blue-600: #3182ce;
+$placeholderColor-blue-700: #2b6cb0;
+$placeholderColor-blue-800: #2c5282;
+$placeholderColor-blue-900: #2a4365;
+$placeholderColor-indigo-100: #ebf4ff;
+$placeholderColor-indigo-200: #c3dafe;
+$placeholderColor-indigo-300: #a3bffa;
+$placeholderColor-indigo-400: #7f9cf5;
+$placeholderColor-indigo-500: #667eea;
+$placeholderColor-indigo-600: #5a67d8;
+$placeholderColor-indigo-700: #4c51bf;
+$placeholderColor-indigo-800: #434190;
+$placeholderColor-indigo-900: #3c366b;
+$placeholderColor-purple-100: #faf5ff;
+$placeholderColor-purple-200: #e9d8fd;
+$placeholderColor-purple-300: #d6bcfa;
+$placeholderColor-purple-400: #b794f4;
+$placeholderColor-purple-500: #9f7aea;
+$placeholderColor-purple-600: #805ad5;
+$placeholderColor-purple-700: #6b46c1;
+$placeholderColor-purple-800: #553c9a;
+$placeholderColor-purple-900: #44337a;
+$placeholderColor-pink-100: #fff5f7;
+$placeholderColor-pink-200: #fed7e2;
+$placeholderColor-pink-300: #fbb6ce;
+$placeholderColor-pink-400: #f687b3;
+$placeholderColor-pink-500: #ed64a6;
+$placeholderColor-pink-600: #d53f8c;
+$placeholderColor-pink-700: #b83280;
+$placeholderColor-pink-800: #97266d;
+$placeholderColor-pink-900: #702459;
+
+$stroke-current: currentColor;
+
+$textColor-transparent: transparent;
+$textColor-black: #000;
+$textColor-white: #fff;
+$textColor-gray-100: #f7fafc;
+$textColor-gray-200: #edf2f7;
+$textColor-gray-300: #e2e8f0;
+$textColor-gray-400: #cbd5e0;
+$textColor-gray-500: #a0aec0;
+$textColor-gray-600: #718096;
+$textColor-gray-700: #4a5568;
+$textColor-gray-800: #2d3748;
+$textColor-gray-900: #1a202c;
+$textColor-red-100: #fff5f5;
+$textColor-red-200: #fed7d7;
+$textColor-red-300: #feb2b2;
+$textColor-red-400: #fc8181;
+$textColor-red-500: #f56565;
+$textColor-red-600: #e53e3e;
+$textColor-red-700: #c53030;
+$textColor-red-800: #9b2c2c;
+$textColor-red-900: #742a2a;
+$textColor-orange-100: #fffaf0;
+$textColor-orange-200: #feebc8;
+$textColor-orange-300: #fbd38d;
+$textColor-orange-400: #f6ad55;
+$textColor-orange-500: #ed8936;
+$textColor-orange-600: #dd6b20;
+$textColor-orange-700: #c05621;
+$textColor-orange-800: #9c4221;
+$textColor-orange-900: #7b341e;
+$textColor-yellow-100: #fffff0;
+$textColor-yellow-200: #fefcbf;
+$textColor-yellow-300: #faf089;
+$textColor-yellow-400: #f6e05e;
+$textColor-yellow-500: #ecc94b;
+$textColor-yellow-600: #d69e2e;
+$textColor-yellow-700: #b7791f;
+$textColor-yellow-800: #975a16;
+$textColor-yellow-900: #744210;
+$textColor-green-100: #f0fff4;
+$textColor-green-200: #c6f6d5;
+$textColor-green-300: #9ae6b4;
+$textColor-green-400: #68d391;
+$textColor-green-500: #48bb78;
+$textColor-green-600: #38a169;
+$textColor-green-700: #2f855a;
+$textColor-green-800: #276749;
+$textColor-green-900: #22543d;
+$textColor-teal-100: #e6fffa;
+$textColor-teal-200: #b2f5ea;
+$textColor-teal-300: #81e6d9;
+$textColor-teal-400: #4fd1c5;
+$textColor-teal-500: #38b2ac;
+$textColor-teal-600: #319795;
+$textColor-teal-700: #2c7a7b;
+$textColor-teal-800: #285e61;
+$textColor-teal-900: #234e52;
+$textColor-blue-100: #ebf8ff;
+$textColor-blue-200: #bee3f8;
+$textColor-blue-300: #90cdf4;
+$textColor-blue-400: #63b3ed;
+$textColor-blue-500: #4299e1;
+$textColor-blue-600: #3182ce;
+$textColor-blue-700: #2b6cb0;
+$textColor-blue-800: #2c5282;
+$textColor-blue-900: #2a4365;
+$textColor-indigo-100: #ebf4ff;
+$textColor-indigo-200: #c3dafe;
+$textColor-indigo-300: #a3bffa;
+$textColor-indigo-400: #7f9cf5;
+$textColor-indigo-500: #667eea;
+$textColor-indigo-600: #5a67d8;
+$textColor-indigo-700: #4c51bf;
+$textColor-indigo-800: #434190;
+$textColor-indigo-900: #3c366b;
+$textColor-purple-100: #faf5ff;
+$textColor-purple-200: #e9d8fd;
+$textColor-purple-300: #d6bcfa;
+$textColor-purple-400: #b794f4;
+$textColor-purple-500: #9f7aea;
+$textColor-purple-600: #805ad5;
+$textColor-purple-700: #6b46c1;
+$textColor-purple-800: #553c9a;
+$textColor-purple-900: #44337a;
+$textColor-pink-100: #fff5f7;
+$textColor-pink-200: #fed7e2;
+$textColor-pink-300: #fbb6ce;
+$textColor-pink-400: #f687b3;
+$textColor-pink-500: #ed64a6;
+$textColor-pink-600: #d53f8c;
+$textColor-pink-700: #b83280;
+$textColor-pink-800: #97266d;
+$textColor-pink-900: #702459;
+
+$width-0: 0;
+$width-1: 0.25rem;
+$width-2: 0.5rem;
+$width-3: 0.75rem;
+$width-4: 1rem;
+$width-5: 1.25rem;
+$width-6: 1.5rem;
+$width-8: 2rem;
+$width-10: 2.5rem;
+$width-12: 3rem;
+$width-16: 4rem;
+$width-20: 5rem;
+$width-24: 6rem;
+$width-32: 8rem;
+$width-40: 10rem;
+$width-48: 12rem;
+$width-56: 14rem;
+$width-64: 16rem;
+$width-auto: auto;
+$width-px: 1px;
+$width-1\\\\/2: 50%;
+$width-1\\\\/3: 33.333333%;
+$width-2\\\\/3: 66.666667%;
+$width-1\\\\/4: 25%;
+$width-2\\\\/4: 50%;
+$width-3\\\\/4: 75%;
+$width-1\\\\/5: 20%;
+$width-2\\\\/5: 40%;
+$width-3\\\\/5: 60%;
+$width-4\\\\/5: 80%;
+$width-1\\\\/6: 16.666667%;
+$width-2\\\\/6: 33.333333%;
+$width-3\\\\/6: 50%;
+$width-4\\\\/6: 66.666667%;
+$width-5\\\\/6: 83.333333%;
+$width-1\\\\/12: 8.333333%;
+$width-2\\\\/12: 16.666667%;
+$width-3\\\\/12: 25%;
+$width-4\\\\/12: 33.333333%;
+$width-5\\\\/12: 41.666667%;
+$width-6\\\\/12: 50%;
+$width-7\\\\/12: 58.333333%;
+$width-8\\\\/12: 66.666667%;
+$width-9\\\\/12: 75%;
+$width-10\\\\/12: 83.333333%;
+$width-11\\\\/12: 91.666667%;
+$width-full: 100%;
+$width-screen: 100vw;
+
+$zIndex-0: 0;
+$zIndex-10: 10;
+$zIndex-20: 20;
+$zIndex-30: 30;
+$zIndex-40: 40;
+$zIndex-50: 50;
+$zIndex-auto: auto;
+"
+`;
+
 exports[`Tailwind Options Exporter skips options that are disabled in \`corePlugins\` using the array pattern 1`] = `
 "/* Converted Tailwind Config to scss */
 $cursor: (

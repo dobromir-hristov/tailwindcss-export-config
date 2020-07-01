@@ -75,6 +75,7 @@ format|String|true| The format in which to convert the file
 prefix|String|false| An optional prefix for each variable name
 flat|Boolean|false| Optionally transforms the variables from nested maps to flat level variables. Less does not support nested maps so we default to flat for them always. Defaults to `false`.
 quoted-keys|Boolean|false| (`quotedKeys` in the Node API) - Whether keys in maps should be quoted or not. We recommend to have this set to `true`. Defaults to `false`.
+flatten-maps-after|Number|false| (`flattenMapsAfter` in the Node API) - After what level should it start flattening deeply nested maps. Defaults to `-1` (always flatten).
 
 ## Example export
 Lets get a portion of the Tailwind config
@@ -233,6 +234,63 @@ $colors: (
   "cyan": #9cdbff,
 );
 
+```
+
+### Flattening deep maps
+
+If your tailwind config has a deeply nested object, it can be converted to a deeply nested map, in SASS or Stylus, or a flattened, single level map.
+
+Given the object below:
+
+```js
+module.exports = {
+  theme: {
+    customForms: {
+      colors: {
+        blue: 'blue',
+        green: 'green',
+      },
+      somethingElse: {
+        level1: {
+          color: 'pink',
+          arrayValue: ['a', 'b', 'c'],
+        }
+      }
+    }
+  }
+}
+```
+
+By default it will convert to:
+
+```scss
+$customForms: (
+  colors-blue: blue,
+  colors-green: green,
+  somethingElse-level1-color: pink,
+  somethingElse-level1-arrayValue: (a,b,c),
+);
+```
+
+If we want to keep the nested structure, similar to the tailwind config, we can set a high number for the `flattenMapsAfter` parameter.
+
+```bash
+tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --flatten-maps-after=10
+```
+
+```scss
+$customForms: (
+  colors: (
+    blue: blue,
+    green: green,
+  ),
+  somethingElse: (
+    level1: (
+      color: pink,
+      arrayValue: (a,b,c),
+    ),
+  ),
+);
 ```
 
 ## Notice

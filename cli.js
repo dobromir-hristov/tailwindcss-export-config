@@ -48,6 +48,11 @@ const argv = yargs // eslint-disable-line
     boolean: true,
     nargs: 1
   })
+  .option('flatten-maps-after', {
+    describe: 'After which level, should deeply nested maps be flattened out. Defaults to -1 (always)',
+    type: 'number', /* array | boolean | string */
+    nargs: 1
+  })
   .argv
 
 try {
@@ -57,7 +62,8 @@ try {
     format: argv.format,
     prefix: argv.prefix,
     flat: argv.flat,
-    quotedKeys: argv['quoted-keys']
+    quotedKeys: argv['quoted-keys'],
+    flattenMapsAfter: argv['flatten-maps-after']
   })
   converter.writeToFile()
     .then((options) => {

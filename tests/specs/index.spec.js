@@ -115,4 +115,50 @@ describe('Tailwind Options Exporter', () => {
       done()
     })
   })
+
+  it('converts deeply nested configs, with flat:false', () => {
+    const config = require('../tailwind-deeply-nested.config.js')
+
+    let converterInstance = new ConvertTo({
+      config: config,
+      format: 'scss',
+      destination: 'doesnt_matter',
+    })
+    expect(converterInstance.convert()).toMatchSnapshot('level-default')
+
+     converterInstance = new ConvertTo({
+      config: config,
+      format: 'scss',
+      destination: 'doesnt_matter',
+      flattenMapsAfter: 0
+    })
+    expect(converterInstance.convert()).toMatchSnapshot('level0')
+
+    converterInstance = new ConvertTo({
+      config: config,
+      format: 'scss',
+      destination: 'doesnt_matter',
+      flattenMapsAfter: 2
+    })
+    expect(converterInstance.convert()).toMatchSnapshot('level2')
+
+    converterInstance = new ConvertTo({
+      config: config,
+      format: 'scss',
+      destination: 'doesnt_matter',
+      flattenMapsAfter: 3
+    })
+    expect(converterInstance.convert()).toMatchSnapshot('level3')
+  })
+
+  it('converts deeply nested configs, with flat:true', () => {
+    const config = require('../tailwind-deeply-nested.config.js')
+
+    let converterInstance = new ConvertTo({
+      config: config,
+      format: 'scss',
+      flat: true
+    })
+    expect(converterInstance.convert()).toMatchSnapshot()
+  })
 })
