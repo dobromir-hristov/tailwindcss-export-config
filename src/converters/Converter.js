@@ -1,5 +1,5 @@
 import { indentWith } from './utils.js'
-import { isObject } from './utils'
+import { isObject, sanitizeKey } from './utils'
 
 const INDENT_BY = 2
 
@@ -220,7 +220,7 @@ class Converter {
    * @private
    */
   _propertyNameSanitizer (property) {
-    property = property.replace('/', '\\/')
+    property = sanitizeKey(property.replace(/\//g, '\\/'))
     return [this.prefix, property].filter(v => v).join('-')
   }
 
@@ -231,6 +231,7 @@ class Converter {
    * @private
    */
   _objectEntryKeySanitizer (key) {
+    key = sanitizeKey(key)
     return this.quotedKeys ? `"${key}"` : key
   }
 }

@@ -20,3 +20,7 @@ export function resolveConfig (config) {
 export function isObject (value) {
   return !Array.isArray(value) && typeof value === 'object'
 }
+
+export function sanitizeKey (text) {
+  return text.replace(/%/g, '').replace(/, /g, '-')
+}
