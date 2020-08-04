@@ -1,21 +1,33 @@
 import LessConverter from '../../../src/converters/Less'
 import testConfig from '../../tailwind.config'
+import testConfigDefault from '../../tailwind-default.config'
 import { resolveConfig } from '../../../src/converters/utils'
 
 describe('Less converter', () => {
-  it('Converts to nested map', () => {
-    const converter = new LessConverter({
+  describe('full config', () => {
+    it('Converts to flat variables', () => {
+      const converter = new LessConverter({
+        config: resolveConfig(testConfigDefault)
+      })
+      expect(converter.convert()).toMatchSnapshot()
+    })
+  })
+
+  it('converts flat and nested, with the same result', () => {
+    let converter = new LessConverter({
       config: resolveConfig(testConfig),
       flat: true
     })
-    expect(converter.convert()).toMatchSnapshot()
-  })
+    const flatResult = converter.convert()
 
-  it('Converts to flat variables', () => {
-    const converter = new LessConverter({
-      config: resolveConfig(testConfig)
+    converter = new LessConverter({
+      config: resolveConfig(testConfig),
+      flat: false
     })
-    expect(converter.convert()). toMatchSnapshot()
+
+    const nestedResult = converter.convert()
+
+    expect(flatResult).toBe(nestedResult)
   })
 
   it('Converts to flat variables with prefix', () => {

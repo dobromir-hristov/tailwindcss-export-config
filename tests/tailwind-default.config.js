@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
   theme: {
     screens: {
@@ -26,6 +25,5 @@ module.exports = {
         '128': '32rem'
       }
     }
-  },
-  corePlugins: ['screens', 'fontFamily', 'borderWidth', 'colors', 'spacing']
+  }
 }
