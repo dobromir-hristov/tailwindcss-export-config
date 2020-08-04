@@ -33,5 +33,6 @@ module.exports = {
         green: 'notGreen'
       }
     }
-  }
+  },
+  corePlugins: ['customForms', 'customColors']
 }

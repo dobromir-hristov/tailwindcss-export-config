@@ -1,6 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sass converter Converts to flat variables 1`] = `
+exports[`Sass converter Converts to flat variables with prefix 1`] = `
+"
+$tw-screens-sm: 640px
+$tw-screens-md: 768px
+$tw-screens-lg: 1024px
+$tw-screens-xl: 1280px
+
+$tw-fontFamily-display: (Gilroy,sans-serif)
+$tw-fontFamily-body: (Graphik,sans-serif)
+
+$tw-borderWidth-0: 0
+$tw-borderWidth-2: 2px
+$tw-borderWidth-4: 4px
+$tw-borderWidth-default: 1px
+
+$tw-colors-transparent: transparent
+$tw-colors-current: currentColor
+$tw-colors-black: #000
+$tw-colors-white: #fff
+$tw-colors-gray-100: #f7fafc
+$tw-colors-gray-200: #edf2f7
+$tw-colors-gray-300: #e2e8f0
+$tw-colors-gray-400: #cbd5e0
+$tw-colors-gray-500: #a0aec0
+$tw-colors-gray-600: #718096
+$tw-colors-gray-700: #4a5568
+$tw-colors-gray-800: #2d3748
+$tw-colors-gray-900: #1a202c
+$tw-colors-red-100: #fff5f5
+$tw-colors-red-200: #fed7d7
+$tw-colors-red-300: #feb2b2
+$tw-colors-red-400: #fc8181
+$tw-colors-red-500: #f56565
+$tw-colors-red-600: #e53e3e
+$tw-colors-red-700: #c53030
+$tw-colors-red-800: #9b2c2c
+$tw-colors-red-900: #742a2a
+$tw-colors-orange-100: #fffaf0
+$tw-colors-orange-200: #feebc8
+$tw-colors-orange-300: #fbd38d
+$tw-colors-orange-400: #f6ad55
+$tw-colors-orange-500: #ed8936
+$tw-colors-orange-600: #dd6b20
+$tw-colors-orange-700: #c05621
+$tw-colors-orange-800: #9c4221
+$tw-colors-orange-900: #7b341e
+$tw-colors-yellow-100: #fffff0
+$tw-colors-yellow-200: #fefcbf
+$tw-colors-yellow-300: #faf089
+$tw-colors-yellow-400: #f6e05e
+$tw-colors-yellow-500: #ecc94b
+$tw-colors-yellow-600: #d69e2e
+$tw-colors-yellow-700: #b7791f
+$tw-colors-yellow-800: #975a16
+$tw-colors-yellow-900: #744210
+$tw-colors-green-100: #f0fff4
+$tw-colors-green-200: #c6f6d5
+$tw-colors-green-300: #9ae6b4
+$tw-colors-green-400: #68d391
+$tw-colors-green-500: #48bb78
+$tw-colors-green-600: #38a169
+$tw-colors-green-700: #2f855a
+$tw-colors-green-800: #276749
+$tw-colors-green-900: #22543d
+$tw-colors-teal-100: #e6fffa
+$tw-colors-teal-200: #b2f5ea
+$tw-colors-teal-300: #81e6d9
+$tw-colors-teal-400: #4fd1c5
+$tw-colors-teal-500: #38b2ac
+$tw-colors-teal-600: #319795
+$tw-colors-teal-700: #2c7a7b
+$tw-colors-teal-800: #285e61
+$tw-colors-teal-900: #234e52
+$tw-colors-blue-100: #ebf8ff
+$tw-colors-blue-200: #bee3f8
+$tw-colors-blue-300: #90cdf4
+$tw-colors-blue-400: #63b3ed
+$tw-colors-blue-500: #4299e1
+$tw-colors-blue-600: #3182ce
+$tw-colors-blue-700: #2b6cb0
+$tw-colors-blue-800: #2c5282
+$tw-colors-blue-900: #2a4365
+$tw-colors-indigo-100: #ebf4ff
+$tw-colors-indigo-200: #c3dafe
+$tw-colors-indigo-300: #a3bffa
+$tw-colors-indigo-400: #7f9cf5
+$tw-colors-indigo-500: #667eea
+$tw-colors-indigo-600: #5a67d8
+$tw-colors-indigo-700: #4c51bf
+$tw-colors-indigo-800: #434190
+$tw-colors-indigo-900: #3c366b
+$tw-colors-purple-100: #faf5ff
+$tw-colors-purple-200: #e9d8fd
+$tw-colors-purple-300: #d6bcfa
+$tw-colors-purple-400: #b794f4
+$tw-colors-purple-500: #9f7aea
+$tw-colors-purple-600: #805ad5
+$tw-colors-purple-700: #6b46c1
+$tw-colors-purple-800: #553c9a
+$tw-colors-purple-900: #44337a
+$tw-colors-pink-100: #fff5f7
+$tw-colors-pink-200: #fed7e2
+$tw-colors-pink-300: #fbb6ce
+$tw-colors-pink-400: #f687b3
+$tw-colors-pink-500: #ed64a6
+$tw-colors-pink-600: #d53f8c
+$tw-colors-pink-700: #b83280
+$tw-colors-pink-800: #97266d
+$tw-colors-pink-900: #702459
+$tw-colors-cyan: #9cdbff
+
+$tw-spacing-0: 0
+$tw-spacing-1: 0.25rem
+$tw-spacing-2: 0.5rem
+$tw-spacing-3: 0.75rem
+$tw-spacing-4: 1rem
+$tw-spacing-5: 1.25rem
+$tw-spacing-6: 1.5rem
+$tw-spacing-8: 2rem
+$tw-spacing-10: 2.5rem
+$tw-spacing-12: 3rem
+$tw-spacing-16: 4rem
+$tw-spacing-20: 5rem
+$tw-spacing-24: 6rem
+$tw-spacing-32: 8rem
+$tw-spacing-40: 10rem
+$tw-spacing-48: 12rem
+$tw-spacing-56: 14rem
+$tw-spacing-64: 16rem
+$tw-spacing-96: 24rem
+$tw-spacing-128: 32rem
+$tw-spacing-px: 1px
+"
+`;
+
+exports[`Sass converter Converts to nested map with prefix 1`] = `
+"
+$tw-screens: (sm: 640px, md: 768px, lg: 1024px, xl: 1280px,)
+
+$tw-fontFamily: (display: (Gilroy,sans-serif), body: (Graphik,sans-serif),)
+
+$tw-borderWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
+
+$tw-colors: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
+
+$tw-spacing: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
+"
+`;
+
+exports[`Sass converter full config converts all props, to a nested map 1`] = `
+"
+$screens: (sm: 640px, md: 768px, lg: 1024px, xl: 1280px,)
+
+$fontFamily: (display: (Gilroy,sans-serif), body: (Graphik,sans-serif),)
+
+$borderWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
+
+$colors: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
+
+$spacing: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
+
+$backgroundColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
+
+$backgroundOpacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
+
+$backgroundPosition: (bottom: bottom, center: center, left: left, left-bottom: left bottom, left-top: left top, right: right, right-bottom: right bottom, right-top: right top, top: top,)
+
+$backgroundSize: (auto: auto, cover: cover, contain: contain,)
+
+$borderColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff, default: #e2e8f0,)
+
+$borderOpacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
+
+$borderRadius: (none: 0, sm: 0.125rem, default: 0.25rem, md: 0.375rem, lg: 0.5rem, full: 9999px,)
+
+$boxShadow: (xs: (0 0 0 1px rgba(0, 0, 0, 0.05)), sm: (0 1px 2px 0 rgba(0, 0, 0, 0.05)), default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)), md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)), lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)), xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)), 2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)), inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)), outline: (0 0 0 3px rgba(66, 153, 225, 0.5)), none: none,)
+
+$container: ()
+
+$cursor: (auto: auto, default: default, pointer: pointer, wait: wait, text: text, move: move, not-allowed: not-allowed,)
+
+$divideColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff, default: #e2e8f0,)
+
+$divideOpacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
+
+$divideWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
+
+$fill: (current: currentColor,)
+
+$flex: (1: 1 1 0%, auto: 1 1 auto, initial: 0 1 auto, none: none,)
+
+$flexGrow: (0: 0, default: 1,)
+
+$flexShrink: (0: 0, default: 1,)
+
+$fontSize: (xs: 0.75rem, sm: 0.875rem, base: 1rem, lg: 1.125rem, xl: 1.25rem, 2xl: 1.5rem, 3xl: 1.875rem, 4xl: 2.25rem, 5xl: 3rem, 6xl: 4rem,)
+
+$fontWeight: (hairline: 100, thin: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700, extrabold: 800, black: 900,)
+
+$height: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, full: 100%, screen: 100vh,)
+
+$inset: (0: 0, auto: auto,)
+
+$letterSpacing: (tighter: -0.05em, tight: -0.025em, normal: 0, wide: 0.025em, wider: 0.05em, widest: 0.1em,)
+
+$lineHeight: (3: .75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 7: 1.75rem, 8: 2rem, 9: 2.25rem, 10: 2.5rem, none: 1, tight: 1.25, snug: 1.375, normal: 1.5, relaxed: 1.625, loose: 2,)
+
+$listStyleType: (none: none, disc: disc, decimal: decimal,)
+
+$margin: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, -1: -0.25rem, -2: -0.5rem, -3: -0.75rem, -4: -1rem, -5: -1.25rem, -6: -1.5rem, -8: -2rem, -10: -2.5rem, -12: -3rem, -16: -4rem, -20: -5rem, -24: -6rem, -32: -8rem, -40: -10rem, -48: -12rem, -56: -14rem, -64: -16rem, -96: -24rem, -128: -32rem, -px: -1px,)
+
+$maxHeight: (full: 100%, screen: 100vh,)
+
+$maxWidth: (none: none, xs: 20rem, sm: 24rem, md: 28rem, lg: 32rem, xl: 36rem, 2xl: 42rem, 3xl: 48rem, 4xl: 56rem, 5xl: 64rem, 6xl: 72rem, full: 100%, screen-sm: 640px, screen-md: 768px, screen-lg: 1024px, screen-xl: 1280px,)
+
+$minHeight: (0: 0, full: 100%, screen: 100vh,)
+
+$minWidth: (0: 0, full: 100%,)
+
+$objectPosition: (bottom: bottom, center: center, left: left, left-bottom: left bottom, left-top: left top, right: right, right-bottom: right bottom, right-top: right top, top: top,)
+
+$opacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
+
+$order: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, first: -9999, last: 9999, none: 0,)
+
+$padding: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
+
+$placeholderColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
+
+$placeholderOpacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
+
+$space: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px, -1: -0.25rem, -2: -0.5rem, -3: -0.75rem, -4: -1rem, -5: -1.25rem, -6: -1.5rem, -8: -2rem, -10: -2.5rem, -12: -3rem, -16: -4rem, -20: -5rem, -24: -6rem, -32: -8rem, -40: -10rem, -48: -12rem, -56: -14rem, -64: -16rem, -96: -24rem, -128: -32rem, -px: -1px,)
+
+$stroke: (current: currentColor,)
+
+$strokeWidth: (0: 0, 1: 1, 2: 2,)
+
+$textColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
+
+$textOpacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
+
+$width: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, 1/2: 50%, 1/3: 33.333333%, 2/3: 66.666667%, 1/4: 25%, 2/4: 50%, 3/4: 75%, 1/5: 20%, 2/5: 40%, 3/5: 60%, 4/5: 80%, 1/6: 16.666667%, 2/6: 33.333333%, 3/6: 50%, 4/6: 66.666667%, 5/6: 83.333333%, 1/12: 8.333333%, 2/12: 16.666667%, 3/12: 25%, 4/12: 33.333333%, 5/12: 41.666667%, 6/12: 50%, 7/12: 58.333333%, 8/12: 66.666667%, 9/12: 75%, 10/12: 83.333333%, 11/12: 91.666667%, full: 100%, screen: 100vw,)
+
+$zIndex: (0: 0, 10: 10, 20: 20, 30: 30, 40: 40, 50: 50, auto: auto,)
+
+$gap: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
+
+$gridTemplateColumns: (1: (repeat(1, minmax(0, 1fr))), 2: (repeat(2, minmax(0, 1fr))), 3: (repeat(3, minmax(0, 1fr))), 4: (repeat(4, minmax(0, 1fr))), 5: (repeat(5, minmax(0, 1fr))), 6: (repeat(6, minmax(0, 1fr))), 7: (repeat(7, minmax(0, 1fr))), 8: (repeat(8, minmax(0, 1fr))), 9: (repeat(9, minmax(0, 1fr))), 10: (repeat(10, minmax(0, 1fr))), 11: (repeat(11, minmax(0, 1fr))), 12: (repeat(12, minmax(0, 1fr))), none: none,)
+
+$gridColumn: (auto: auto, span-1: span 1 / span 1, span-2: span 2 / span 2, span-3: span 3 / span 3, span-4: span 4 / span 4, span-5: span 5 / span 5, span-6: span 6 / span 6, span-7: span 7 / span 7, span-8: span 8 / span 8, span-9: span 9 / span 9, span-10: span 10 / span 10, span-11: span 11 / span 11, span-12: span 12 / span 12,)
+
+$gridColumnStart: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 13, auto: auto,)
+
+$gridColumnEnd: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, 13: 13, auto: auto,)
+
+$gridTemplateRows: (1: (repeat(1, minmax(0, 1fr))), 2: (repeat(2, minmax(0, 1fr))), 3: (repeat(3, minmax(0, 1fr))), 4: (repeat(4, minmax(0, 1fr))), 5: (repeat(5, minmax(0, 1fr))), 6: (repeat(6, minmax(0, 1fr))), none: none,)
+
+$gridRow: (auto: auto, span-1: span 1 / span 1, span-2: span 2 / span 2, span-3: span 3 / span 3, span-4: span 4 / span 4, span-5: span 5 / span 5, span-6: span 6 / span 6,)
+
+$gridRowStart: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, auto: auto,)
+
+$gridRowEnd: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, auto: auto,)
+
+$transformOrigin: (center: center, top: top, top-right: top right, right: right, bottom-right: bottom right, bottom: bottom, bottom-left: bottom left, left: left, top-left: top left,)
+
+$scale: (0: 0, 50: .5, 75: .75, 90: .9, 95: .95, 100: 1, 105: 1.05, 110: 1.1, 125: 1.25, 150: 1.5,)
+
+$rotate: (0: 0, 45: 45deg, 90: 90deg, 180: 180deg, -180: -180deg, -90: -90deg, -45: -45deg,)
+
+$translate: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px, -1: -0.25rem, -2: -0.5rem, -3: -0.75rem, -4: -1rem, -5: -1.25rem, -6: -1.5rem, -8: -2rem, -10: -2.5rem, -12: -3rem, -16: -4rem, -20: -5rem, -24: -6rem, -32: -8rem, -40: -10rem, -48: -12rem, -56: -14rem, -64: -16rem, -96: -24rem, -128: -32rem, -px: -1px, -full: -100%, -1/2: -50%, 1/2: 50%, full: 100%,)
+
+$skew: (0: 0, 3: 3deg, 6: 6deg, 12: 12deg, -12: -12deg, -6: -6deg, -3: -3deg,)
+
+$transitionProperty: (none: none, all: all, default: (background-color, border-color, color, fill, stroke, opacity, box-shadow, transform), colors: (background-color, border-color, color, fill, stroke), opacity: opacity, shadow: box-shadow, transform: transform,)
+
+$transitionTimingFunction: (linear: linear, in: (cubic-bezier(0.4, 0, 1, 1)), out: (cubic-bezier(0, 0, 0.2, 1)), in-out: (cubic-bezier(0.4, 0, 0.2, 1)),)
+
+$transitionDuration: (75: 75ms, 100: 100ms, 150: 150ms, 200: 200ms, 300: 300ms, 500: 500ms, 700: 700ms, 1000: 1000ms,)
+
+$transitionDelay: (75: 75ms, 100: 100ms, 150: 150ms, 200: 200ms, 300: 300ms, 500: 500ms, 700: 700ms, 1000: 1000ms,)
+
+$animation: (none: none, spin: spin 1s linear infinite, ping: (ping 1s cubic-bezier(0, 0, 0.2, 1) infinite), pulse: (pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite), bounce: bounce 1s infinite,)
+
+$keyframes: (spin-from-transform: rotate(0deg),spin-to-transform: rotate(360deg), ping-0-transform: scale(1), ping-0-opacity: 1, ping-75-100-transform: scale(2), ping-75-100-opacity: 0, pulse-0-100-opacity: 1, pulse-50-opacity: .5, bounce-0-100-transform: translateY(-25%), bounce-0-100-animationTimingFunction: (cubic-bezier(0.8,0,1,1)), bounce-50-transform: translateY(0), bounce-50-animationTimingFunction: (cubic-bezier(0,0,0.2,1)),)
+"
+`;
+
+exports[`Sass converter full config converts all props, to flat variables 1`] = `
 "
 $screens-sm: 640px
 $screens-md: 768px
@@ -16,6 +303,7 @@ $borderWidth-4: 4px
 $borderWidth-default: 1px
 
 $colors-transparent: transparent
+$colors-current: currentColor
 $colors-black: #000
 $colors-white: #fff
 $colors-gray-100: #f7fafc
@@ -133,6 +421,7 @@ $spacing-128: 32rem
 $spacing-px: 1px
 
 $backgroundColor-transparent: transparent
+$backgroundColor-current: currentColor
 $backgroundColor-black: #000
 $backgroundColor-white: #fff
 $backgroundColor-gray-100: #f7fafc
@@ -227,6 +516,12 @@ $backgroundColor-pink-800: #97266d
 $backgroundColor-pink-900: #702459
 $backgroundColor-cyan: #9cdbff
 
+$backgroundOpacity-0: 0
+$backgroundOpacity-25: 0.25
+$backgroundOpacity-50: 0.5
+$backgroundOpacity-75: 0.75
+$backgroundOpacity-100: 1
+
 $backgroundPosition-bottom: bottom
 $backgroundPosition-center: center
 $backgroundPosition-left: left
@@ -242,6 +537,7 @@ $backgroundSize-cover: cover
 $backgroundSize-contain: contain
 
 $borderColor-transparent: transparent
+$borderColor-current: currentColor
 $borderColor-black: #000
 $borderColor-white: #fff
 $borderColor-gray-100: #f7fafc
@@ -337,12 +633,21 @@ $borderColor-pink-900: #702459
 $borderColor-cyan: #9cdbff
 $borderColor-default: #e2e8f0
 
+$borderOpacity-0: 0
+$borderOpacity-25: 0.25
+$borderOpacity-50: 0.5
+$borderOpacity-75: 0.75
+$borderOpacity-100: 1
+
 $borderRadius-none: 0
 $borderRadius-sm: 0.125rem
 $borderRadius-default: 0.25rem
+$borderRadius-md: 0.375rem
 $borderRadius-lg: 0.5rem
 $borderRadius-full: 9999px
 
+$boxShadow-xs: (0 0 0 1px rgba(0, 0, 0, 0.05))
+$boxShadow-sm: (0 1px 2px 0 rgba(0, 0, 0, 0.05))
 $boxShadow-default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06))
 $boxShadow-md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06))
 $boxShadow-lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05))
@@ -360,6 +665,114 @@ $cursor-wait: wait
 $cursor-text: text
 $cursor-move: move
 $cursor-not-allowed: not-allowed
+
+$divideColor-transparent: transparent
+$divideColor-current: currentColor
+$divideColor-black: #000
+$divideColor-white: #fff
+$divideColor-gray-100: #f7fafc
+$divideColor-gray-200: #edf2f7
+$divideColor-gray-300: #e2e8f0
+$divideColor-gray-400: #cbd5e0
+$divideColor-gray-500: #a0aec0
+$divideColor-gray-600: #718096
+$divideColor-gray-700: #4a5568
+$divideColor-gray-800: #2d3748
+$divideColor-gray-900: #1a202c
+$divideColor-red-100: #fff5f5
+$divideColor-red-200: #fed7d7
+$divideColor-red-300: #feb2b2
+$divideColor-red-400: #fc8181
+$divideColor-red-500: #f56565
+$divideColor-red-600: #e53e3e
+$divideColor-red-700: #c53030
+$divideColor-red-800: #9b2c2c
+$divideColor-red-900: #742a2a
+$divideColor-orange-100: #fffaf0
+$divideColor-orange-200: #feebc8
+$divideColor-orange-300: #fbd38d
+$divideColor-orange-400: #f6ad55
+$divideColor-orange-500: #ed8936
+$divideColor-orange-600: #dd6b20
+$divideColor-orange-700: #c05621
+$divideColor-orange-800: #9c4221
+$divideColor-orange-900: #7b341e
+$divideColor-yellow-100: #fffff0
+$divideColor-yellow-200: #fefcbf
+$divideColor-yellow-300: #faf089
+$divideColor-yellow-400: #f6e05e
+$divideColor-yellow-500: #ecc94b
+$divideColor-yellow-600: #d69e2e
+$divideColor-yellow-700: #b7791f
+$divideColor-yellow-800: #975a16
+$divideColor-yellow-900: #744210
+$divideColor-green-100: #f0fff4
+$divideColor-green-200: #c6f6d5
+$divideColor-green-300: #9ae6b4
+$divideColor-green-400: #68d391
+$divideColor-green-500: #48bb78
+$divideColor-green-600: #38a169
+$divideColor-green-700: #2f855a
+$divideColor-green-800: #276749
+$divideColor-green-900: #22543d
+$divideColor-teal-100: #e6fffa
+$divideColor-teal-200: #b2f5ea
+$divideColor-teal-300: #81e6d9
+$divideColor-teal-400: #4fd1c5
+$divideColor-teal-500: #38b2ac
+$divideColor-teal-600: #319795
+$divideColor-teal-700: #2c7a7b
+$divideColor-teal-800: #285e61
+$divideColor-teal-900: #234e52
+$divideColor-blue-100: #ebf8ff
+$divideColor-blue-200: #bee3f8
+$divideColor-blue-300: #90cdf4
+$divideColor-blue-400: #63b3ed
+$divideColor-blue-500: #4299e1
+$divideColor-blue-600: #3182ce
+$divideColor-blue-700: #2b6cb0
+$divideColor-blue-800: #2c5282
+$divideColor-blue-900: #2a4365
+$divideColor-indigo-100: #ebf4ff
+$divideColor-indigo-200: #c3dafe
+$divideColor-indigo-300: #a3bffa
+$divideColor-indigo-400: #7f9cf5
+$divideColor-indigo-500: #667eea
+$divideColor-indigo-600: #5a67d8
+$divideColor-indigo-700: #4c51bf
+$divideColor-indigo-800: #434190
+$divideColor-indigo-900: #3c366b
+$divideColor-purple-100: #faf5ff
+$divideColor-purple-200: #e9d8fd
+$divideColor-purple-300: #d6bcfa
+$divideColor-purple-400: #b794f4
+$divideColor-purple-500: #9f7aea
+$divideColor-purple-600: #805ad5
+$divideColor-purple-700: #6b46c1
+$divideColor-purple-800: #553c9a
+$divideColor-purple-900: #44337a
+$divideColor-pink-100: #fff5f7
+$divideColor-pink-200: #fed7e2
+$divideColor-pink-300: #fbb6ce
+$divideColor-pink-400: #f687b3
+$divideColor-pink-500: #ed64a6
+$divideColor-pink-600: #d53f8c
+$divideColor-pink-700: #b83280
+$divideColor-pink-800: #97266d
+$divideColor-pink-900: #702459
+$divideColor-cyan: #9cdbff
+$divideColor-default: #e2e8f0
+
+$divideOpacity-0: 0
+$divideOpacity-25: 0.25
+$divideOpacity-50: 0.5
+$divideOpacity-75: 0.75
+$divideOpacity-100: 1
+
+$divideWidth-0: 0
+$divideWidth-2: 2px
+$divideWidth-4: 4px
+$divideWidth-default: 1px
 
 $fill-current: currentColor
 
@@ -430,6 +843,14 @@ $letterSpacing-wide: 0.025em
 $letterSpacing-wider: 0.05em
 $letterSpacing-widest: 0.1em
 
+$lineHeight-3: .75rem
+$lineHeight-4: 1rem
+$lineHeight-5: 1.25rem
+$lineHeight-6: 1.5rem
+$lineHeight-7: 1.75rem
+$lineHeight-8: 2rem
+$lineHeight-9: 2.25rem
+$lineHeight-10: 2.5rem
 $lineHeight-none: 1
 $lineHeight-tight: 1.25
 $lineHeight-snug: 1.375
@@ -487,6 +908,7 @@ $margin--px: -1px
 $maxHeight-full: 100%
 $maxHeight-screen: 100vh
 
+$maxWidth-none: none
 $maxWidth-xs: 20rem
 $maxWidth-sm: 24rem
 $maxWidth-md: 28rem
@@ -498,6 +920,10 @@ $maxWidth-4xl: 56rem
 $maxWidth-5xl: 64rem
 $maxWidth-6xl: 72rem
 $maxWidth-full: 100%
+$maxWidth-screen-sm: 640px
+$maxWidth-screen-md: 768px
+$maxWidth-screen-lg: 1024px
+$maxWidth-screen-xl: 1280px
 
 $minHeight-0: 0
 $minHeight-full: 100%
@@ -561,6 +987,7 @@ $padding-128: 32rem
 $padding-px: 1px
 
 $placeholderColor-transparent: transparent
+$placeholderColor-current: currentColor
 $placeholderColor-black: #000
 $placeholderColor-white: #fff
 $placeholderColor-gray-100: #f7fafc
@@ -655,9 +1082,62 @@ $placeholderColor-pink-800: #97266d
 $placeholderColor-pink-900: #702459
 $placeholderColor-cyan: #9cdbff
 
+$placeholderOpacity-0: 0
+$placeholderOpacity-25: 0.25
+$placeholderOpacity-50: 0.5
+$placeholderOpacity-75: 0.75
+$placeholderOpacity-100: 1
+
+$space-0: 0
+$space-1: 0.25rem
+$space-2: 0.5rem
+$space-3: 0.75rem
+$space-4: 1rem
+$space-5: 1.25rem
+$space-6: 1.5rem
+$space-8: 2rem
+$space-10: 2.5rem
+$space-12: 3rem
+$space-16: 4rem
+$space-20: 5rem
+$space-24: 6rem
+$space-32: 8rem
+$space-40: 10rem
+$space-48: 12rem
+$space-56: 14rem
+$space-64: 16rem
+$space-96: 24rem
+$space-128: 32rem
+$space-px: 1px
+$space--1: -0.25rem
+$space--2: -0.5rem
+$space--3: -0.75rem
+$space--4: -1rem
+$space--5: -1.25rem
+$space--6: -1.5rem
+$space--8: -2rem
+$space--10: -2.5rem
+$space--12: -3rem
+$space--16: -4rem
+$space--20: -5rem
+$space--24: -6rem
+$space--32: -8rem
+$space--40: -10rem
+$space--48: -12rem
+$space--56: -14rem
+$space--64: -16rem
+$space--96: -24rem
+$space--128: -32rem
+$space--px: -1px
+
 $stroke-current: currentColor
 
+$strokeWidth-0: 0
+$strokeWidth-1: 1
+$strokeWidth-2: 2
+
 $textColor-transparent: transparent
+$textColor-current: currentColor
 $textColor-black: #000
 $textColor-white: #fff
 $textColor-gray-100: #f7fafc
@@ -752,6 +1232,12 @@ $textColor-pink-800: #97266d
 $textColor-pink-900: #702459
 $textColor-cyan: #9cdbff
 
+$textOpacity-0: 0
+$textOpacity-25: 0.25
+$textOpacity-50: 0.5
+$textOpacity-75: 0.75
+$textOpacity-100: 1
+
 $width-0: 0
 $width-1: 0.25rem
 $width-2: 0.5rem
@@ -810,979 +1296,253 @@ $zIndex-30: 30
 $zIndex-40: 40
 $zIndex-50: 50
 $zIndex-auto: auto
-"
-`;
 
-exports[`Sass converter Converts to flat variables with prefix 1`] = `
-"
-$tw-screens-sm: 640px
-$tw-screens-md: 768px
-$tw-screens-lg: 1024px
-$tw-screens-xl: 1280px
-
-$tw-fontFamily-display: (Gilroy,sans-serif)
-$tw-fontFamily-body: (Graphik,sans-serif)
-
-$tw-borderWidth-0: 0
-$tw-borderWidth-2: 2px
-$tw-borderWidth-4: 4px
-$tw-borderWidth-default: 1px
-
-$tw-colors-transparent: transparent
-$tw-colors-black: #000
-$tw-colors-white: #fff
-$tw-colors-gray-100: #f7fafc
-$tw-colors-gray-200: #edf2f7
-$tw-colors-gray-300: #e2e8f0
-$tw-colors-gray-400: #cbd5e0
-$tw-colors-gray-500: #a0aec0
-$tw-colors-gray-600: #718096
-$tw-colors-gray-700: #4a5568
-$tw-colors-gray-800: #2d3748
-$tw-colors-gray-900: #1a202c
-$tw-colors-red-100: #fff5f5
-$tw-colors-red-200: #fed7d7
-$tw-colors-red-300: #feb2b2
-$tw-colors-red-400: #fc8181
-$tw-colors-red-500: #f56565
-$tw-colors-red-600: #e53e3e
-$tw-colors-red-700: #c53030
-$tw-colors-red-800: #9b2c2c
-$tw-colors-red-900: #742a2a
-$tw-colors-orange-100: #fffaf0
-$tw-colors-orange-200: #feebc8
-$tw-colors-orange-300: #fbd38d
-$tw-colors-orange-400: #f6ad55
-$tw-colors-orange-500: #ed8936
-$tw-colors-orange-600: #dd6b20
-$tw-colors-orange-700: #c05621
-$tw-colors-orange-800: #9c4221
-$tw-colors-orange-900: #7b341e
-$tw-colors-yellow-100: #fffff0
-$tw-colors-yellow-200: #fefcbf
-$tw-colors-yellow-300: #faf089
-$tw-colors-yellow-400: #f6e05e
-$tw-colors-yellow-500: #ecc94b
-$tw-colors-yellow-600: #d69e2e
-$tw-colors-yellow-700: #b7791f
-$tw-colors-yellow-800: #975a16
-$tw-colors-yellow-900: #744210
-$tw-colors-green-100: #f0fff4
-$tw-colors-green-200: #c6f6d5
-$tw-colors-green-300: #9ae6b4
-$tw-colors-green-400: #68d391
-$tw-colors-green-500: #48bb78
-$tw-colors-green-600: #38a169
-$tw-colors-green-700: #2f855a
-$tw-colors-green-800: #276749
-$tw-colors-green-900: #22543d
-$tw-colors-teal-100: #e6fffa
-$tw-colors-teal-200: #b2f5ea
-$tw-colors-teal-300: #81e6d9
-$tw-colors-teal-400: #4fd1c5
-$tw-colors-teal-500: #38b2ac
-$tw-colors-teal-600: #319795
-$tw-colors-teal-700: #2c7a7b
-$tw-colors-teal-800: #285e61
-$tw-colors-teal-900: #234e52
-$tw-colors-blue-100: #ebf8ff
-$tw-colors-blue-200: #bee3f8
-$tw-colors-blue-300: #90cdf4
-$tw-colors-blue-400: #63b3ed
-$tw-colors-blue-500: #4299e1
-$tw-colors-blue-600: #3182ce
-$tw-colors-blue-700: #2b6cb0
-$tw-colors-blue-800: #2c5282
-$tw-colors-blue-900: #2a4365
-$tw-colors-indigo-100: #ebf4ff
-$tw-colors-indigo-200: #c3dafe
-$tw-colors-indigo-300: #a3bffa
-$tw-colors-indigo-400: #7f9cf5
-$tw-colors-indigo-500: #667eea
-$tw-colors-indigo-600: #5a67d8
-$tw-colors-indigo-700: #4c51bf
-$tw-colors-indigo-800: #434190
-$tw-colors-indigo-900: #3c366b
-$tw-colors-purple-100: #faf5ff
-$tw-colors-purple-200: #e9d8fd
-$tw-colors-purple-300: #d6bcfa
-$tw-colors-purple-400: #b794f4
-$tw-colors-purple-500: #9f7aea
-$tw-colors-purple-600: #805ad5
-$tw-colors-purple-700: #6b46c1
-$tw-colors-purple-800: #553c9a
-$tw-colors-purple-900: #44337a
-$tw-colors-pink-100: #fff5f7
-$tw-colors-pink-200: #fed7e2
-$tw-colors-pink-300: #fbb6ce
-$tw-colors-pink-400: #f687b3
-$tw-colors-pink-500: #ed64a6
-$tw-colors-pink-600: #d53f8c
-$tw-colors-pink-700: #b83280
-$tw-colors-pink-800: #97266d
-$tw-colors-pink-900: #702459
-$tw-colors-cyan: #9cdbff
-
-$tw-spacing-0: 0
-$tw-spacing-1: 0.25rem
-$tw-spacing-2: 0.5rem
-$tw-spacing-3: 0.75rem
-$tw-spacing-4: 1rem
-$tw-spacing-5: 1.25rem
-$tw-spacing-6: 1.5rem
-$tw-spacing-8: 2rem
-$tw-spacing-10: 2.5rem
-$tw-spacing-12: 3rem
-$tw-spacing-16: 4rem
-$tw-spacing-20: 5rem
-$tw-spacing-24: 6rem
-$tw-spacing-32: 8rem
-$tw-spacing-40: 10rem
-$tw-spacing-48: 12rem
-$tw-spacing-56: 14rem
-$tw-spacing-64: 16rem
-$tw-spacing-96: 24rem
-$tw-spacing-128: 32rem
-$tw-spacing-px: 1px
-
-$tw-backgroundColor-transparent: transparent
-$tw-backgroundColor-black: #000
-$tw-backgroundColor-white: #fff
-$tw-backgroundColor-gray-100: #f7fafc
-$tw-backgroundColor-gray-200: #edf2f7
-$tw-backgroundColor-gray-300: #e2e8f0
-$tw-backgroundColor-gray-400: #cbd5e0
-$tw-backgroundColor-gray-500: #a0aec0
-$tw-backgroundColor-gray-600: #718096
-$tw-backgroundColor-gray-700: #4a5568
-$tw-backgroundColor-gray-800: #2d3748
-$tw-backgroundColor-gray-900: #1a202c
-$tw-backgroundColor-red-100: #fff5f5
-$tw-backgroundColor-red-200: #fed7d7
-$tw-backgroundColor-red-300: #feb2b2
-$tw-backgroundColor-red-400: #fc8181
-$tw-backgroundColor-red-500: #f56565
-$tw-backgroundColor-red-600: #e53e3e
-$tw-backgroundColor-red-700: #c53030
-$tw-backgroundColor-red-800: #9b2c2c
-$tw-backgroundColor-red-900: #742a2a
-$tw-backgroundColor-orange-100: #fffaf0
-$tw-backgroundColor-orange-200: #feebc8
-$tw-backgroundColor-orange-300: #fbd38d
-$tw-backgroundColor-orange-400: #f6ad55
-$tw-backgroundColor-orange-500: #ed8936
-$tw-backgroundColor-orange-600: #dd6b20
-$tw-backgroundColor-orange-700: #c05621
-$tw-backgroundColor-orange-800: #9c4221
-$tw-backgroundColor-orange-900: #7b341e
-$tw-backgroundColor-yellow-100: #fffff0
-$tw-backgroundColor-yellow-200: #fefcbf
-$tw-backgroundColor-yellow-300: #faf089
-$tw-backgroundColor-yellow-400: #f6e05e
-$tw-backgroundColor-yellow-500: #ecc94b
-$tw-backgroundColor-yellow-600: #d69e2e
-$tw-backgroundColor-yellow-700: #b7791f
-$tw-backgroundColor-yellow-800: #975a16
-$tw-backgroundColor-yellow-900: #744210
-$tw-backgroundColor-green-100: #f0fff4
-$tw-backgroundColor-green-200: #c6f6d5
-$tw-backgroundColor-green-300: #9ae6b4
-$tw-backgroundColor-green-400: #68d391
-$tw-backgroundColor-green-500: #48bb78
-$tw-backgroundColor-green-600: #38a169
-$tw-backgroundColor-green-700: #2f855a
-$tw-backgroundColor-green-800: #276749
-$tw-backgroundColor-green-900: #22543d
-$tw-backgroundColor-teal-100: #e6fffa
-$tw-backgroundColor-teal-200: #b2f5ea
-$tw-backgroundColor-teal-300: #81e6d9
-$tw-backgroundColor-teal-400: #4fd1c5
-$tw-backgroundColor-teal-500: #38b2ac
-$tw-backgroundColor-teal-600: #319795
-$tw-backgroundColor-teal-700: #2c7a7b
-$tw-backgroundColor-teal-800: #285e61
-$tw-backgroundColor-teal-900: #234e52
-$tw-backgroundColor-blue-100: #ebf8ff
-$tw-backgroundColor-blue-200: #bee3f8
-$tw-backgroundColor-blue-300: #90cdf4
-$tw-backgroundColor-blue-400: #63b3ed
-$tw-backgroundColor-blue-500: #4299e1
-$tw-backgroundColor-blue-600: #3182ce
-$tw-backgroundColor-blue-700: #2b6cb0
-$tw-backgroundColor-blue-800: #2c5282
-$tw-backgroundColor-blue-900: #2a4365
-$tw-backgroundColor-indigo-100: #ebf4ff
-$tw-backgroundColor-indigo-200: #c3dafe
-$tw-backgroundColor-indigo-300: #a3bffa
-$tw-backgroundColor-indigo-400: #7f9cf5
-$tw-backgroundColor-indigo-500: #667eea
-$tw-backgroundColor-indigo-600: #5a67d8
-$tw-backgroundColor-indigo-700: #4c51bf
-$tw-backgroundColor-indigo-800: #434190
-$tw-backgroundColor-indigo-900: #3c366b
-$tw-backgroundColor-purple-100: #faf5ff
-$tw-backgroundColor-purple-200: #e9d8fd
-$tw-backgroundColor-purple-300: #d6bcfa
-$tw-backgroundColor-purple-400: #b794f4
-$tw-backgroundColor-purple-500: #9f7aea
-$tw-backgroundColor-purple-600: #805ad5
-$tw-backgroundColor-purple-700: #6b46c1
-$tw-backgroundColor-purple-800: #553c9a
-$tw-backgroundColor-purple-900: #44337a
-$tw-backgroundColor-pink-100: #fff5f7
-$tw-backgroundColor-pink-200: #fed7e2
-$tw-backgroundColor-pink-300: #fbb6ce
-$tw-backgroundColor-pink-400: #f687b3
-$tw-backgroundColor-pink-500: #ed64a6
-$tw-backgroundColor-pink-600: #d53f8c
-$tw-backgroundColor-pink-700: #b83280
-$tw-backgroundColor-pink-800: #97266d
-$tw-backgroundColor-pink-900: #702459
-$tw-backgroundColor-cyan: #9cdbff
-
-$tw-backgroundPosition-bottom: bottom
-$tw-backgroundPosition-center: center
-$tw-backgroundPosition-left: left
-$tw-backgroundPosition-left-bottom: left bottom
-$tw-backgroundPosition-left-top: left top
-$tw-backgroundPosition-right: right
-$tw-backgroundPosition-right-bottom: right bottom
-$tw-backgroundPosition-right-top: right top
-$tw-backgroundPosition-top: top
-
-$tw-backgroundSize-auto: auto
-$tw-backgroundSize-cover: cover
-$tw-backgroundSize-contain: contain
-
-$tw-borderColor-transparent: transparent
-$tw-borderColor-black: #000
-$tw-borderColor-white: #fff
-$tw-borderColor-gray-100: #f7fafc
-$tw-borderColor-gray-200: #edf2f7
-$tw-borderColor-gray-300: #e2e8f0
-$tw-borderColor-gray-400: #cbd5e0
-$tw-borderColor-gray-500: #a0aec0
-$tw-borderColor-gray-600: #718096
-$tw-borderColor-gray-700: #4a5568
-$tw-borderColor-gray-800: #2d3748
-$tw-borderColor-gray-900: #1a202c
-$tw-borderColor-red-100: #fff5f5
-$tw-borderColor-red-200: #fed7d7
-$tw-borderColor-red-300: #feb2b2
-$tw-borderColor-red-400: #fc8181
-$tw-borderColor-red-500: #f56565
-$tw-borderColor-red-600: #e53e3e
-$tw-borderColor-red-700: #c53030
-$tw-borderColor-red-800: #9b2c2c
-$tw-borderColor-red-900: #742a2a
-$tw-borderColor-orange-100: #fffaf0
-$tw-borderColor-orange-200: #feebc8
-$tw-borderColor-orange-300: #fbd38d
-$tw-borderColor-orange-400: #f6ad55
-$tw-borderColor-orange-500: #ed8936
-$tw-borderColor-orange-600: #dd6b20
-$tw-borderColor-orange-700: #c05621
-$tw-borderColor-orange-800: #9c4221
-$tw-borderColor-orange-900: #7b341e
-$tw-borderColor-yellow-100: #fffff0
-$tw-borderColor-yellow-200: #fefcbf
-$tw-borderColor-yellow-300: #faf089
-$tw-borderColor-yellow-400: #f6e05e
-$tw-borderColor-yellow-500: #ecc94b
-$tw-borderColor-yellow-600: #d69e2e
-$tw-borderColor-yellow-700: #b7791f
-$tw-borderColor-yellow-800: #975a16
-$tw-borderColor-yellow-900: #744210
-$tw-borderColor-green-100: #f0fff4
-$tw-borderColor-green-200: #c6f6d5
-$tw-borderColor-green-300: #9ae6b4
-$tw-borderColor-green-400: #68d391
-$tw-borderColor-green-500: #48bb78
-$tw-borderColor-green-600: #38a169
-$tw-borderColor-green-700: #2f855a
-$tw-borderColor-green-800: #276749
-$tw-borderColor-green-900: #22543d
-$tw-borderColor-teal-100: #e6fffa
-$tw-borderColor-teal-200: #b2f5ea
-$tw-borderColor-teal-300: #81e6d9
-$tw-borderColor-teal-400: #4fd1c5
-$tw-borderColor-teal-500: #38b2ac
-$tw-borderColor-teal-600: #319795
-$tw-borderColor-teal-700: #2c7a7b
-$tw-borderColor-teal-800: #285e61
-$tw-borderColor-teal-900: #234e52
-$tw-borderColor-blue-100: #ebf8ff
-$tw-borderColor-blue-200: #bee3f8
-$tw-borderColor-blue-300: #90cdf4
-$tw-borderColor-blue-400: #63b3ed
-$tw-borderColor-blue-500: #4299e1
-$tw-borderColor-blue-600: #3182ce
-$tw-borderColor-blue-700: #2b6cb0
-$tw-borderColor-blue-800: #2c5282
-$tw-borderColor-blue-900: #2a4365
-$tw-borderColor-indigo-100: #ebf4ff
-$tw-borderColor-indigo-200: #c3dafe
-$tw-borderColor-indigo-300: #a3bffa
-$tw-borderColor-indigo-400: #7f9cf5
-$tw-borderColor-indigo-500: #667eea
-$tw-borderColor-indigo-600: #5a67d8
-$tw-borderColor-indigo-700: #4c51bf
-$tw-borderColor-indigo-800: #434190
-$tw-borderColor-indigo-900: #3c366b
-$tw-borderColor-purple-100: #faf5ff
-$tw-borderColor-purple-200: #e9d8fd
-$tw-borderColor-purple-300: #d6bcfa
-$tw-borderColor-purple-400: #b794f4
-$tw-borderColor-purple-500: #9f7aea
-$tw-borderColor-purple-600: #805ad5
-$tw-borderColor-purple-700: #6b46c1
-$tw-borderColor-purple-800: #553c9a
-$tw-borderColor-purple-900: #44337a
-$tw-borderColor-pink-100: #fff5f7
-$tw-borderColor-pink-200: #fed7e2
-$tw-borderColor-pink-300: #fbb6ce
-$tw-borderColor-pink-400: #f687b3
-$tw-borderColor-pink-500: #ed64a6
-$tw-borderColor-pink-600: #d53f8c
-$tw-borderColor-pink-700: #b83280
-$tw-borderColor-pink-800: #97266d
-$tw-borderColor-pink-900: #702459
-$tw-borderColor-cyan: #9cdbff
-$tw-borderColor-default: #e2e8f0
-
-$tw-borderRadius-none: 0
-$tw-borderRadius-sm: 0.125rem
-$tw-borderRadius-default: 0.25rem
-$tw-borderRadius-lg: 0.5rem
-$tw-borderRadius-full: 9999px
-
-$tw-boxShadow-default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06))
-$tw-boxShadow-md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06))
-$tw-boxShadow-lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05))
-$tw-boxShadow-xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04))
-$tw-boxShadow-2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25))
-$tw-boxShadow-inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06))
-$tw-boxShadow-outline: (0 0 0 3px rgba(66, 153, 225, 0.5))
-$tw-boxShadow-none: none
-
-
-$tw-cursor-auto: auto
-$tw-cursor-default: default
-$tw-cursor-pointer: pointer
-$tw-cursor-wait: wait
-$tw-cursor-text: text
-$tw-cursor-move: move
-$tw-cursor-not-allowed: not-allowed
-
-$tw-fill-current: currentColor
-
-$tw-flex-1: 1 1 0%
-$tw-flex-auto: 1 1 auto
-$tw-flex-initial: 0 1 auto
-$tw-flex-none: none
-
-$tw-flexGrow-0: 0
-$tw-flexGrow-default: 1
-
-$tw-flexShrink-0: 0
-$tw-flexShrink-default: 1
-
-$tw-fontSize-xs: 0.75rem
-$tw-fontSize-sm: 0.875rem
-$tw-fontSize-base: 1rem
-$tw-fontSize-lg: 1.125rem
-$tw-fontSize-xl: 1.25rem
-$tw-fontSize-2xl: 1.5rem
-$tw-fontSize-3xl: 1.875rem
-$tw-fontSize-4xl: 2.25rem
-$tw-fontSize-5xl: 3rem
-$tw-fontSize-6xl: 4rem
-
-$tw-fontWeight-hairline: 100
-$tw-fontWeight-thin: 200
-$tw-fontWeight-light: 300
-$tw-fontWeight-normal: 400
-$tw-fontWeight-medium: 500
-$tw-fontWeight-semibold: 600
-$tw-fontWeight-bold: 700
-$tw-fontWeight-extrabold: 800
-$tw-fontWeight-black: 900
-
-$tw-height-0: 0
-$tw-height-1: 0.25rem
-$tw-height-2: 0.5rem
-$tw-height-3: 0.75rem
-$tw-height-4: 1rem
-$tw-height-5: 1.25rem
-$tw-height-6: 1.5rem
-$tw-height-8: 2rem
-$tw-height-10: 2.5rem
-$tw-height-12: 3rem
-$tw-height-16: 4rem
-$tw-height-20: 5rem
-$tw-height-24: 6rem
-$tw-height-32: 8rem
-$tw-height-40: 10rem
-$tw-height-48: 12rem
-$tw-height-56: 14rem
-$tw-height-64: 16rem
-$tw-height-96: 24rem
-$tw-height-128: 32rem
-$tw-height-auto: auto
-$tw-height-px: 1px
-$tw-height-full: 100%
-$tw-height-screen: 100vh
-
-$tw-inset-0: 0
-$tw-inset-auto: auto
-
-$tw-letterSpacing-tighter: -0.05em
-$tw-letterSpacing-tight: -0.025em
-$tw-letterSpacing-normal: 0
-$tw-letterSpacing-wide: 0.025em
-$tw-letterSpacing-wider: 0.05em
-$tw-letterSpacing-widest: 0.1em
-
-$tw-lineHeight-none: 1
-$tw-lineHeight-tight: 1.25
-$tw-lineHeight-snug: 1.375
-$tw-lineHeight-normal: 1.5
-$tw-lineHeight-relaxed: 1.625
-$tw-lineHeight-loose: 2
-
-$tw-listStyleType-none: none
-$tw-listStyleType-disc: disc
-$tw-listStyleType-decimal: decimal
-
-$tw-margin-0: 0
-$tw-margin-1: 0.25rem
-$tw-margin-2: 0.5rem
-$tw-margin-3: 0.75rem
-$tw-margin-4: 1rem
-$tw-margin-5: 1.25rem
-$tw-margin-6: 1.5rem
-$tw-margin-8: 2rem
-$tw-margin-10: 2.5rem
-$tw-margin-12: 3rem
-$tw-margin-16: 4rem
-$tw-margin-20: 5rem
-$tw-margin-24: 6rem
-$tw-margin-32: 8rem
-$tw-margin-40: 10rem
-$tw-margin-48: 12rem
-$tw-margin-56: 14rem
-$tw-margin-64: 16rem
-$tw-margin-96: 24rem
-$tw-margin-128: 32rem
-$tw-margin-auto: auto
-$tw-margin-px: 1px
-$tw-margin--1: -0.25rem
-$tw-margin--2: -0.5rem
-$tw-margin--3: -0.75rem
-$tw-margin--4: -1rem
-$tw-margin--5: -1.25rem
-$tw-margin--6: -1.5rem
-$tw-margin--8: -2rem
-$tw-margin--10: -2.5rem
-$tw-margin--12: -3rem
-$tw-margin--16: -4rem
-$tw-margin--20: -5rem
-$tw-margin--24: -6rem
-$tw-margin--32: -8rem
-$tw-margin--40: -10rem
-$tw-margin--48: -12rem
-$tw-margin--56: -14rem
-$tw-margin--64: -16rem
-$tw-margin--96: -24rem
-$tw-margin--128: -32rem
-$tw-margin--px: -1px
-
-$tw-maxHeight-full: 100%
-$tw-maxHeight-screen: 100vh
-
-$tw-maxWidth-xs: 20rem
-$tw-maxWidth-sm: 24rem
-$tw-maxWidth-md: 28rem
-$tw-maxWidth-lg: 32rem
-$tw-maxWidth-xl: 36rem
-$tw-maxWidth-2xl: 42rem
-$tw-maxWidth-3xl: 48rem
-$tw-maxWidth-4xl: 56rem
-$tw-maxWidth-5xl: 64rem
-$tw-maxWidth-6xl: 72rem
-$tw-maxWidth-full: 100%
-
-$tw-minHeight-0: 0
-$tw-minHeight-full: 100%
-$tw-minHeight-screen: 100vh
-
-$tw-minWidth-0: 0
-$tw-minWidth-full: 100%
-
-$tw-objectPosition-bottom: bottom
-$tw-objectPosition-center: center
-$tw-objectPosition-left: left
-$tw-objectPosition-left-bottom: left bottom
-$tw-objectPosition-left-top: left top
-$tw-objectPosition-right: right
-$tw-objectPosition-right-bottom: right bottom
-$tw-objectPosition-right-top: right top
-$tw-objectPosition-top: top
-
-$tw-opacity-0: 0
-$tw-opacity-25: 0.25
-$tw-opacity-50: 0.5
-$tw-opacity-75: 0.75
-$tw-opacity-100: 1
-
-$tw-order-1: 1
-$tw-order-2: 2
-$tw-order-3: 3
-$tw-order-4: 4
-$tw-order-5: 5
-$tw-order-6: 6
-$tw-order-7: 7
-$tw-order-8: 8
-$tw-order-9: 9
-$tw-order-10: 10
-$tw-order-11: 11
-$tw-order-12: 12
-$tw-order-first: -9999
-$tw-order-last: 9999
-$tw-order-none: 0
-
-$tw-padding-0: 0
-$tw-padding-1: 0.25rem
-$tw-padding-2: 0.5rem
-$tw-padding-3: 0.75rem
-$tw-padding-4: 1rem
-$tw-padding-5: 1.25rem
-$tw-padding-6: 1.5rem
-$tw-padding-8: 2rem
-$tw-padding-10: 2.5rem
-$tw-padding-12: 3rem
-$tw-padding-16: 4rem
-$tw-padding-20: 5rem
-$tw-padding-24: 6rem
-$tw-padding-32: 8rem
-$tw-padding-40: 10rem
-$tw-padding-48: 12rem
-$tw-padding-56: 14rem
-$tw-padding-64: 16rem
-$tw-padding-96: 24rem
-$tw-padding-128: 32rem
-$tw-padding-px: 1px
-
-$tw-placeholderColor-transparent: transparent
-$tw-placeholderColor-black: #000
-$tw-placeholderColor-white: #fff
-$tw-placeholderColor-gray-100: #f7fafc
-$tw-placeholderColor-gray-200: #edf2f7
-$tw-placeholderColor-gray-300: #e2e8f0
-$tw-placeholderColor-gray-400: #cbd5e0
-$tw-placeholderColor-gray-500: #a0aec0
-$tw-placeholderColor-gray-600: #718096
-$tw-placeholderColor-gray-700: #4a5568
-$tw-placeholderColor-gray-800: #2d3748
-$tw-placeholderColor-gray-900: #1a202c
-$tw-placeholderColor-red-100: #fff5f5
-$tw-placeholderColor-red-200: #fed7d7
-$tw-placeholderColor-red-300: #feb2b2
-$tw-placeholderColor-red-400: #fc8181
-$tw-placeholderColor-red-500: #f56565
-$tw-placeholderColor-red-600: #e53e3e
-$tw-placeholderColor-red-700: #c53030
-$tw-placeholderColor-red-800: #9b2c2c
-$tw-placeholderColor-red-900: #742a2a
-$tw-placeholderColor-orange-100: #fffaf0
-$tw-placeholderColor-orange-200: #feebc8
-$tw-placeholderColor-orange-300: #fbd38d
-$tw-placeholderColor-orange-400: #f6ad55
-$tw-placeholderColor-orange-500: #ed8936
-$tw-placeholderColor-orange-600: #dd6b20
-$tw-placeholderColor-orange-700: #c05621
-$tw-placeholderColor-orange-800: #9c4221
-$tw-placeholderColor-orange-900: #7b341e
-$tw-placeholderColor-yellow-100: #fffff0
-$tw-placeholderColor-yellow-200: #fefcbf
-$tw-placeholderColor-yellow-300: #faf089
-$tw-placeholderColor-yellow-400: #f6e05e
-$tw-placeholderColor-yellow-500: #ecc94b
-$tw-placeholderColor-yellow-600: #d69e2e
-$tw-placeholderColor-yellow-700: #b7791f
-$tw-placeholderColor-yellow-800: #975a16
-$tw-placeholderColor-yellow-900: #744210
-$tw-placeholderColor-green-100: #f0fff4
-$tw-placeholderColor-green-200: #c6f6d5
-$tw-placeholderColor-green-300: #9ae6b4
-$tw-placeholderColor-green-400: #68d391
-$tw-placeholderColor-green-500: #48bb78
-$tw-placeholderColor-green-600: #38a169
-$tw-placeholderColor-green-700: #2f855a
-$tw-placeholderColor-green-800: #276749
-$tw-placeholderColor-green-900: #22543d
-$tw-placeholderColor-teal-100: #e6fffa
-$tw-placeholderColor-teal-200: #b2f5ea
-$tw-placeholderColor-teal-300: #81e6d9
-$tw-placeholderColor-teal-400: #4fd1c5
-$tw-placeholderColor-teal-500: #38b2ac
-$tw-placeholderColor-teal-600: #319795
-$tw-placeholderColor-teal-700: #2c7a7b
-$tw-placeholderColor-teal-800: #285e61
-$tw-placeholderColor-teal-900: #234e52
-$tw-placeholderColor-blue-100: #ebf8ff
-$tw-placeholderColor-blue-200: #bee3f8
-$tw-placeholderColor-blue-300: #90cdf4
-$tw-placeholderColor-blue-400: #63b3ed
-$tw-placeholderColor-blue-500: #4299e1
-$tw-placeholderColor-blue-600: #3182ce
-$tw-placeholderColor-blue-700: #2b6cb0
-$tw-placeholderColor-blue-800: #2c5282
-$tw-placeholderColor-blue-900: #2a4365
-$tw-placeholderColor-indigo-100: #ebf4ff
-$tw-placeholderColor-indigo-200: #c3dafe
-$tw-placeholderColor-indigo-300: #a3bffa
-$tw-placeholderColor-indigo-400: #7f9cf5
-$tw-placeholderColor-indigo-500: #667eea
-$tw-placeholderColor-indigo-600: #5a67d8
-$tw-placeholderColor-indigo-700: #4c51bf
-$tw-placeholderColor-indigo-800: #434190
-$tw-placeholderColor-indigo-900: #3c366b
-$tw-placeholderColor-purple-100: #faf5ff
-$tw-placeholderColor-purple-200: #e9d8fd
-$tw-placeholderColor-purple-300: #d6bcfa
-$tw-placeholderColor-purple-400: #b794f4
-$tw-placeholderColor-purple-500: #9f7aea
-$tw-placeholderColor-purple-600: #805ad5
-$tw-placeholderColor-purple-700: #6b46c1
-$tw-placeholderColor-purple-800: #553c9a
-$tw-placeholderColor-purple-900: #44337a
-$tw-placeholderColor-pink-100: #fff5f7
-$tw-placeholderColor-pink-200: #fed7e2
-$tw-placeholderColor-pink-300: #fbb6ce
-$tw-placeholderColor-pink-400: #f687b3
-$tw-placeholderColor-pink-500: #ed64a6
-$tw-placeholderColor-pink-600: #d53f8c
-$tw-placeholderColor-pink-700: #b83280
-$tw-placeholderColor-pink-800: #97266d
-$tw-placeholderColor-pink-900: #702459
-$tw-placeholderColor-cyan: #9cdbff
-
-$tw-stroke-current: currentColor
-
-$tw-textColor-transparent: transparent
-$tw-textColor-black: #000
-$tw-textColor-white: #fff
-$tw-textColor-gray-100: #f7fafc
-$tw-textColor-gray-200: #edf2f7
-$tw-textColor-gray-300: #e2e8f0
-$tw-textColor-gray-400: #cbd5e0
-$tw-textColor-gray-500: #a0aec0
-$tw-textColor-gray-600: #718096
-$tw-textColor-gray-700: #4a5568
-$tw-textColor-gray-800: #2d3748
-$tw-textColor-gray-900: #1a202c
-$tw-textColor-red-100: #fff5f5
-$tw-textColor-red-200: #fed7d7
-$tw-textColor-red-300: #feb2b2
-$tw-textColor-red-400: #fc8181
-$tw-textColor-red-500: #f56565
-$tw-textColor-red-600: #e53e3e
-$tw-textColor-red-700: #c53030
-$tw-textColor-red-800: #9b2c2c
-$tw-textColor-red-900: #742a2a
-$tw-textColor-orange-100: #fffaf0
-$tw-textColor-orange-200: #feebc8
-$tw-textColor-orange-300: #fbd38d
-$tw-textColor-orange-400: #f6ad55
-$tw-textColor-orange-500: #ed8936
-$tw-textColor-orange-600: #dd6b20
-$tw-textColor-orange-700: #c05621
-$tw-textColor-orange-800: #9c4221
-$tw-textColor-orange-900: #7b341e
-$tw-textColor-yellow-100: #fffff0
-$tw-textColor-yellow-200: #fefcbf
-$tw-textColor-yellow-300: #faf089
-$tw-textColor-yellow-400: #f6e05e
-$tw-textColor-yellow-500: #ecc94b
-$tw-textColor-yellow-600: #d69e2e
-$tw-textColor-yellow-700: #b7791f
-$tw-textColor-yellow-800: #975a16
-$tw-textColor-yellow-900: #744210
-$tw-textColor-green-100: #f0fff4
-$tw-textColor-green-200: #c6f6d5
-$tw-textColor-green-300: #9ae6b4
-$tw-textColor-green-400: #68d391
-$tw-textColor-green-500: #48bb78
-$tw-textColor-green-600: #38a169
-$tw-textColor-green-700: #2f855a
-$tw-textColor-green-800: #276749
-$tw-textColor-green-900: #22543d
-$tw-textColor-teal-100: #e6fffa
-$tw-textColor-teal-200: #b2f5ea
-$tw-textColor-teal-300: #81e6d9
-$tw-textColor-teal-400: #4fd1c5
-$tw-textColor-teal-500: #38b2ac
-$tw-textColor-teal-600: #319795
-$tw-textColor-teal-700: #2c7a7b
-$tw-textColor-teal-800: #285e61
-$tw-textColor-teal-900: #234e52
-$tw-textColor-blue-100: #ebf8ff
-$tw-textColor-blue-200: #bee3f8
-$tw-textColor-blue-300: #90cdf4
-$tw-textColor-blue-400: #63b3ed
-$tw-textColor-blue-500: #4299e1
-$tw-textColor-blue-600: #3182ce
-$tw-textColor-blue-700: #2b6cb0
-$tw-textColor-blue-800: #2c5282
-$tw-textColor-blue-900: #2a4365
-$tw-textColor-indigo-100: #ebf4ff
-$tw-textColor-indigo-200: #c3dafe
-$tw-textColor-indigo-300: #a3bffa
-$tw-textColor-indigo-400: #7f9cf5
-$tw-textColor-indigo-500: #667eea
-$tw-textColor-indigo-600: #5a67d8
-$tw-textColor-indigo-700: #4c51bf
-$tw-textColor-indigo-800: #434190
-$tw-textColor-indigo-900: #3c366b
-$tw-textColor-purple-100: #faf5ff
-$tw-textColor-purple-200: #e9d8fd
-$tw-textColor-purple-300: #d6bcfa
-$tw-textColor-purple-400: #b794f4
-$tw-textColor-purple-500: #9f7aea
-$tw-textColor-purple-600: #805ad5
-$tw-textColor-purple-700: #6b46c1
-$tw-textColor-purple-800: #553c9a
-$tw-textColor-purple-900: #44337a
-$tw-textColor-pink-100: #fff5f7
-$tw-textColor-pink-200: #fed7e2
-$tw-textColor-pink-300: #fbb6ce
-$tw-textColor-pink-400: #f687b3
-$tw-textColor-pink-500: #ed64a6
-$tw-textColor-pink-600: #d53f8c
-$tw-textColor-pink-700: #b83280
-$tw-textColor-pink-800: #97266d
-$tw-textColor-pink-900: #702459
-$tw-textColor-cyan: #9cdbff
-
-$tw-width-0: 0
-$tw-width-1: 0.25rem
-$tw-width-2: 0.5rem
-$tw-width-3: 0.75rem
-$tw-width-4: 1rem
-$tw-width-5: 1.25rem
-$tw-width-6: 1.5rem
-$tw-width-8: 2rem
-$tw-width-10: 2.5rem
-$tw-width-12: 3rem
-$tw-width-16: 4rem
-$tw-width-20: 5rem
-$tw-width-24: 6rem
-$tw-width-32: 8rem
-$tw-width-40: 10rem
-$tw-width-48: 12rem
-$tw-width-56: 14rem
-$tw-width-64: 16rem
-$tw-width-96: 24rem
-$tw-width-128: 32rem
-$tw-width-auto: auto
-$tw-width-px: 1px
-$tw-width-1\\\\/2: 50%
-$tw-width-1\\\\/3: 33.333333%
-$tw-width-2\\\\/3: 66.666667%
-$tw-width-1\\\\/4: 25%
-$tw-width-2\\\\/4: 50%
-$tw-width-3\\\\/4: 75%
-$tw-width-1\\\\/5: 20%
-$tw-width-2\\\\/5: 40%
-$tw-width-3\\\\/5: 60%
-$tw-width-4\\\\/5: 80%
-$tw-width-1\\\\/6: 16.666667%
-$tw-width-2\\\\/6: 33.333333%
-$tw-width-3\\\\/6: 50%
-$tw-width-4\\\\/6: 66.666667%
-$tw-width-5\\\\/6: 83.333333%
-$tw-width-1\\\\/12: 8.333333%
-$tw-width-2\\\\/12: 16.666667%
-$tw-width-3\\\\/12: 25%
-$tw-width-4\\\\/12: 33.333333%
-$tw-width-5\\\\/12: 41.666667%
-$tw-width-6\\\\/12: 50%
-$tw-width-7\\\\/12: 58.333333%
-$tw-width-8\\\\/12: 66.666667%
-$tw-width-9\\\\/12: 75%
-$tw-width-10\\\\/12: 83.333333%
-$tw-width-11\\\\/12: 91.666667%
-$tw-width-full: 100%
-$tw-width-screen: 100vw
-
-$tw-zIndex-0: 0
-$tw-zIndex-10: 10
-$tw-zIndex-20: 20
-$tw-zIndex-30: 30
-$tw-zIndex-40: 40
-$tw-zIndex-50: 50
-$tw-zIndex-auto: auto
-"
-`;
-
-exports[`Sass converter Converts to nested map 1`] = `
-"
-$screens: (sm: 640px, md: 768px, lg: 1024px, xl: 1280px,)
-
-$fontFamily: (display: (Gilroy,sans-serif), body: (Graphik,sans-serif),)
-
-$borderWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
-
-$colors: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$spacing: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
-
-$backgroundColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$backgroundPosition: (bottom: bottom, center: center, left: left, left-bottom: left bottom, left-top: left top, right: right, right-bottom: right bottom, right-top: right top, top: top,)
-
-$backgroundSize: (auto: auto, cover: cover, contain: contain,)
-
-$borderColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff, default: #e2e8f0,)
-
-$borderRadius: (none: 0, sm: 0.125rem, default: 0.25rem, lg: 0.5rem, full: 9999px,)
-
-$boxShadow: (default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)), md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)), lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)), xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)), 2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)), inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)), outline: (0 0 0 3px rgba(66, 153, 225, 0.5)), none: none,)
-
-$container: ()
-
-$cursor: (auto: auto, default: default, pointer: pointer, wait: wait, text: text, move: move, not-allowed: not-allowed,)
-
-$fill: (current: currentColor,)
-
-$flex: (1: 1 1 0%, auto: 1 1 auto, initial: 0 1 auto, none: none,)
-
-$flexGrow: (0: 0, default: 1,)
-
-$flexShrink: (0: 0, default: 1,)
-
-$fontSize: (xs: 0.75rem, sm: 0.875rem, base: 1rem, lg: 1.125rem, xl: 1.25rem, 2xl: 1.5rem, 3xl: 1.875rem, 4xl: 2.25rem, 5xl: 3rem, 6xl: 4rem,)
-
-$fontWeight: (hairline: 100, thin: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700, extrabold: 800, black: 900,)
-
-$height: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, full: 100%, screen: 100vh,)
-
-$inset: (0: 0, auto: auto,)
-
-$letterSpacing: (tighter: -0.05em, tight: -0.025em, normal: 0, wide: 0.025em, wider: 0.05em, widest: 0.1em,)
-
-$lineHeight: (none: 1, tight: 1.25, snug: 1.375, normal: 1.5, relaxed: 1.625, loose: 2,)
-
-$listStyleType: (none: none, disc: disc, decimal: decimal,)
-
-$margin: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, -1: -0.25rem, -2: -0.5rem, -3: -0.75rem, -4: -1rem, -5: -1.25rem, -6: -1.5rem, -8: -2rem, -10: -2.5rem, -12: -3rem, -16: -4rem, -20: -5rem, -24: -6rem, -32: -8rem, -40: -10rem, -48: -12rem, -56: -14rem, -64: -16rem, -96: -24rem, -128: -32rem, -px: -1px,)
-
-$maxHeight: (full: 100%, screen: 100vh,)
-
-$maxWidth: (xs: 20rem, sm: 24rem, md: 28rem, lg: 32rem, xl: 36rem, 2xl: 42rem, 3xl: 48rem, 4xl: 56rem, 5xl: 64rem, 6xl: 72rem, full: 100%,)
-
-$minHeight: (0: 0, full: 100%, screen: 100vh,)
-
-$minWidth: (0: 0, full: 100%,)
-
-$objectPosition: (bottom: bottom, center: center, left: left, left-bottom: left bottom, left-top: left top, right: right, right-bottom: right bottom, right-top: right top, top: top,)
-
-$opacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
-
-$order: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, first: -9999, last: 9999, none: 0,)
-
-$padding: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
-
-$placeholderColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$stroke: (current: currentColor,)
-
-$textColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$width: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, 1/2: 50%, 1/3: 33.333333%, 2/3: 66.666667%, 1/4: 25%, 2/4: 50%, 3/4: 75%, 1/5: 20%, 2/5: 40%, 3/5: 60%, 4/5: 80%, 1/6: 16.666667%, 2/6: 33.333333%, 3/6: 50%, 4/6: 66.666667%, 5/6: 83.333333%, 1/12: 8.333333%, 2/12: 16.666667%, 3/12: 25%, 4/12: 33.333333%, 5/12: 41.666667%, 6/12: 50%, 7/12: 58.333333%, 8/12: 66.666667%, 9/12: 75%, 10/12: 83.333333%, 11/12: 91.666667%, full: 100%, screen: 100vw,)
-
-$zIndex: (0: 0, 10: 10, 20: 20, 30: 30, 40: 40, 50: 50, auto: auto,)
-"
-`;
-
-exports[`Sass converter Converts to nested map with prefix 1`] = `
-"
-$tw-screens: (sm: 640px, md: 768px, lg: 1024px, xl: 1280px,)
-
-$tw-fontFamily: (display: (Gilroy,sans-serif), body: (Graphik,sans-serif),)
-
-$tw-borderWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
-
-$tw-colors: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$tw-spacing: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
-
-$tw-backgroundColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$tw-backgroundPosition: (bottom: bottom, center: center, left: left, left-bottom: left bottom, left-top: left top, right: right, right-bottom: right bottom, right-top: right top, top: top,)
-
-$tw-backgroundSize: (auto: auto, cover: cover, contain: contain,)
-
-$tw-borderColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff, default: #e2e8f0,)
-
-$tw-borderRadius: (none: 0, sm: 0.125rem, default: 0.25rem, lg: 0.5rem, full: 9999px,)
-
-$tw-boxShadow: (default: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)), md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)), lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)), xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)), 2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)), inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)), outline: (0 0 0 3px rgba(66, 153, 225, 0.5)), none: none,)
-
-$tw-container: ()
-
-$tw-cursor: (auto: auto, default: default, pointer: pointer, wait: wait, text: text, move: move, not-allowed: not-allowed,)
-
-$tw-fill: (current: currentColor,)
-
-$tw-flex: (1: 1 1 0%, auto: 1 1 auto, initial: 0 1 auto, none: none,)
-
-$tw-flexGrow: (0: 0, default: 1,)
-
-$tw-flexShrink: (0: 0, default: 1,)
-
-$tw-fontSize: (xs: 0.75rem, sm: 0.875rem, base: 1rem, lg: 1.125rem, xl: 1.25rem, 2xl: 1.5rem, 3xl: 1.875rem, 4xl: 2.25rem, 5xl: 3rem, 6xl: 4rem,)
-
-$tw-fontWeight: (hairline: 100, thin: 200, light: 300, normal: 400, medium: 500, semibold: 600, bold: 700, extrabold: 800, black: 900,)
-
-$tw-height: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, full: 100%, screen: 100vh,)
-
-$tw-inset: (0: 0, auto: auto,)
-
-$tw-letterSpacing: (tighter: -0.05em, tight: -0.025em, normal: 0, wide: 0.025em, wider: 0.05em, widest: 0.1em,)
-
-$tw-lineHeight: (none: 1, tight: 1.25, snug: 1.375, normal: 1.5, relaxed: 1.625, loose: 2,)
-
-$tw-listStyleType: (none: none, disc: disc, decimal: decimal,)
-
-$tw-margin: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, -1: -0.25rem, -2: -0.5rem, -3: -0.75rem, -4: -1rem, -5: -1.25rem, -6: -1.5rem, -8: -2rem, -10: -2.5rem, -12: -3rem, -16: -4rem, -20: -5rem, -24: -6rem, -32: -8rem, -40: -10rem, -48: -12rem, -56: -14rem, -64: -16rem, -96: -24rem, -128: -32rem, -px: -1px,)
-
-$tw-maxHeight: (full: 100%, screen: 100vh,)
-
-$tw-maxWidth: (xs: 20rem, sm: 24rem, md: 28rem, lg: 32rem, xl: 36rem, 2xl: 42rem, 3xl: 48rem, 4xl: 56rem, 5xl: 64rem, 6xl: 72rem, full: 100%,)
-
-$tw-minHeight: (0: 0, full: 100%, screen: 100vh,)
-
-$tw-minWidth: (0: 0, full: 100%,)
-
-$tw-objectPosition: (bottom: bottom, center: center, left: left, left-bottom: left bottom, left-top: left top, right: right, right-bottom: right bottom, right-top: right top, top: top,)
-
-$tw-opacity: (0: 0, 25: 0.25, 50: 0.5, 75: 0.75, 100: 1,)
-
-$tw-order: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 9, 10: 10, 11: 11, 12: 12, first: -9999, last: 9999, none: 0,)
-
-$tw-padding: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, px: 1px,)
-
-$tw-placeholderColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$tw-stroke: (current: currentColor,)
-
-$tw-textColor: (transparent: transparent, black: #000, white: #fff, gray-100: #f7fafc, gray-200: #edf2f7, gray-300: #e2e8f0, gray-400: #cbd5e0, gray-500: #a0aec0, gray-600: #718096, gray-700: #4a5568, gray-800: #2d3748, gray-900: #1a202c, red-100: #fff5f5, red-200: #fed7d7, red-300: #feb2b2, red-400: #fc8181, red-500: #f56565, red-600: #e53e3e, red-700: #c53030, red-800: #9b2c2c, red-900: #742a2a, orange-100: #fffaf0, orange-200: #feebc8, orange-300: #fbd38d, orange-400: #f6ad55, orange-500: #ed8936, orange-600: #dd6b20, orange-700: #c05621, orange-800: #9c4221, orange-900: #7b341e, yellow-100: #fffff0, yellow-200: #fefcbf, yellow-300: #faf089, yellow-400: #f6e05e, yellow-500: #ecc94b, yellow-600: #d69e2e, yellow-700: #b7791f, yellow-800: #975a16, yellow-900: #744210, green-100: #f0fff4, green-200: #c6f6d5, green-300: #9ae6b4, green-400: #68d391, green-500: #48bb78, green-600: #38a169, green-700: #2f855a, green-800: #276749, green-900: #22543d, teal-100: #e6fffa, teal-200: #b2f5ea, teal-300: #81e6d9, teal-400: #4fd1c5, teal-500: #38b2ac, teal-600: #319795, teal-700: #2c7a7b, teal-800: #285e61, teal-900: #234e52, blue-100: #ebf8ff, blue-200: #bee3f8, blue-300: #90cdf4, blue-400: #63b3ed, blue-500: #4299e1, blue-600: #3182ce, blue-700: #2b6cb0, blue-800: #2c5282, blue-900: #2a4365, indigo-100: #ebf4ff, indigo-200: #c3dafe, indigo-300: #a3bffa, indigo-400: #7f9cf5, indigo-500: #667eea, indigo-600: #5a67d8, indigo-700: #4c51bf, indigo-800: #434190, indigo-900: #3c366b, purple-100: #faf5ff, purple-200: #e9d8fd, purple-300: #d6bcfa, purple-400: #b794f4, purple-500: #9f7aea, purple-600: #805ad5, purple-700: #6b46c1, purple-800: #553c9a, purple-900: #44337a, pink-100: #fff5f7, pink-200: #fed7e2, pink-300: #fbb6ce, pink-400: #f687b3, pink-500: #ed64a6, pink-600: #d53f8c, pink-700: #b83280, pink-800: #97266d, pink-900: #702459, cyan: #9cdbff,)
-
-$tw-width: (0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 8: 2rem, 10: 2.5rem, 12: 3rem, 16: 4rem, 20: 5rem, 24: 6rem, 32: 8rem, 40: 10rem, 48: 12rem, 56: 14rem, 64: 16rem, 96: 24rem, 128: 32rem, auto: auto, px: 1px, 1/2: 50%, 1/3: 33.333333%, 2/3: 66.666667%, 1/4: 25%, 2/4: 50%, 3/4: 75%, 1/5: 20%, 2/5: 40%, 3/5: 60%, 4/5: 80%, 1/6: 16.666667%, 2/6: 33.333333%, 3/6: 50%, 4/6: 66.666667%, 5/6: 83.333333%, 1/12: 8.333333%, 2/12: 16.666667%, 3/12: 25%, 4/12: 33.333333%, 5/12: 41.666667%, 6/12: 50%, 7/12: 58.333333%, 8/12: 66.666667%, 9/12: 75%, 10/12: 83.333333%, 11/12: 91.666667%, full: 100%, screen: 100vw,)
-
-$tw-zIndex: (0: 0, 10: 10, 20: 20, 30: 30, 40: 40, 50: 50, auto: auto,)
+$gap-0: 0
+$gap-1: 0.25rem
+$gap-2: 0.5rem
+$gap-3: 0.75rem
+$gap-4: 1rem
+$gap-5: 1.25rem
+$gap-6: 1.5rem
+$gap-8: 2rem
+$gap-10: 2.5rem
+$gap-12: 3rem
+$gap-16: 4rem
+$gap-20: 5rem
+$gap-24: 6rem
+$gap-32: 8rem
+$gap-40: 10rem
+$gap-48: 12rem
+$gap-56: 14rem
+$gap-64: 16rem
+$gap-96: 24rem
+$gap-128: 32rem
+$gap-px: 1px
+
+$gridTemplateColumns-1: (repeat(1, minmax(0, 1fr)))
+$gridTemplateColumns-2: (repeat(2, minmax(0, 1fr)))
+$gridTemplateColumns-3: (repeat(3, minmax(0, 1fr)))
+$gridTemplateColumns-4: (repeat(4, minmax(0, 1fr)))
+$gridTemplateColumns-5: (repeat(5, minmax(0, 1fr)))
+$gridTemplateColumns-6: (repeat(6, minmax(0, 1fr)))
+$gridTemplateColumns-7: (repeat(7, minmax(0, 1fr)))
+$gridTemplateColumns-8: (repeat(8, minmax(0, 1fr)))
+$gridTemplateColumns-9: (repeat(9, minmax(0, 1fr)))
+$gridTemplateColumns-10: (repeat(10, minmax(0, 1fr)))
+$gridTemplateColumns-11: (repeat(11, minmax(0, 1fr)))
+$gridTemplateColumns-12: (repeat(12, minmax(0, 1fr)))
+$gridTemplateColumns-none: none
+
+$gridColumn-auto: auto
+$gridColumn-span-1: span 1 / span 1
+$gridColumn-span-2: span 2 / span 2
+$gridColumn-span-3: span 3 / span 3
+$gridColumn-span-4: span 4 / span 4
+$gridColumn-span-5: span 5 / span 5
+$gridColumn-span-6: span 6 / span 6
+$gridColumn-span-7: span 7 / span 7
+$gridColumn-span-8: span 8 / span 8
+$gridColumn-span-9: span 9 / span 9
+$gridColumn-span-10: span 10 / span 10
+$gridColumn-span-11: span 11 / span 11
+$gridColumn-span-12: span 12 / span 12
+
+$gridColumnStart-1: 1
+$gridColumnStart-2: 2
+$gridColumnStart-3: 3
+$gridColumnStart-4: 4
+$gridColumnStart-5: 5
+$gridColumnStart-6: 6
+$gridColumnStart-7: 7
+$gridColumnStart-8: 8
+$gridColumnStart-9: 9
+$gridColumnStart-10: 10
+$gridColumnStart-11: 11
+$gridColumnStart-12: 12
+$gridColumnStart-13: 13
+$gridColumnStart-auto: auto
+
+$gridColumnEnd-1: 1
+$gridColumnEnd-2: 2
+$gridColumnEnd-3: 3
+$gridColumnEnd-4: 4
+$gridColumnEnd-5: 5
+$gridColumnEnd-6: 6
+$gridColumnEnd-7: 7
+$gridColumnEnd-8: 8
+$gridColumnEnd-9: 9
+$gridColumnEnd-10: 10
+$gridColumnEnd-11: 11
+$gridColumnEnd-12: 12
+$gridColumnEnd-13: 13
+$gridColumnEnd-auto: auto
+
+$gridTemplateRows-1: (repeat(1, minmax(0, 1fr)))
+$gridTemplateRows-2: (repeat(2, minmax(0, 1fr)))
+$gridTemplateRows-3: (repeat(3, minmax(0, 1fr)))
+$gridTemplateRows-4: (repeat(4, minmax(0, 1fr)))
+$gridTemplateRows-5: (repeat(5, minmax(0, 1fr)))
+$gridTemplateRows-6: (repeat(6, minmax(0, 1fr)))
+$gridTemplateRows-none: none
+
+$gridRow-auto: auto
+$gridRow-span-1: span 1 / span 1
+$gridRow-span-2: span 2 / span 2
+$gridRow-span-3: span 3 / span 3
+$gridRow-span-4: span 4 / span 4
+$gridRow-span-5: span 5 / span 5
+$gridRow-span-6: span 6 / span 6
+
+$gridRowStart-1: 1
+$gridRowStart-2: 2
+$gridRowStart-3: 3
+$gridRowStart-4: 4
+$gridRowStart-5: 5
+$gridRowStart-6: 6
+$gridRowStart-7: 7
+$gridRowStart-auto: auto
+
+$gridRowEnd-1: 1
+$gridRowEnd-2: 2
+$gridRowEnd-3: 3
+$gridRowEnd-4: 4
+$gridRowEnd-5: 5
+$gridRowEnd-6: 6
+$gridRowEnd-7: 7
+$gridRowEnd-auto: auto
+
+$transformOrigin-center: center
+$transformOrigin-top: top
+$transformOrigin-top-right: top right
+$transformOrigin-right: right
+$transformOrigin-bottom-right: bottom right
+$transformOrigin-bottom: bottom
+$transformOrigin-bottom-left: bottom left
+$transformOrigin-left: left
+$transformOrigin-top-left: top left
+
+$scale-0: 0
+$scale-50: .5
+$scale-75: .75
+$scale-90: .9
+$scale-95: .95
+$scale-100: 1
+$scale-105: 1.05
+$scale-110: 1.1
+$scale-125: 1.25
+$scale-150: 1.5
+
+$rotate-0: 0
+$rotate-45: 45deg
+$rotate-90: 90deg
+$rotate-180: 180deg
+$rotate--180: -180deg
+$rotate--90: -90deg
+$rotate--45: -45deg
+
+$translate-0: 0
+$translate-1: 0.25rem
+$translate-2: 0.5rem
+$translate-3: 0.75rem
+$translate-4: 1rem
+$translate-5: 1.25rem
+$translate-6: 1.5rem
+$translate-8: 2rem
+$translate-10: 2.5rem
+$translate-12: 3rem
+$translate-16: 4rem
+$translate-20: 5rem
+$translate-24: 6rem
+$translate-32: 8rem
+$translate-40: 10rem
+$translate-48: 12rem
+$translate-56: 14rem
+$translate-64: 16rem
+$translate-96: 24rem
+$translate-128: 32rem
+$translate-px: 1px
+$translate--1: -0.25rem
+$translate--2: -0.5rem
+$translate--3: -0.75rem
+$translate--4: -1rem
+$translate--5: -1.25rem
+$translate--6: -1.5rem
+$translate--8: -2rem
+$translate--10: -2.5rem
+$translate--12: -3rem
+$translate--16: -4rem
+$translate--20: -5rem
+$translate--24: -6rem
+$translate--32: -8rem
+$translate--40: -10rem
+$translate--48: -12rem
+$translate--56: -14rem
+$translate--64: -16rem
+$translate--96: -24rem
+$translate--128: -32rem
+$translate--px: -1px
+$translate--full: -100%
+$translate--1\\\\/2: -50%
+$translate-1\\\\/2: 50%
+$translate-full: 100%
+
+$skew-0: 0
+$skew-3: 3deg
+$skew-6: 6deg
+$skew-12: 12deg
+$skew--12: -12deg
+$skew--6: -6deg
+$skew--3: -3deg
+
+$transitionProperty-none: none
+$transitionProperty-all: all
+$transitionProperty-default: (background-color, border-color, color, fill, stroke, opacity, box-shadow, transform)
+$transitionProperty-colors: (background-color, border-color, color, fill, stroke)
+$transitionProperty-opacity: opacity
+$transitionProperty-shadow: box-shadow
+$transitionProperty-transform: transform
+
+$transitionTimingFunction-linear: linear
+$transitionTimingFunction-in: (cubic-bezier(0.4, 0, 1, 1))
+$transitionTimingFunction-out: (cubic-bezier(0, 0, 0.2, 1))
+$transitionTimingFunction-in-out: (cubic-bezier(0.4, 0, 0.2, 1))
+
+$transitionDuration-75: 75ms
+$transitionDuration-100: 100ms
+$transitionDuration-150: 150ms
+$transitionDuration-200: 200ms
+$transitionDuration-300: 300ms
+$transitionDuration-500: 500ms
+$transitionDuration-700: 700ms
+$transitionDuration-1000: 1000ms
+
+$transitionDelay-75: 75ms
+$transitionDelay-100: 100ms
+$transitionDelay-150: 150ms
+$transitionDelay-200: 200ms
+$transitionDelay-300: 300ms
+$transitionDelay-500: 500ms
+$transitionDelay-700: 700ms
+$transitionDelay-1000: 1000ms
+
+$animation-none: none
+$animation-spin: spin 1s linear infinite
+$animation-ping: (ping 1s cubic-bezier(0, 0, 0.2, 1) infinite)
+$animation-pulse: (pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite)
+$animation-bounce: bounce 1s infinite
+
+$keyframes-spin-from-transform: rotate(0deg)
+$keyframes-spin-to-transform: rotate(360deg)
+$keyframes-ping-0-transform: scale(1)
+$keyframes-ping-0-opacity: 1
+$keyframes-ping-75-100-transform: scale(2)
+$keyframes-ping-75-100-opacity: 0
+$keyframes-pulse-0-100-opacity: 1
+$keyframes-pulse-50-opacity: .5
+$keyframes-bounce-0-100-transform: translateY(-25%)
+$keyframes-bounce-0-100-animationTimingFunction: (cubic-bezier(0.8,0,1,1))
+$keyframes-bounce-50-transform: translateY(0)
+$keyframes-bounce-50-animationTimingFunction: (cubic-bezier(0,0,0.2,1))
 "
 `;
 
@@ -1794,74 +1554,8 @@ $fontFamily: (\\"display\\": (Gilroy,sans-serif), \\"body\\": (Graphik,sans-seri
 
 $borderWidth: (\\"0\\": 0, \\"2\\": 2px, \\"4\\": 4px, \\"default\\": 1px,)
 
-$colors: (\\"transparent\\": transparent, \\"black\\": #000, \\"white\\": #fff, \\"gray-100\\": #f7fafc, \\"gray-200\\": #edf2f7, \\"gray-300\\": #e2e8f0, \\"gray-400\\": #cbd5e0, \\"gray-500\\": #a0aec0, \\"gray-600\\": #718096, \\"gray-700\\": #4a5568, \\"gray-800\\": #2d3748, \\"gray-900\\": #1a202c, \\"red-100\\": #fff5f5, \\"red-200\\": #fed7d7, \\"red-300\\": #feb2b2, \\"red-400\\": #fc8181, \\"red-500\\": #f56565, \\"red-600\\": #e53e3e, \\"red-700\\": #c53030, \\"red-800\\": #9b2c2c, \\"red-900\\": #742a2a, \\"orange-100\\": #fffaf0, \\"orange-200\\": #feebc8, \\"orange-300\\": #fbd38d, \\"orange-400\\": #f6ad55, \\"orange-500\\": #ed8936, \\"orange-600\\": #dd6b20, \\"orange-700\\": #c05621, \\"orange-800\\": #9c4221, \\"orange-900\\": #7b341e, \\"yellow-100\\": #fffff0, \\"yellow-200\\": #fefcbf, \\"yellow-300\\": #faf089, \\"yellow-400\\": #f6e05e, \\"yellow-500\\": #ecc94b, \\"yellow-600\\": #d69e2e, \\"yellow-700\\": #b7791f, \\"yellow-800\\": #975a16, \\"yellow-900\\": #744210, \\"green-100\\": #f0fff4, \\"green-200\\": #c6f6d5, \\"green-300\\": #9ae6b4, \\"green-400\\": #68d391, \\"green-500\\": #48bb78, \\"green-600\\": #38a169, \\"green-700\\": #2f855a, \\"green-800\\": #276749, \\"green-900\\": #22543d, \\"teal-100\\": #e6fffa, \\"teal-200\\": #b2f5ea, \\"teal-300\\": #81e6d9, \\"teal-400\\": #4fd1c5, \\"teal-500\\": #38b2ac, \\"teal-600\\": #319795, \\"teal-700\\": #2c7a7b, \\"teal-800\\": #285e61, \\"teal-900\\": #234e52, \\"blue-100\\": #ebf8ff, \\"blue-200\\": #bee3f8, \\"blue-300\\": #90cdf4, \\"blue-400\\": #63b3ed, \\"blue-500\\": #4299e1, \\"blue-600\\": #3182ce, \\"blue-700\\": #2b6cb0, \\"blue-800\\": #2c5282, \\"blue-900\\": #2a4365, \\"indigo-100\\": #ebf4ff, \\"indigo-200\\": #c3dafe, \\"indigo-300\\": #a3bffa, \\"indigo-400\\": #7f9cf5, \\"indigo-500\\": #667eea, \\"indigo-600\\": #5a67d8, \\"indigo-700\\": #4c51bf, \\"indigo-800\\": #434190, \\"indigo-900\\": #3c366b, \\"purple-100\\": #faf5ff, \\"purple-200\\": #e9d8fd, \\"purple-300\\": #d6bcfa, \\"purple-400\\": #b794f4, \\"purple-500\\": #9f7aea, \\"purple-600\\": #805ad5, \\"purple-700\\": #6b46c1, \\"purple-800\\": #553c9a, \\"purple-900\\": #44337a, \\"pink-100\\": #fff5f7, \\"pink-200\\": #fed7e2, \\"pink-300\\": #fbb6ce, \\"pink-400\\": #f687b3, \\"pink-500\\": #ed64a6, \\"pink-600\\": #d53f8c, \\"pink-700\\": #b83280, \\"pink-800\\": #97266d, \\"pink-900\\": #702459, \\"cyan\\": #9cdbff,)
+$colors: (\\"transparent\\": transparent, \\"current\\": currentColor, \\"black\\": #000, \\"white\\": #fff, \\"gray-100\\": #f7fafc, \\"gray-200\\": #edf2f7, \\"gray-300\\": #e2e8f0, \\"gray-400\\": #cbd5e0, \\"gray-500\\": #a0aec0, \\"gray-600\\": #718096, \\"gray-700\\": #4a5568, \\"gray-800\\": #2d3748, \\"gray-900\\": #1a202c, \\"red-100\\": #fff5f5, \\"red-200\\": #fed7d7, \\"red-300\\": #feb2b2, \\"red-400\\": #fc8181, \\"red-500\\": #f56565, \\"red-600\\": #e53e3e, \\"red-700\\": #c53030, \\"red-800\\": #9b2c2c, \\"red-900\\": #742a2a, \\"orange-100\\": #fffaf0, \\"orange-200\\": #feebc8, \\"orange-300\\": #fbd38d, \\"orange-400\\": #f6ad55, \\"orange-500\\": #ed8936, \\"orange-600\\": #dd6b20, \\"orange-700\\": #c05621, \\"orange-800\\": #9c4221, \\"orange-900\\": #7b341e, \\"yellow-100\\": #fffff0, \\"yellow-200\\": #fefcbf, \\"yellow-300\\": #faf089, \\"yellow-400\\": #f6e05e, \\"yellow-500\\": #ecc94b, \\"yellow-600\\": #d69e2e, \\"yellow-700\\": #b7791f, \\"yellow-800\\": #975a16, \\"yellow-900\\": #744210, \\"green-100\\": #f0fff4, \\"green-200\\": #c6f6d5, \\"green-300\\": #9ae6b4, \\"green-400\\": #68d391, \\"green-500\\": #48bb78, \\"green-600\\": #38a169, \\"green-700\\": #2f855a, \\"green-800\\": #276749, \\"green-900\\": #22543d, \\"teal-100\\": #e6fffa, \\"teal-200\\": #b2f5ea, \\"teal-300\\": #81e6d9, \\"teal-400\\": #4fd1c5, \\"teal-500\\": #38b2ac, \\"teal-600\\": #319795, \\"teal-700\\": #2c7a7b, \\"teal-800\\": #285e61, \\"teal-900\\": #234e52, \\"blue-100\\": #ebf8ff, \\"blue-200\\": #bee3f8, \\"blue-300\\": #90cdf4, \\"blue-400\\": #63b3ed, \\"blue-500\\": #4299e1, \\"blue-600\\": #3182ce, \\"blue-700\\": #2b6cb0, \\"blue-800\\": #2c5282, \\"blue-900\\": #2a4365, \\"indigo-100\\": #ebf4ff, \\"indigo-200\\": #c3dafe, \\"indigo-300\\": #a3bffa, \\"indigo-400\\": #7f9cf5, \\"indigo-500\\": #667eea, \\"indigo-600\\": #5a67d8, \\"indigo-700\\": #4c51bf, \\"indigo-800\\": #434190, \\"indigo-900\\": #3c366b, \\"purple-100\\": #faf5ff, \\"purple-200\\": #e9d8fd, \\"purple-300\\": #d6bcfa, \\"purple-400\\": #b794f4, \\"purple-500\\": #9f7aea, \\"purple-600\\": #805ad5, \\"purple-700\\": #6b46c1, \\"purple-800\\": #553c9a, \\"purple-900\\": #44337a, \\"pink-100\\": #fff5f7, \\"pink-200\\": #fed7e2, \\"pink-300\\": #fbb6ce, \\"pink-400\\": #f687b3, \\"pink-500\\": #ed64a6, \\"pink-600\\": #d53f8c, \\"pink-700\\": #b83280, \\"pink-800\\": #97266d, \\"pink-900\\": #702459, \\"cyan\\": #9cdbff,)
 
 $spacing: (\\"0\\": 0, \\"1\\": 0.25rem, \\"2\\": 0.5rem, \\"3\\": 0.75rem, \\"4\\": 1rem, \\"5\\": 1.25rem, \\"6\\": 1.5rem, \\"8\\": 2rem, \\"10\\": 2.5rem, \\"12\\": 3rem, \\"16\\": 4rem, \\"20\\": 5rem, \\"24\\": 6rem, \\"32\\": 8rem, \\"40\\": 10rem, \\"48\\": 12rem, \\"56\\": 14rem, \\"64\\": 16rem, \\"96\\": 24rem, \\"128\\": 32rem, \\"px\\": 1px,)
-
-$backgroundColor: (\\"transparent\\": transparent, \\"black\\": #000, \\"white\\": #fff, \\"gray-100\\": #f7fafc, \\"gray-200\\": #edf2f7, \\"gray-300\\": #e2e8f0, \\"gray-400\\": #cbd5e0, \\"gray-500\\": #a0aec0, \\"gray-600\\": #718096, \\"gray-700\\": #4a5568, \\"gray-800\\": #2d3748, \\"gray-900\\": #1a202c, \\"red-100\\": #fff5f5, \\"red-200\\": #fed7d7, \\"red-300\\": #feb2b2, \\"red-400\\": #fc8181, \\"red-500\\": #f56565, \\"red-600\\": #e53e3e, \\"red-700\\": #c53030, \\"red-800\\": #9b2c2c, \\"red-900\\": #742a2a, \\"orange-100\\": #fffaf0, \\"orange-200\\": #feebc8, \\"orange-300\\": #fbd38d, \\"orange-400\\": #f6ad55, \\"orange-500\\": #ed8936, \\"orange-600\\": #dd6b20, \\"orange-700\\": #c05621, \\"orange-800\\": #9c4221, \\"orange-900\\": #7b341e, \\"yellow-100\\": #fffff0, \\"yellow-200\\": #fefcbf, \\"yellow-300\\": #faf089, \\"yellow-400\\": #f6e05e, \\"yellow-500\\": #ecc94b, \\"yellow-600\\": #d69e2e, \\"yellow-700\\": #b7791f, \\"yellow-800\\": #975a16, \\"yellow-900\\": #744210, \\"green-100\\": #f0fff4, \\"green-200\\": #c6f6d5, \\"green-300\\": #9ae6b4, \\"green-400\\": #68d391, \\"green-500\\": #48bb78, \\"green-600\\": #38a169, \\"green-700\\": #2f855a, \\"green-800\\": #276749, \\"green-900\\": #22543d, \\"teal-100\\": #e6fffa, \\"teal-200\\": #b2f5ea, \\"teal-300\\": #81e6d9, \\"teal-400\\": #4fd1c5, \\"teal-500\\": #38b2ac, \\"teal-600\\": #319795, \\"teal-700\\": #2c7a7b, \\"teal-800\\": #285e61, \\"teal-900\\": #234e52, \\"blue-100\\": #ebf8ff, \\"blue-200\\": #bee3f8, \\"blue-300\\": #90cdf4, \\"blue-400\\": #63b3ed, \\"blue-500\\": #4299e1, \\"blue-600\\": #3182ce, \\"blue-700\\": #2b6cb0, \\"blue-800\\": #2c5282, \\"blue-900\\": #2a4365, \\"indigo-100\\": #ebf4ff, \\"indigo-200\\": #c3dafe, \\"indigo-300\\": #a3bffa, \\"indigo-400\\": #7f9cf5, \\"indigo-500\\": #667eea, \\"indigo-600\\": #5a67d8, \\"indigo-700\\": #4c51bf, \\"indigo-800\\": #434190, \\"indigo-900\\": #3c366b, \\"purple-100\\": #faf5ff, \\"purple-200\\": #e9d8fd, \\"purple-300\\": #d6bcfa, \\"purple-400\\": #b794f4, \\"purple-500\\": #9f7aea, \\"purple-600\\": #805ad5, \\"purple-700\\": #6b46c1, \\"purple-800\\": #553c9a, \\"purple-900\\": #44337a, \\"pink-100\\": #fff5f7, \\"pink-200\\": #fed7e2, \\"pink-300\\": #fbb6ce, \\"pink-400\\": #f687b3, \\"pink-500\\": #ed64a6, \\"pink-600\\": #d53f8c, \\"pink-700\\": #b83280, \\"pink-800\\": #97266d, \\"pink-900\\": #702459, \\"cyan\\": #9cdbff,)
-
-$backgroundPosition: (\\"bottom\\": bottom, \\"center\\": center, \\"left\\": left, \\"left-bottom\\": left bottom, \\"left-top\\": left top, \\"right\\": right, \\"right-bottom\\": right bottom, \\"right-top\\": right top, \\"top\\": top,)
-
-$backgroundSize: (\\"auto\\": auto, \\"cover\\": cover, \\"contain\\": contain,)
-
-$borderColor: (\\"transparent\\": transparent, \\"black\\": #000, \\"white\\": #fff, \\"gray-100\\": #f7fafc, \\"gray-200\\": #edf2f7, \\"gray-300\\": #e2e8f0, \\"gray-400\\": #cbd5e0, \\"gray-500\\": #a0aec0, \\"gray-600\\": #718096, \\"gray-700\\": #4a5568, \\"gray-800\\": #2d3748, \\"gray-900\\": #1a202c, \\"red-100\\": #fff5f5, \\"red-200\\": #fed7d7, \\"red-300\\": #feb2b2, \\"red-400\\": #fc8181, \\"red-500\\": #f56565, \\"red-600\\": #e53e3e, \\"red-700\\": #c53030, \\"red-800\\": #9b2c2c, \\"red-900\\": #742a2a, \\"orange-100\\": #fffaf0, \\"orange-200\\": #feebc8, \\"orange-300\\": #fbd38d, \\"orange-400\\": #f6ad55, \\"orange-500\\": #ed8936, \\"orange-600\\": #dd6b20, \\"orange-700\\": #c05621, \\"orange-800\\": #9c4221, \\"orange-900\\": #7b341e, \\"yellow-100\\": #fffff0, \\"yellow-200\\": #fefcbf, \\"yellow-300\\": #faf089, \\"yellow-400\\": #f6e05e, \\"yellow-500\\": #ecc94b, \\"yellow-600\\": #d69e2e, \\"yellow-700\\": #b7791f, \\"yellow-800\\": #975a16, \\"yellow-900\\": #744210, \\"green-100\\": #f0fff4, \\"green-200\\": #c6f6d5, \\"green-300\\": #9ae6b4, \\"green-400\\": #68d391, \\"green-500\\": #48bb78, \\"green-600\\": #38a169, \\"green-700\\": #2f855a, \\"green-800\\": #276749, \\"green-900\\": #22543d, \\"teal-100\\": #e6fffa, \\"teal-200\\": #b2f5ea, \\"teal-300\\": #81e6d9, \\"teal-400\\": #4fd1c5, \\"teal-500\\": #38b2ac, \\"teal-600\\": #319795, \\"teal-700\\": #2c7a7b, \\"teal-800\\": #285e61, \\"teal-900\\": #234e52, \\"blue-100\\": #ebf8ff, \\"blue-200\\": #bee3f8, \\"blue-300\\": #90cdf4, \\"blue-400\\": #63b3ed, \\"blue-500\\": #4299e1, \\"blue-600\\": #3182ce, \\"blue-700\\": #2b6cb0, \\"blue-800\\": #2c5282, \\"blue-900\\": #2a4365, \\"indigo-100\\": #ebf4ff, \\"indigo-200\\": #c3dafe, \\"indigo-300\\": #a3bffa, \\"indigo-400\\": #7f9cf5, \\"indigo-500\\": #667eea, \\"indigo-600\\": #5a67d8, \\"indigo-700\\": #4c51bf, \\"indigo-800\\": #434190, \\"indigo-900\\": #3c366b, \\"purple-100\\": #faf5ff, \\"purple-200\\": #e9d8fd, \\"purple-300\\": #d6bcfa, \\"purple-400\\": #b794f4, \\"purple-500\\": #9f7aea, \\"purple-600\\": #805ad5, \\"purple-700\\": #6b46c1, \\"purple-800\\": #553c9a, \\"purple-900\\": #44337a, \\"pink-100\\": #fff5f7, \\"pink-200\\": #fed7e2, \\"pink-300\\": #fbb6ce, \\"pink-400\\": #f687b3, \\"pink-500\\": #ed64a6, \\"pink-600\\": #d53f8c, \\"pink-700\\": #b83280, \\"pink-800\\": #97266d, \\"pink-900\\": #702459, \\"cyan\\": #9cdbff, \\"default\\": #e2e8f0,)
-
-$borderRadius: (\\"none\\": 0, \\"sm\\": 0.125rem, \\"default\\": 0.25rem, \\"lg\\": 0.5rem, \\"full\\": 9999px,)
-
-$boxShadow: (\\"default\\": (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)), \\"md\\": (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)), \\"lg\\": (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)), \\"xl\\": (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)), \\"2xl\\": (0 25px 50px -12px rgba(0, 0, 0, 0.25)), \\"inner\\": (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)), \\"outline\\": (0 0 0 3px rgba(66, 153, 225, 0.5)), \\"none\\": none,)
-
-$container: ()
-
-$cursor: (\\"auto\\": auto, \\"default\\": default, \\"pointer\\": pointer, \\"wait\\": wait, \\"text\\": text, \\"move\\": move, \\"not-allowed\\": not-allowed,)
-
-$fill: (\\"current\\": currentColor,)
-
-$flex: (\\"1\\": 1 1 0%, \\"auto\\": 1 1 auto, \\"initial\\": 0 1 auto, \\"none\\": none,)
-
-$flexGrow: (\\"0\\": 0, \\"default\\": 1,)
-
-$flexShrink: (\\"0\\": 0, \\"default\\": 1,)
-
-$fontSize: (\\"xs\\": 0.75rem, \\"sm\\": 0.875rem, \\"base\\": 1rem, \\"lg\\": 1.125rem, \\"xl\\": 1.25rem, \\"2xl\\": 1.5rem, \\"3xl\\": 1.875rem, \\"4xl\\": 2.25rem, \\"5xl\\": 3rem, \\"6xl\\": 4rem,)
-
-$fontWeight: (\\"hairline\\": 100, \\"thin\\": 200, \\"light\\": 300, \\"normal\\": 400, \\"medium\\": 500, \\"semibold\\": 600, \\"bold\\": 700, \\"extrabold\\": 800, \\"black\\": 900,)
-
-$height: (\\"0\\": 0, \\"1\\": 0.25rem, \\"2\\": 0.5rem, \\"3\\": 0.75rem, \\"4\\": 1rem, \\"5\\": 1.25rem, \\"6\\": 1.5rem, \\"8\\": 2rem, \\"10\\": 2.5rem, \\"12\\": 3rem, \\"16\\": 4rem, \\"20\\": 5rem, \\"24\\": 6rem, \\"32\\": 8rem, \\"40\\": 10rem, \\"48\\": 12rem, \\"56\\": 14rem, \\"64\\": 16rem, \\"96\\": 24rem, \\"128\\": 32rem, \\"auto\\": auto, \\"px\\": 1px, \\"full\\": 100%, \\"screen\\": 100vh,)
-
-$inset: (\\"0\\": 0, \\"auto\\": auto,)
-
-$letterSpacing: (\\"tighter\\": -0.05em, \\"tight\\": -0.025em, \\"normal\\": 0, \\"wide\\": 0.025em, \\"wider\\": 0.05em, \\"widest\\": 0.1em,)
-
-$lineHeight: (\\"none\\": 1, \\"tight\\": 1.25, \\"snug\\": 1.375, \\"normal\\": 1.5, \\"relaxed\\": 1.625, \\"loose\\": 2,)
-
-$listStyleType: (\\"none\\": none, \\"disc\\": disc, \\"decimal\\": decimal,)
-
-$margin: (\\"0\\": 0, \\"1\\": 0.25rem, \\"2\\": 0.5rem, \\"3\\": 0.75rem, \\"4\\": 1rem, \\"5\\": 1.25rem, \\"6\\": 1.5rem, \\"8\\": 2rem, \\"10\\": 2.5rem, \\"12\\": 3rem, \\"16\\": 4rem, \\"20\\": 5rem, \\"24\\": 6rem, \\"32\\": 8rem, \\"40\\": 10rem, \\"48\\": 12rem, \\"56\\": 14rem, \\"64\\": 16rem, \\"96\\": 24rem, \\"128\\": 32rem, \\"auto\\": auto, \\"px\\": 1px, \\"-1\\": -0.25rem, \\"-2\\": -0.5rem, \\"-3\\": -0.75rem, \\"-4\\": -1rem, \\"-5\\": -1.25rem, \\"-6\\": -1.5rem, \\"-8\\": -2rem, \\"-10\\": -2.5rem, \\"-12\\": -3rem, \\"-16\\": -4rem, \\"-20\\": -5rem, \\"-24\\": -6rem, \\"-32\\": -8rem, \\"-40\\": -10rem, \\"-48\\": -12rem, \\"-56\\": -14rem, \\"-64\\": -16rem, \\"-96\\": -24rem, \\"-128\\": -32rem, \\"-px\\": -1px,)
-
-$maxHeight: (\\"full\\": 100%, \\"screen\\": 100vh,)
-
-$maxWidth: (\\"xs\\": 20rem, \\"sm\\": 24rem, \\"md\\": 28rem, \\"lg\\": 32rem, \\"xl\\": 36rem, \\"2xl\\": 42rem, \\"3xl\\": 48rem, \\"4xl\\": 56rem, \\"5xl\\": 64rem, \\"6xl\\": 72rem, \\"full\\": 100%,)
-
-$minHeight: (\\"0\\": 0, \\"full\\": 100%, \\"screen\\": 100vh,)
-
-$minWidth: (\\"0\\": 0, \\"full\\": 100%,)
-
-$objectPosition: (\\"bottom\\": bottom, \\"center\\": center, \\"left\\": left, \\"left-bottom\\": left bottom, \\"left-top\\": left top, \\"right\\": right, \\"right-bottom\\": right bottom, \\"right-top\\": right top, \\"top\\": top,)
-
-$opacity: (\\"0\\": 0, \\"25\\": 0.25, \\"50\\": 0.5, \\"75\\": 0.75, \\"100\\": 1,)
-
-$order: (\\"1\\": 1, \\"2\\": 2, \\"3\\": 3, \\"4\\": 4, \\"5\\": 5, \\"6\\": 6, \\"7\\": 7, \\"8\\": 8, \\"9\\": 9, \\"10\\": 10, \\"11\\": 11, \\"12\\": 12, \\"first\\": -9999, \\"last\\": 9999, \\"none\\": 0,)
-
-$padding: (\\"0\\": 0, \\"1\\": 0.25rem, \\"2\\": 0.5rem, \\"3\\": 0.75rem, \\"4\\": 1rem, \\"5\\": 1.25rem, \\"6\\": 1.5rem, \\"8\\": 2rem, \\"10\\": 2.5rem, \\"12\\": 3rem, \\"16\\": 4rem, \\"20\\": 5rem, \\"24\\": 6rem, \\"32\\": 8rem, \\"40\\": 10rem, \\"48\\": 12rem, \\"56\\": 14rem, \\"64\\": 16rem, \\"96\\": 24rem, \\"128\\": 32rem, \\"px\\": 1px,)
-
-$placeholderColor: (\\"transparent\\": transparent, \\"black\\": #000, \\"white\\": #fff, \\"gray-100\\": #f7fafc, \\"gray-200\\": #edf2f7, \\"gray-300\\": #e2e8f0, \\"gray-400\\": #cbd5e0, \\"gray-500\\": #a0aec0, \\"gray-600\\": #718096, \\"gray-700\\": #4a5568, \\"gray-800\\": #2d3748, \\"gray-900\\": #1a202c, \\"red-100\\": #fff5f5, \\"red-200\\": #fed7d7, \\"red-300\\": #feb2b2, \\"red-400\\": #fc8181, \\"red-500\\": #f56565, \\"red-600\\": #e53e3e, \\"red-700\\": #c53030, \\"red-800\\": #9b2c2c, \\"red-900\\": #742a2a, \\"orange-100\\": #fffaf0, \\"orange-200\\": #feebc8, \\"orange-300\\": #fbd38d, \\"orange-400\\": #f6ad55, \\"orange-500\\": #ed8936, \\"orange-600\\": #dd6b20, \\"orange-700\\": #c05621, \\"orange-800\\": #9c4221, \\"orange-900\\": #7b341e, \\"yellow-100\\": #fffff0, \\"yellow-200\\": #fefcbf, \\"yellow-300\\": #faf089, \\"yellow-400\\": #f6e05e, \\"yellow-500\\": #ecc94b, \\"yellow-600\\": #d69e2e, \\"yellow-700\\": #b7791f, \\"yellow-800\\": #975a16, \\"yellow-900\\": #744210, \\"green-100\\": #f0fff4, \\"green-200\\": #c6f6d5, \\"green-300\\": #9ae6b4, \\"green-400\\": #68d391, \\"green-500\\": #48bb78, \\"green-600\\": #38a169, \\"green-700\\": #2f855a, \\"green-800\\": #276749, \\"green-900\\": #22543d, \\"teal-100\\": #e6fffa, \\"teal-200\\": #b2f5ea, \\"teal-300\\": #81e6d9, \\"teal-400\\": #4fd1c5, \\"teal-500\\": #38b2ac, \\"teal-600\\": #319795, \\"teal-700\\": #2c7a7b, \\"teal-800\\": #285e61, \\"teal-900\\": #234e52, \\"blue-100\\": #ebf8ff, \\"blue-200\\": #bee3f8, \\"blue-300\\": #90cdf4, \\"blue-400\\": #63b3ed, \\"blue-500\\": #4299e1, \\"blue-600\\": #3182ce, \\"blue-700\\": #2b6cb0, \\"blue-800\\": #2c5282, \\"blue-900\\": #2a4365, \\"indigo-100\\": #ebf4ff, \\"indigo-200\\": #c3dafe, \\"indigo-300\\": #a3bffa, \\"indigo-400\\": #7f9cf5, \\"indigo-500\\": #667eea, \\"indigo-600\\": #5a67d8, \\"indigo-700\\": #4c51bf, \\"indigo-800\\": #434190, \\"indigo-900\\": #3c366b, \\"purple-100\\": #faf5ff, \\"purple-200\\": #e9d8fd, \\"purple-300\\": #d6bcfa, \\"purple-400\\": #b794f4, \\"purple-500\\": #9f7aea, \\"purple-600\\": #805ad5, \\"purple-700\\": #6b46c1, \\"purple-800\\": #553c9a, \\"purple-900\\": #44337a, \\"pink-100\\": #fff5f7, \\"pink-200\\": #fed7e2, \\"pink-300\\": #fbb6ce, \\"pink-400\\": #f687b3, \\"pink-500\\": #ed64a6, \\"pink-600\\": #d53f8c, \\"pink-700\\": #b83280, \\"pink-800\\": #97266d, \\"pink-900\\": #702459, \\"cyan\\": #9cdbff,)
-
-$stroke: (\\"current\\": currentColor,)
-
-$textColor: (\\"transparent\\": transparent, \\"black\\": #000, \\"white\\": #fff, \\"gray-100\\": #f7fafc, \\"gray-200\\": #edf2f7, \\"gray-300\\": #e2e8f0, \\"gray-400\\": #cbd5e0, \\"gray-500\\": #a0aec0, \\"gray-600\\": #718096, \\"gray-700\\": #4a5568, \\"gray-800\\": #2d3748, \\"gray-900\\": #1a202c, \\"red-100\\": #fff5f5, \\"red-200\\": #fed7d7, \\"red-300\\": #feb2b2, \\"red-400\\": #fc8181, \\"red-500\\": #f56565, \\"red-600\\": #e53e3e, \\"red-700\\": #c53030, \\"red-800\\": #9b2c2c, \\"red-900\\": #742a2a, \\"orange-100\\": #fffaf0, \\"orange-200\\": #feebc8, \\"orange-300\\": #fbd38d, \\"orange-400\\": #f6ad55, \\"orange-500\\": #ed8936, \\"orange-600\\": #dd6b20, \\"orange-700\\": #c05621, \\"orange-800\\": #9c4221, \\"orange-900\\": #7b341e, \\"yellow-100\\": #fffff0, \\"yellow-200\\": #fefcbf, \\"yellow-300\\": #faf089, \\"yellow-400\\": #f6e05e, \\"yellow-500\\": #ecc94b, \\"yellow-600\\": #d69e2e, \\"yellow-700\\": #b7791f, \\"yellow-800\\": #975a16, \\"yellow-900\\": #744210, \\"green-100\\": #f0fff4, \\"green-200\\": #c6f6d5, \\"green-300\\": #9ae6b4, \\"green-400\\": #68d391, \\"green-500\\": #48bb78, \\"green-600\\": #38a169, \\"green-700\\": #2f855a, \\"green-800\\": #276749, \\"green-900\\": #22543d, \\"teal-100\\": #e6fffa, \\"teal-200\\": #b2f5ea, \\"teal-300\\": #81e6d9, \\"teal-400\\": #4fd1c5, \\"teal-500\\": #38b2ac, \\"teal-600\\": #319795, \\"teal-700\\": #2c7a7b, \\"teal-800\\": #285e61, \\"teal-900\\": #234e52, \\"blue-100\\": #ebf8ff, \\"blue-200\\": #bee3f8, \\"blue-300\\": #90cdf4, \\"blue-400\\": #63b3ed, \\"blue-500\\": #4299e1, \\"blue-600\\": #3182ce, \\"blue-700\\": #2b6cb0, \\"blue-800\\": #2c5282, \\"blue-900\\": #2a4365, \\"indigo-100\\": #ebf4ff, \\"indigo-200\\": #c3dafe, \\"indigo-300\\": #a3bffa, \\"indigo-400\\": #7f9cf5, \\"indigo-500\\": #667eea, \\"indigo-600\\": #5a67d8, \\"indigo-700\\": #4c51bf, \\"indigo-800\\": #434190, \\"indigo-900\\": #3c366b, \\"purple-100\\": #faf5ff, \\"purple-200\\": #e9d8fd, \\"purple-300\\": #d6bcfa, \\"purple-400\\": #b794f4, \\"purple-500\\": #9f7aea, \\"purple-600\\": #805ad5, \\"purple-700\\": #6b46c1, \\"purple-800\\": #553c9a, \\"purple-900\\": #44337a, \\"pink-100\\": #fff5f7, \\"pink-200\\": #fed7e2, \\"pink-300\\": #fbb6ce, \\"pink-400\\": #f687b3, \\"pink-500\\": #ed64a6, \\"pink-600\\": #d53f8c, \\"pink-700\\": #b83280, \\"pink-800\\": #97266d, \\"pink-900\\": #702459, \\"cyan\\": #9cdbff,)
-
-$width: (\\"0\\": 0, \\"1\\": 0.25rem, \\"2\\": 0.5rem, \\"3\\": 0.75rem, \\"4\\": 1rem, \\"5\\": 1.25rem, \\"6\\": 1.5rem, \\"8\\": 2rem, \\"10\\": 2.5rem, \\"12\\": 3rem, \\"16\\": 4rem, \\"20\\": 5rem, \\"24\\": 6rem, \\"32\\": 8rem, \\"40\\": 10rem, \\"48\\": 12rem, \\"56\\": 14rem, \\"64\\": 16rem, \\"96\\": 24rem, \\"128\\": 32rem, \\"auto\\": auto, \\"px\\": 1px, \\"1/2\\": 50%, \\"1/3\\": 33.333333%, \\"2/3\\": 66.666667%, \\"1/4\\": 25%, \\"2/4\\": 50%, \\"3/4\\": 75%, \\"1/5\\": 20%, \\"2/5\\": 40%, \\"3/5\\": 60%, \\"4/5\\": 80%, \\"1/6\\": 16.666667%, \\"2/6\\": 33.333333%, \\"3/6\\": 50%, \\"4/6\\": 66.666667%, \\"5/6\\": 83.333333%, \\"1/12\\": 8.333333%, \\"2/12\\": 16.666667%, \\"3/12\\": 25%, \\"4/12\\": 33.333333%, \\"5/12\\": 41.666667%, \\"6/12\\": 50%, \\"7/12\\": 58.333333%, \\"8/12\\": 66.666667%, \\"9/12\\": 75%, \\"10/12\\": 83.333333%, \\"11/12\\": 91.666667%, \\"full\\": 100%, \\"screen\\": 100vw,)
-
-$zIndex: (\\"0\\": 0, \\"10\\": 10, \\"20\\": 20, \\"30\\": 30, \\"40\\": 40, \\"50\\": 50, \\"auto\\": auto,)
 "
 `;

@@ -1,13 +1,24 @@
 import ScssConverter from '../../../src/converters/Scss'
-import testConfig from '../../tailwind.config'
 import { resolveConfig } from '../../../src/converters/utils'
+import testConfig from '../../tailwind.config'
+import testConfigDefault from '../../tailwind-default.config'
 
 describe('Scss converter', () => {
-  it('Converts to nested map', () => {
-    const converter = new ScssConverter({
-      config: resolveConfig(testConfig)
+  describe('full config', () => {
+    it('Converts to nested map', () => {
+      const converter = new ScssConverter({
+        config: resolveConfig(testConfigDefault)
+      })
+      expect(converter.convert()).toMatchSnapshot()
     })
-    expect(converter.convert()).toMatchSnapshot()
+
+    it('Converts to flat variables', () => {
+      const converter = new ScssConverter({
+        config: resolveConfig(testConfigDefault),
+        flat: true
+      })
+      expect(converter.convert()).toMatchSnapshot()
+    })
   })
 
   it('converts a nested map with quoted keys', () => {
@@ -18,14 +29,6 @@ describe('Scss converter', () => {
     const result = converter.convert()
     expect(result).toContain('"sm": 640px')
     expect(result).toMatchSnapshot()
-  })
-
-  it('Converts to flat variables', () => {
-    const converter = new ScssConverter({
-      config: resolveConfig(testConfig),
-      flat: true
-    })
-    expect(converter.convert()).toMatchSnapshot()
   })
 
   it('Converts to flat variables with prefix', () => {
