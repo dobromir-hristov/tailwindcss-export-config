@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.2.0...v2.2.1) (2020-08-04)
+
+
+### Bug Fixes
+
+* improve the key sanitization, closes [#19](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/19) ([#20](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/20)) ([9446fa2](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/9446fa2))
+
 ### [2.2.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.1.0...v2.2.0) (2020-07-01)
 
 ### Features
