@@ -53,6 +53,11 @@ const argv = yargs // eslint-disable-line
     type: 'number', /* array | boolean | string */
     nargs: 1
   })
+  .option('preserve-keys', {
+    describe: 'Keys to preserve',
+    type: 'array', /* array | boolean | string */
+    nargs: 1
+  })
   .argv
 
 try {
@@ -63,7 +68,8 @@ try {
     prefix: argv.prefix,
     flat: argv.flat,
     quotedKeys: argv['quoted-keys'],
-    flattenMapsAfter: argv['flatten-maps-after']
+    flattenMapsAfter: argv['flatten-maps-after'],
+    preserveKeys: argv['preserve-keys'],
   })
   converter.writeToFile()
     .then((options) => {

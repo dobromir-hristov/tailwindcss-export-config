@@ -12,9 +12,9 @@
 
 ## Features
 
-* :rocket: Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
-* :boom: CLI and Node api support
-* :muscle: Unit Tested
+* 🚀 Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
+* 💥 CLI and Node api support
+* 💪 Unit Tested
 
 ## Getting started
 
@@ -25,7 +25,7 @@ npm install tailwindcss-export-config
 ```
 
 or with yarn:
- 
+
 ```bash
 yarn add tailwindcss-export-config
 ```
@@ -51,7 +51,8 @@ const converter = new TailwindExportConfig({
   format: 'scss',
   prefix: 'tw',
   flat: true,
-  quotedKeys: true
+  quotedKeys: true,
+  preserveKeys: ['colors', 'screens'],
 })
 
 // writeToFile returns a promise so we can chain off it
@@ -76,6 +77,7 @@ prefix|String|false| An optional prefix for each variable name
 flat|Boolean|false| Optionally transforms the variables from nested maps to flat level variables. Less does not support nested maps so we default to flat for them always. Defaults to `false`.
 quoted-keys|Boolean|false| (`quotedKeys` in the Node API) - Whether keys in maps should be quoted or not. We recommend to have this set to `true`. Defaults to `false`.
 flatten-maps-after|Number|false| (`flattenMapsAfter` in the Node API) - After what level should it start flattening deeply nested maps. Defaults to `-1` (always flatten).
+preserve-keys|Array|false|(`preserveKeys` in the Node API) - Always keep those keys in export. Defaults to `[]`.
 
 ## Example export
 Lets get a portion of the Tailwind config
@@ -140,7 +142,7 @@ $colors: (
 
 ```
 
-When working with SASS, the second (nested map) approach is a bit more annoying to work with as you have to do `map_get($colors, black)`  but things are easier to loop if you need to.
+When working with SASS, the second (nested map) approach is a bit more annoying to work with as you have to do `map-get($colors, black)`  but things are easier to loop if you need to.
 
 Sass is almost the same and you can import both sass and scss vars into the same project. We support them both if someone prefers one syntax over the other.
 
@@ -172,7 +174,7 @@ $colors-pink-900 = #702459;
 $colors-cyan = #9cdbff;
 ```
 
-or with the flat param to false 
+or with the flat param to false
 
 ```stylus
 $fontFamily = {
@@ -291,6 +293,14 @@ $customForms: (
     ),
   ),
 );
+```
+
+### Preserve keys
+
+You can explicitly preserve some tailwind config keys using the `preserveKeys` parameter.
+
+```
+tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --preserveKeys=colors --preserveKeys=screens
 ```
 
 ## Notice
