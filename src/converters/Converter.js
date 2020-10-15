@@ -23,6 +23,8 @@ class Converter {
   quotedKeys = false
   /** @type {number} - should try to flatten deep maps after N level */
   flattenMapsAfter = -1
+  /** @type {array} - config keys to preserve */
+  preserveKeys = []
 
   /**
    * @param opts
@@ -31,6 +33,7 @@ class Converter {
    * @param {String} opts.prefix - If we want a variable prefix
    * @param {Boolean} [opts.quotedKeys] - Should map keys be quoted
    * @param {Number} [opts.flattenMapsAfter] - Should flatten maps after N level
+   * @param {Array} [opts.preserveKeys] - config keys to preserve
    */
   constructor (opts) {
     const { theme, ...rest } = opts.config
@@ -41,6 +44,7 @@ class Converter {
     this.prefix = opts.prefix || ''
     if (opts.quotedKeys) this.quotedKeys = opts.quotedKeys
     if (typeof opts.flattenMapsAfter !== 'undefined') this.flattenMapsAfter = opts.flattenMapsAfter
+    if (typeof opts.preserveKeys !== 'undefined') this.preserveKeys = opts.preserveKeys
   }
 
   /**
@@ -189,6 +193,7 @@ class Converter {
    */
   _isSettingEnabled (key) {
     const { corePlugins } = this.configs
+    if (this.preserveKeys.length && this.preserveKeys.includes(key)) return true
     if (!corePlugins) return true
     return Array.isArray(corePlugins) ? corePlugins.includes(key) : corePlugins[key] !== false
   }
