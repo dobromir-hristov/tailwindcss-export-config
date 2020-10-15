@@ -297,7 +297,7 @@ $customForms: (
 
 ### Preserve keys
 
-You can explicitly preserve some tailwind config keys using the `preserveKeys` parameter.
+When you have disabled some `corePlugins`, you can explicitly preserve some tailwind config keys using the `preserveKeys` parameter, both in CLI and in the node api.
 
 ```
 tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --preserveKeys=colors --preserveKeys=screens
