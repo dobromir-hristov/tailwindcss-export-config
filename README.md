@@ -15,6 +15,7 @@
 * 🚀 Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
 * 💥 CLI and Node api support
 * 💪 Unit Tested
+* ⚙️ Also available for [Gulp](https://github.com/dkern/gulp-tailwindcss-export-config)
 
 ## Getting started
 
