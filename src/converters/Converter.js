@@ -225,6 +225,7 @@ class Converter {
    * @private
    */
   _propertyNameSanitizer (property) {
+    property = property.replace('-DEFAULT', '')
     property = sanitizeKey(property.replace(/\//g, '\\/'))
     return [this.prefix, property].filter(v => v).join('-')
   }
@@ -236,6 +237,7 @@ class Converter {
    * @private
    */
   _objectEntryKeySanitizer (key) {
+    key = key.replace('-DEFAULT', '')
     key = sanitizeKey(key)
     return this.quotedKeys ? `"${key}"` : key
   }

@@ -48,4 +48,5 @@ describe('Sass converter', () => {
     })
     expect(converter.convert()).toMatchSnapshot()
   })
+
 })
