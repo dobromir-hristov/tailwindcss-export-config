@@ -667,6 +667,7 @@ $backgroundColor = {
 };
 
 $backgroundImage = {
+  none: none,
   gradient-to-t: (linear-gradient(to top, var(--gradient-color-stops))),
   gradient-to-tr: (linear-gradient(to top right, var(--gradient-color-stops))),
   gradient-to-r: (linear-gradient(to right, var(--gradient-color-stops))),
@@ -2152,6 +2153,7 @@ $backgroundColor-pink-800 = #97266d;
 $backgroundColor-pink-900 = #702459;
 $backgroundColor-cyan = #9cdbff;
 
+$backgroundImage-none = none;
 $backgroundImage-gradient-to-t = (linear-gradient(to top, var(--gradient-color-stops)));
 $backgroundImage-gradient-to-tr = (linear-gradient(to top right, var(--gradient-color-stops)));
 $backgroundImage-gradient-to-r = (linear-gradient(to right, var(--gradient-color-stops)));
