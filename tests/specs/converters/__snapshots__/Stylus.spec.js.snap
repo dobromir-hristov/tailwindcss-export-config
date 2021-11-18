@@ -666,6 +666,115 @@ $backgroundColor = {
   cyan: #9cdbff,
 };
 
+$backgroundImage = {
+  gradient-to-t: (linear-gradient(to top, var(--gradient-color-stops))),
+  gradient-to-tr: (linear-gradient(to top right, var(--gradient-color-stops))),
+  gradient-to-r: (linear-gradient(to right, var(--gradient-color-stops))),
+  gradient-to-br: (linear-gradient(to bottom right, var(--gradient-color-stops))),
+  gradient-to-b: (linear-gradient(to bottom, var(--gradient-color-stops))),
+  gradient-to-bl: (linear-gradient(to bottom left, var(--gradient-color-stops))),
+  gradient-to-l: (linear-gradient(to left, var(--gradient-color-stops))),
+  gradient-to-tl: (linear-gradient(to top left, var(--gradient-color-stops))),
+};
+
+$gradientColorStops = {
+  transparent: transparent,
+  current: currentColor,
+  black: #000,
+  white: #fff,
+  \\"gray-100\\": #f7fafc,
+  \\"gray-200\\": #edf2f7,
+  \\"gray-300\\": #e2e8f0,
+  \\"gray-400\\": #cbd5e0,
+  \\"gray-500\\": #a0aec0,
+  \\"gray-600\\": #718096,
+  \\"gray-700\\": #4a5568,
+  \\"gray-800\\": #2d3748,
+  \\"gray-900\\": #1a202c,
+  \\"red-100\\": #fff5f5,
+  \\"red-200\\": #fed7d7,
+  \\"red-300\\": #feb2b2,
+  \\"red-400\\": #fc8181,
+  \\"red-500\\": #f56565,
+  \\"red-600\\": #e53e3e,
+  \\"red-700\\": #c53030,
+  \\"red-800\\": #9b2c2c,
+  \\"red-900\\": #742a2a,
+  \\"orange-100\\": #fffaf0,
+  \\"orange-200\\": #feebc8,
+  \\"orange-300\\": #fbd38d,
+  \\"orange-400\\": #f6ad55,
+  \\"orange-500\\": #ed8936,
+  \\"orange-600\\": #dd6b20,
+  \\"orange-700\\": #c05621,
+  \\"orange-800\\": #9c4221,
+  \\"orange-900\\": #7b341e,
+  \\"yellow-100\\": #fffff0,
+  \\"yellow-200\\": #fefcbf,
+  \\"yellow-300\\": #faf089,
+  \\"yellow-400\\": #f6e05e,
+  \\"yellow-500\\": #ecc94b,
+  \\"yellow-600\\": #d69e2e,
+  \\"yellow-700\\": #b7791f,
+  \\"yellow-800\\": #975a16,
+  \\"yellow-900\\": #744210,
+  \\"green-100\\": #f0fff4,
+  \\"green-200\\": #c6f6d5,
+  \\"green-300\\": #9ae6b4,
+  \\"green-400\\": #68d391,
+  \\"green-500\\": #48bb78,
+  \\"green-600\\": #38a169,
+  \\"green-700\\": #2f855a,
+  \\"green-800\\": #276749,
+  \\"green-900\\": #22543d,
+  \\"teal-100\\": #e6fffa,
+  \\"teal-200\\": #b2f5ea,
+  \\"teal-300\\": #81e6d9,
+  \\"teal-400\\": #4fd1c5,
+  \\"teal-500\\": #38b2ac,
+  \\"teal-600\\": #319795,
+  \\"teal-700\\": #2c7a7b,
+  \\"teal-800\\": #285e61,
+  \\"teal-900\\": #234e52,
+  \\"blue-100\\": #ebf8ff,
+  \\"blue-200\\": #bee3f8,
+  \\"blue-300\\": #90cdf4,
+  \\"blue-400\\": #63b3ed,
+  \\"blue-500\\": #4299e1,
+  \\"blue-600\\": #3182ce,
+  \\"blue-700\\": #2b6cb0,
+  \\"blue-800\\": #2c5282,
+  \\"blue-900\\": #2a4365,
+  \\"indigo-100\\": #ebf4ff,
+  \\"indigo-200\\": #c3dafe,
+  \\"indigo-300\\": #a3bffa,
+  \\"indigo-400\\": #7f9cf5,
+  \\"indigo-500\\": #667eea,
+  \\"indigo-600\\": #5a67d8,
+  \\"indigo-700\\": #4c51bf,
+  \\"indigo-800\\": #434190,
+  \\"indigo-900\\": #3c366b,
+  \\"purple-100\\": #faf5ff,
+  \\"purple-200\\": #e9d8fd,
+  \\"purple-300\\": #d6bcfa,
+  \\"purple-400\\": #b794f4,
+  \\"purple-500\\": #9f7aea,
+  \\"purple-600\\": #805ad5,
+  \\"purple-700\\": #6b46c1,
+  \\"purple-800\\": #553c9a,
+  \\"purple-900\\": #44337a,
+  \\"pink-100\\": #fff5f7,
+  \\"pink-200\\": #fed7e2,
+  \\"pink-300\\": #fbb6ce,
+  \\"pink-400\\": #f687b3,
+  \\"pink-500\\": #ed64a6,
+  \\"pink-600\\": #d53f8c,
+  \\"pink-700\\": #b83280,
+  \\"pink-800\\": #97266d,
+  \\"pink-900\\": #702459,
+  cyan: #9cdbff,
+};
+
 $backgroundOpacity = {
   \\"0\\": 0,
   \\"25\\": 0.25,
@@ -1802,17 +1911,13 @@ $animation = {
 };
 
 $keyframes = {
-  spin-from-transform: rotate(0deg),
   spin-to-transform: rotate(360deg),
-  \\"ping-0-transform\\": scale(1),
-  \\"ping-0-opacity\\": 1,
   \\"ping-75-100-transform\\": scale(2),
   \\"ping-75-100-opacity\\": 0,
-  \\"pulse-0-100-opacity\\": 1,
   \\"pulse-50-opacity\\": .5,
   \\"bounce-0-100-transform\\": translateY(-25%),
   \\"bounce-0-100-animationTimingFunction\\": (cubic-bezier(0.8,0,1,1)),
-  \\"bounce-50-transform\\": translateY(0),
+  \\"bounce-50-transform\\": none,
   \\"bounce-50-animationTimingFunction\\": (cubic-bezier(0,0,0.2,1)),
 };
 "
@@ -2046,6 +2151,111 @@ $backgroundColor-pink-700 = #b83280;
 $backgroundColor-pink-800 = #97266d;
 $backgroundColor-pink-900 = #702459;
 $backgroundColor-cyan = #9cdbff;
+
+$backgroundImage-gradient-to-t = (linear-gradient(to top, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-tr = (linear-gradient(to top right, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-r = (linear-gradient(to right, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-br = (linear-gradient(to bottom right, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-b = (linear-gradient(to bottom, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-bl = (linear-gradient(to bottom left, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-l = (linear-gradient(to left, var(--gradient-color-stops)));
+$backgroundImage-gradient-to-tl = (linear-gradient(to top left, var(--gradient-color-stops)));
+
+$gradientColorStops-transparent = transparent;
+$gradientColorStops-current = currentColor;
+$gradientColorStops-black = #000;
+$gradientColorStops-white = #fff;
+$gradientColorStops-gray-100 = #f7fafc;
+$gradientColorStops-gray-200 = #edf2f7;
+$gradientColorStops-gray-300 = #e2e8f0;
+$gradientColorStops-gray-400 = #cbd5e0;
+$gradientColorStops-gray-500 = #a0aec0;
+$gradientColorStops-gray-600 = #718096;
+$gradientColorStops-gray-700 = #4a5568;
+$gradientColorStops-gray-800 = #2d3748;
+$gradientColorStops-gray-900 = #1a202c;
+$gradientColorStops-red-100 = #fff5f5;
+$gradientColorStops-red-200 = #fed7d7;
+$gradientColorStops-red-300 = #feb2b2;
+$gradientColorStops-red-400 = #fc8181;
+$gradientColorStops-red-500 = #f56565;
+$gradientColorStops-red-600 = #e53e3e;
+$gradientColorStops-red-700 = #c53030;
+$gradientColorStops-red-800 = #9b2c2c;
+$gradientColorStops-red-900 = #742a2a;
+$gradientColorStops-orange-100 = #fffaf0;
+$gradientColorStops-orange-200 = #feebc8;
+$gradientColorStops-orange-300 = #fbd38d;
+$gradientColorStops-orange-400 = #f6ad55;
+$gradientColorStops-orange-500 = #ed8936;
+$gradientColorStops-orange-600 = #dd6b20;
+$gradientColorStops-orange-700 = #c05621;
+$gradientColorStops-orange-800 = #9c4221;
+$gradientColorStops-orange-900 = #7b341e;
+$gradientColorStops-yellow-100 = #fffff0;
+$gradientColorStops-yellow-200 = #fefcbf;
+$gradientColorStops-yellow-300 = #faf089;
+$gradientColorStops-yellow-400 = #f6e05e;
+$gradientColorStops-yellow-500 = #ecc94b;
+$gradientColorStops-yellow-600 = #d69e2e;
+$gradientColorStops-yellow-700 = #b7791f;
+$gradientColorStops-yellow-800 = #975a16;
+$gradientColorStops-yellow-900 = #744210;
+$gradientColorStops-green-100 = #f0fff4;
+$gradientColorStops-green-200 = #c6f6d5;
+$gradientColorStops-green-300 = #9ae6b4;
+$gradientColorStops-green-400 = #68d391;
+$gradientColorStops-green-500 = #48bb78;
+$gradientColorStops-green-600 = #38a169;
+$gradientColorStops-green-700 = #2f855a;
+$gradientColorStops-green-800 = #276749;
+$gradientColorStops-green-900 = #22543d;
+$gradientColorStops-teal-100 = #e6fffa;
+$gradientColorStops-teal-200 = #b2f5ea;
+$gradientColorStops-teal-300 = #81e6d9;
+$gradientColorStops-teal-400 = #4fd1c5;
+$gradientColorStops-teal-500 = #38b2ac;
+$gradientColorStops-teal-600 = #319795;
+$gradientColorStops-teal-700 = #2c7a7b;
+$gradientColorStops-teal-800 = #285e61;
+$gradientColorStops-teal-900 = #234e52;
+$gradientColorStops-blue-100 = #ebf8ff;
+$gradientColorStops-blue-200 = #bee3f8;
+$gradientColorStops-blue-300 = #90cdf4;
+$gradientColorStops-blue-400 = #63b3ed;
+$gradientColorStops-blue-500 = #4299e1;
+$gradientColorStops-blue-600 = #3182ce;
+$gradientColorStops-blue-700 = #2b6cb0;
+$gradientColorStops-blue-800 = #2c5282;
+$gradientColorStops-blue-900 = #2a4365;
+$gradientColorStops-indigo-100 = #ebf4ff;
+$gradientColorStops-indigo-200 = #c3dafe;
+$gradientColorStops-indigo-300 = #a3bffa;
+$gradientColorStops-indigo-400 = #7f9cf5;
+$gradientColorStops-indigo-500 = #667eea;
+$gradientColorStops-indigo-600 = #5a67d8;
+$gradientColorStops-indigo-700 = #4c51bf;
+$gradientColorStops-indigo-800 = #434190;
+$gradientColorStops-indigo-900 = #3c366b;
+$gradientColorStops-purple-100 = #faf5ff;
+$gradientColorStops-purple-200 = #e9d8fd;
+$gradientColorStops-purple-300 = #d6bcfa;
+$gradientColorStops-purple-400 = #b794f4;
+$gradientColorStops-purple-500 = #9f7aea;
+$gradientColorStops-purple-600 = #805ad5;
+$gradientColorStops-purple-700 = #6b46c1;
+$gradientColorStops-purple-800 = #553c9a;
+$gradientColorStops-purple-900 = #44337a;
+$gradientColorStops-pink-100 = #fff5f7;
+$gradientColorStops-pink-200 = #fed7e2;
+$gradientColorStops-pink-300 = #fbb6ce;
+$gradientColorStops-pink-400 = #f687b3;
+$gradientColorStops-pink-500 = #ed64a6;
+$gradientColorStops-pink-600 = #d53f8c;
+$gradientColorStops-pink-700 = #b83280;
+$gradientColorStops-pink-800 = #97266d;
+$gradientColorStops-pink-900 = #702459;
+$gradientColorStops-cyan = #9cdbff;
 
 $backgroundOpacity-0 = 0;
 $backgroundOpacity-25 = 0.25;
@@ -3062,17 +3272,13 @@ $animation-ping = (ping 1s cubic-bezier(0, 0, 0.2, 1) infinite);
 $animation-pulse = (pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite);
 $animation-bounce = bounce 1s infinite;
 
-$keyframes-spin-from-transform = rotate(0deg);
 $keyframes-spin-to-transform = rotate(360deg);
-$keyframes-ping-0-transform = scale(1);
-$keyframes-ping-0-opacity = 1;
 $keyframes-ping-75-100-transform = scale(2);
 $keyframes-ping-75-100-opacity = 0;
-$keyframes-pulse-0-100-opacity = 1;
 $keyframes-pulse-50-opacity = .5;
 $keyframes-bounce-0-100-transform = translateY(-25%);
 $keyframes-bounce-0-100-animationTimingFunction = (cubic-bezier(0.8,0,1,1));
-$keyframes-bounce-50-transform = translateY(0);
+$keyframes-bounce-50-transform = none;
 $keyframes-bounce-50-animationTimingFunction = (cubic-bezier(0,0,0.2,1));
 "
 `;
