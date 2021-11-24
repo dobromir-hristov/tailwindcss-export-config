@@ -162,6 +162,24 @@ $borderWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
 
 $animation: (none: none, spin: spin 1s linear infinite, ping: (ping 1s cubic-bezier(0, 0, 0.2, 1) infinite), pulse: (pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite), bounce: bounce 1s infinite,)
 
+$backdropBlur: (0: 0, none: 0, sm: 4px, DEFAULT: 8px, md: 12px, lg: 16px, xl: 24px, 2xl: 40px, 3xl: 64px,)
+
+$backdropBrightness: (0: 0, 50: .5, 75: .75, 90: .9, 95: .95, 100: 1, 105: 1.05, 110: 1.1, 125: 1.25, 150: 1.5, 200: 2,)
+
+$backdropContrast: (0: 0, 50: .5, 75: .75, 100: 1, 125: 1.25, 150: 1.5, 200: 2,)
+
+$backdropGrayscale: (0: 0, DEFAULT: 100%,)
+
+$backdropHueRotate: (0: 0deg, 15: 15deg, 30: 30deg, 60: 60deg, 90: 90deg, 180: 180deg, -180: -180deg, -90: -90deg, -60: -60deg, -30: -30deg, -15: -15deg,)
+
+$backdropInvert: (0: 0, DEFAULT: 100%,)
+
+$backdropOpacity: (0: 0, 5: 0.05, 10: 0.1, 20: 0.2, 25: 0.25, 30: 0.3, 40: 0.4, 50: 0.5, 60: 0.6, 70: 0.7, 75: 0.75, 80: 0.8, 90: 0.9, 95: 0.95, 100: 1,)
+
+$backdropSaturate: (0: 0, 50: .5, 100: 1, 150: 1.5, 200: 2,)
+
+$backdropSepia: (0: 0, DEFAULT: 100%,)
+
 $backgroundColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-50: #f9fafb, gray-100: #f3f4f6, gray-200: #e5e7eb, gray-300: #d1d5db, gray-400: #9ca3af, gray-500: #6b7280, gray-600: #4b5563, gray-700: #374151, gray-800: #1f2937, gray-900: #111827, red-50: #fef2f2, red-100: #fee2e2, red-200: #fecaca, red-300: #fca5a5, red-400: #f87171, red-500: #ef4444, red-600: #dc2626, red-700: #b91c1c, red-800: #991b1b, red-900: #7f1d1d, yellow-50: #fffbeb, yellow-100: #fef3c7, yellow-200: #fde68a, yellow-300: #fcd34d, yellow-400: #fbbf24, yellow-500: #f59e0b, yellow-600: #d97706, yellow-700: #b45309, yellow-800: #92400e, yellow-900: #78350f, green-50: #ecfdf5, green-100: #d1fae5, green-200: #a7f3d0, green-300: #6ee7b7, green-400: #34d399, green-500: #10b981, green-600: #059669, green-700: #047857, green-800: #065f46, green-900: #064e3b, blue-50: #eff6ff, blue-100: #dbeafe, blue-200: #bfdbfe, blue-300: #93c5fd, blue-400: #60a5fa, blue-500: #3b82f6, blue-600: #2563eb, blue-700: #1d4ed8, blue-800: #1e40af, blue-900: #1e3a8a, indigo-50: #eef2ff, indigo-100: #e0e7ff, indigo-200: #c7d2fe, indigo-300: #a5b4fc, indigo-400: #818cf8, indigo-500: #6366f1, indigo-600: #4f46e5, indigo-700: #4338ca, indigo-800: #3730a3, indigo-900: #312e81, purple-50: #f5f3ff, purple-100: #ede9fe, purple-200: #ddd6fe, purple-300: #c4b5fd, purple-400: #a78bfa, purple-500: #8b5cf6, purple-600: #7c3aed, purple-700: #6d28d9, purple-800: #5b21b6, purple-900: #4c1d95, pink-50: #fdf2f8, pink-100: #fce7f3, pink-200: #fbcfe8, pink-300: #f9a8d4, pink-400: #f472b6, pink-500: #ec4899, pink-600: #db2777, pink-700: #be185d, pink-800: #9d174d, pink-900: #831843, cyan: #9cdbff,)
 
 $backgroundImage: (none: none, gradient-to-t: (linear-gradient(to top, var(--tw-gradient-stops))), gradient-to-tr: (linear-gradient(to top right, var(--tw-gradient-stops))), gradient-to-r: (linear-gradient(to right, var(--tw-gradient-stops))), gradient-to-br: (linear-gradient(to bottom right, var(--tw-gradient-stops))), gradient-to-b: (linear-gradient(to bottom, var(--tw-gradient-stops))), gradient-to-bl: (linear-gradient(to bottom left, var(--tw-gradient-stops))), gradient-to-l: (linear-gradient(to left, var(--tw-gradient-stops))), gradient-to-tl: (linear-gradient(to top left, var(--tw-gradient-stops))),)
@@ -172,6 +190,10 @@ $backgroundPosition: (bottom: bottom, center: center, left: left, left-bottom: l
 
 $backgroundSize: (auto: auto, cover: cover, contain: contain,)
 
+$blur: (0: 0, none: 0, sm: 4px, DEFAULT: 8px, md: 12px, lg: 16px, xl: 24px, 2xl: 40px, 3xl: 64px,)
+
+$brightness: (0: 0, 50: .5, 75: .75, 90: .9, 95: .95, 100: 1, 105: 1.05, 110: 1.1, 125: 1.25, 150: 1.5, 200: 2,)
+
 $borderColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-50: #f9fafb, gray-100: #f3f4f6, gray-200: #e5e7eb, gray-300: #d1d5db, gray-400: #9ca3af, gray-500: #6b7280, gray-600: #4b5563, gray-700: #374151, gray-800: #1f2937, gray-900: #111827, red-50: #fef2f2, red-100: #fee2e2, red-200: #fecaca, red-300: #fca5a5, red-400: #f87171, red-500: #ef4444, red-600: #dc2626, red-700: #b91c1c, red-800: #991b1b, red-900: #7f1d1d, yellow-50: #fffbeb, yellow-100: #fef3c7, yellow-200: #fde68a, yellow-300: #fcd34d, yellow-400: #fbbf24, yellow-500: #f59e0b, yellow-600: #d97706, yellow-700: #b45309, yellow-800: #92400e, yellow-900: #78350f, green-50: #ecfdf5, green-100: #d1fae5, green-200: #a7f3d0, green-300: #6ee7b7, green-400: #34d399, green-500: #10b981, green-600: #059669, green-700: #047857, green-800: #065f46, green-900: #064e3b, blue-50: #eff6ff, blue-100: #dbeafe, blue-200: #bfdbfe, blue-300: #93c5fd, blue-400: #60a5fa, blue-500: #3b82f6, blue-600: #2563eb, blue-700: #1d4ed8, blue-800: #1e40af, blue-900: #1e3a8a, indigo-50: #eef2ff, indigo-100: #e0e7ff, indigo-200: #c7d2fe, indigo-300: #a5b4fc, indigo-400: #818cf8, indigo-500: #6366f1, indigo-600: #4f46e5, indigo-700: #4338ca, indigo-800: #3730a3, indigo-900: #312e81, purple-50: #f5f3ff, purple-100: #ede9fe, purple-200: #ddd6fe, purple-300: #c4b5fd, purple-400: #a78bfa, purple-500: #8b5cf6, purple-600: #7c3aed, purple-700: #6d28d9, purple-800: #5b21b6, purple-900: #4c1d95, pink-50: #fdf2f8, pink-100: #fce7f3, pink-200: #fbcfe8, pink-300: #f9a8d4, pink-400: #f472b6, pink-500: #ec4899, pink-600: #db2777, pink-700: #be185d, pink-800: #9d174d, pink-900: #831843, cyan: #9cdbff, DEFAULT: #e5e7eb,)
 
 $borderOpacity: (0: 0, 5: 0.05, 10: 0.1, 20: 0.2, 25: 0.25, 30: 0.3, 40: 0.4, 50: 0.5, 60: 0.6, 70: 0.7, 75: 0.75, 80: 0.8, 90: 0.9, 95: 0.95, 100: 1,)
@@ -180,9 +202,15 @@ $borderRadius: (none: 0px, sm: 0.125rem, DEFAULT: 0.25rem, md: 0.375rem, lg: 0.5
 
 $boxShadow: (sm: (0 1px 2px 0 rgba(0, 0, 0, 0.05)), DEFAULT: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)), md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)), lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)), xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)), 2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25)), inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)), none: none,)
 
+$caretColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-50: #f9fafb, gray-100: #f3f4f6, gray-200: #e5e7eb, gray-300: #d1d5db, gray-400: #9ca3af, gray-500: #6b7280, gray-600: #4b5563, gray-700: #374151, gray-800: #1f2937, gray-900: #111827, red-50: #fef2f2, red-100: #fee2e2, red-200: #fecaca, red-300: #fca5a5, red-400: #f87171, red-500: #ef4444, red-600: #dc2626, red-700: #b91c1c, red-800: #991b1b, red-900: #7f1d1d, yellow-50: #fffbeb, yellow-100: #fef3c7, yellow-200: #fde68a, yellow-300: #fcd34d, yellow-400: #fbbf24, yellow-500: #f59e0b, yellow-600: #d97706, yellow-700: #b45309, yellow-800: #92400e, yellow-900: #78350f, green-50: #ecfdf5, green-100: #d1fae5, green-200: #a7f3d0, green-300: #6ee7b7, green-400: #34d399, green-500: #10b981, green-600: #059669, green-700: #047857, green-800: #065f46, green-900: #064e3b, blue-50: #eff6ff, blue-100: #dbeafe, blue-200: #bfdbfe, blue-300: #93c5fd, blue-400: #60a5fa, blue-500: #3b82f6, blue-600: #2563eb, blue-700: #1d4ed8, blue-800: #1e40af, blue-900: #1e3a8a, indigo-50: #eef2ff, indigo-100: #e0e7ff, indigo-200: #c7d2fe, indigo-300: #a5b4fc, indigo-400: #818cf8, indigo-500: #6366f1, indigo-600: #4f46e5, indigo-700: #4338ca, indigo-800: #3730a3, indigo-900: #312e81, purple-50: #f5f3ff, purple-100: #ede9fe, purple-200: #ddd6fe, purple-300: #c4b5fd, purple-400: #a78bfa, purple-500: #8b5cf6, purple-600: #7c3aed, purple-700: #6d28d9, purple-800: #5b21b6, purple-900: #4c1d95, pink-50: #fdf2f8, pink-100: #fce7f3, pink-200: #fbcfe8, pink-300: #f9a8d4, pink-400: #f472b6, pink-500: #ec4899, pink-600: #db2777, pink-700: #be185d, pink-800: #9d174d, pink-900: #831843, cyan: #9cdbff,)
+
+$contrast: (0: 0, 50: .5, 75: .75, 100: 1, 125: 1.25, 150: 1.5, 200: 2,)
+
 $container: ()
 
-$cursor: (auto: auto, default: default, pointer: pointer, wait: wait, text: text, move: move, not-allowed: not-allowed,)
+$content: (none: none,)
+
+$cursor: (auto: auto, default: default, pointer: pointer, wait: wait, text: text, move: move, help: help, not-allowed: not-allowed,)
 
 $divideColor: (transparent: transparent, current: currentColor, black: #000, white: #fff, gray-50: #f9fafb, gray-100: #f3f4f6, gray-200: #e5e7eb, gray-300: #d1d5db, gray-400: #9ca3af, gray-500: #6b7280, gray-600: #4b5563, gray-700: #374151, gray-800: #1f2937, gray-900: #111827, red-50: #fef2f2, red-100: #fee2e2, red-200: #fecaca, red-300: #fca5a5, red-400: #f87171, red-500: #ef4444, red-600: #dc2626, red-700: #b91c1c, red-800: #991b1b, red-900: #7f1d1d, yellow-50: #fffbeb, yellow-100: #fef3c7, yellow-200: #fde68a, yellow-300: #fcd34d, yellow-400: #fbbf24, yellow-500: #f59e0b, yellow-600: #d97706, yellow-700: #b45309, yellow-800: #92400e, yellow-900: #78350f, green-50: #ecfdf5, green-100: #d1fae5, green-200: #a7f3d0, green-300: #6ee7b7, green-400: #34d399, green-500: #10b981, green-600: #059669, green-700: #047857, green-800: #065f46, green-900: #064e3b, blue-50: #eff6ff, blue-100: #dbeafe, blue-200: #bfdbfe, blue-300: #93c5fd, blue-400: #60a5fa, blue-500: #3b82f6, blue-600: #2563eb, blue-700: #1d4ed8, blue-800: #1e40af, blue-900: #1e3a8a, indigo-50: #eef2ff, indigo-100: #e0e7ff, indigo-200: #c7d2fe, indigo-300: #a5b4fc, indigo-400: #818cf8, indigo-500: #6366f1, indigo-600: #4f46e5, indigo-700: #4338ca, indigo-800: #3730a3, indigo-900: #312e81, purple-50: #f5f3ff, purple-100: #ede9fe, purple-200: #ddd6fe, purple-300: #c4b5fd, purple-400: #a78bfa, purple-500: #8b5cf6, purple-600: #7c3aed, purple-700: #6d28d9, purple-800: #5b21b6, purple-900: #4c1d95, pink-50: #fdf2f8, pink-100: #fce7f3, pink-200: #fbcfe8, pink-300: #f9a8d4, pink-400: #f472b6, pink-500: #ec4899, pink-600: #db2777, pink-700: #be185d, pink-800: #9d174d, pink-900: #831843, cyan: #9cdbff, DEFAULT: #e5e7eb,)
 
@@ -190,7 +218,15 @@ $divideOpacity: (0: 0, 5: 0.05, 10: 0.1, 20: 0.2, 25: 0.25, 30: 0.3, 40: 0.4, 50
 
 $divideWidth: (0: 0, 2: 2px, 4: 4px, default: 1px,)
 
+$dropShadow: (sm: (0 1px 1px rgba(0,0,0,0.05)), DEFAULT: (0 1px 2px rgba(0, 0, 0, 0.1),0 1px 1px rgba(0, 0, 0, 0.06)), md: (0 4px 3px rgba(0, 0, 0, 0.07),0 2px 2px rgba(0, 0, 0, 0.06)), lg: (0 10px 8px rgba(0, 0, 0, 0.04),0 4px 3px rgba(0, 0, 0, 0.1)), xl: (0 20px 13px rgba(0, 0, 0, 0.03),0 8px 5px rgba(0, 0, 0, 0.08)), 2xl: (0 25px 25px rgba(0, 0, 0, 0.15)), none: 0 0 #0000,)
+
 $fill: (current: currentColor,)
+
+$grayscale: (0: 0, DEFAULT: 100%,)
+
+$hueRotate: (0: 0deg, 15: 15deg, 30: 30deg, 60: 60deg, 90: 90deg, 180: 180deg, -180: -180deg, -90: -90deg, -60: -60deg, -30: -30deg, -15: -15deg,)
+
+$invert: (0: 0, DEFAULT: 100%,)
 
 $flex: (1: 1 1 0%, auto: 1 1 auto, initial: 0 1 auto, none: none,)
 
@@ -221,8 +257,6 @@ $gridRow: (auto: auto, span-1: span 1 / span 1, span-2: span 2 / span 2, span-3:
 $gridRowStart: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, auto: auto,)
 
 $gridRowEnd: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, auto: auto,)
-
-$transformOrigin: (center: center, top: top, top-right: top right, right: right, bottom-right: bottom right, bottom: bottom, bottom-left: bottom left, left: left, top-left: top left,)
 
 $gridTemplateColumns: (1: (repeat(1, minmax(0, 1fr))), 2: (repeat(2, minmax(0, 1fr))), 3: (repeat(3, minmax(0, 1fr))), 4: (repeat(4, minmax(0, 1fr))), 5: (repeat(5, minmax(0, 1fr))), 6: (repeat(6, minmax(0, 1fr))), 7: (repeat(7, minmax(0, 1fr))), 8: (repeat(8, minmax(0, 1fr))), 9: (repeat(9, minmax(0, 1fr))), 10: (repeat(10, minmax(0, 1fr))), 11: (repeat(11, minmax(0, 1fr))), 12: (repeat(12, minmax(0, 1fr))), none: none,)
 
@@ -274,7 +308,11 @@ $ringWidth: (0: 0px, 1: 1px, 2: 2px, 4: 4px, 8: 8px, DEFAULT: 3px,)
 
 $rotate: (0: 0deg, 1: 1deg, 2: 2deg, 3: 3deg, 6: 6deg, 12: 12deg, 45: 45deg, 90: 90deg, 180: 180deg, -180: -180deg, -90: -90deg, -45: -45deg, -12: -12deg, -6: -6deg, -3: -3deg, -2: -2deg, -1: -1deg,)
 
+$saturate: (0: 0, 50: .5, 100: 1, 150: 1.5, 200: 2,)
+
 $scale: (0: 0, 50: .5, 75: .75, 90: .9, 95: .95, 100: 1, 105: 1.05, 110: 1.1, 125: 1.25, 150: 1.5,)
+
+$sepia: (0: 0, DEFAULT: 100%,)
 
 $skew: (0: 0deg, 1: 1deg, 2: 2deg, 3: 3deg, 6: 6deg, 12: 12deg, -12: -12deg, -6: -6deg, -3: -3deg, -2: -2deg, -1: -1deg,)
 
@@ -288,11 +326,13 @@ $textColor: (transparent: transparent, current: currentColor, black: #000, white
 
 $textOpacity: (0: 0, 5: 0.05, 10: 0.1, 20: 0.2, 25: 0.25, 30: 0.3, 40: 0.4, 50: 0.5, 60: 0.6, 70: 0.7, 75: 0.75, 80: 0.8, 90: 0.9, 95: 0.95, 100: 1,)
 
-$transitionDuration: (75: 75ms, 100: 100ms, 150: 150ms, 200: 200ms, 300: 300ms, 500: 500ms, 700: 700ms, 1000: 1000ms, DEFAULT: 150ms,)
+$transformOrigin: (center: center, top: top, top-right: top right, right: right, bottom-right: bottom right, bottom: bottom, bottom-left: bottom left, left: left, top-left: top left,)
 
 $transitionDelay: (75: 75ms, 100: 100ms, 150: 150ms, 200: 200ms, 300: 300ms, 500: 500ms, 700: 700ms, 1000: 1000ms,)
 
-$transitionProperty: (none: none, all: all, DEFAULT: (background-color, border-color, color, fill, stroke, opacity, box-shadow, transform), colors: (background-color, border-color, color, fill, stroke), opacity: opacity, shadow: box-shadow, transform: transform,)
+$transitionDuration: (75: 75ms, 100: 100ms, 150: 150ms, 200: 200ms, 300: 300ms, 500: 500ms, 700: 700ms, 1000: 1000ms, DEFAULT: 150ms,)
+
+$transitionProperty: (none: none, all: all, DEFAULT: (background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter), colors: (background-color, border-color, color, fill, stroke), opacity: opacity, shadow: box-shadow, transform: transform,)
 
 $transitionTimingFunction: (DEFAULT: (cubic-bezier(0.4, 0, 0.2, 1)), linear: linear, in: (cubic-bezier(0.4, 0, 1, 1)), out: (cubic-bezier(0, 0, 0.2, 1)), in-out: (cubic-bezier(0.4, 0, 0.2, 1)),)
 
@@ -319,6 +359,79 @@ $animation-spin: spin 1s linear infinite
 $animation-ping: (ping 1s cubic-bezier(0, 0, 0.2, 1) infinite)
 $animation-pulse: (pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite)
 $animation-bounce: bounce 1s infinite
+
+$backdropBlur-0: 0
+$backdropBlur-none: 0
+$backdropBlur-sm: 4px
+$backdropBlur-DEFAULT: 8px
+$backdropBlur-md: 12px
+$backdropBlur-lg: 16px
+$backdropBlur-xl: 24px
+$backdropBlur-2xl: 40px
+$backdropBlur-3xl: 64px
+
+$backdropBrightness-0: 0
+$backdropBrightness-50: .5
+$backdropBrightness-75: .75
+$backdropBrightness-90: .9
+$backdropBrightness-95: .95
+$backdropBrightness-100: 1
+$backdropBrightness-105: 1.05
+$backdropBrightness-110: 1.1
+$backdropBrightness-125: 1.25
+$backdropBrightness-150: 1.5
+$backdropBrightness-200: 2
+
+$backdropContrast-0: 0
+$backdropContrast-50: .5
+$backdropContrast-75: .75
+$backdropContrast-100: 1
+$backdropContrast-125: 1.25
+$backdropContrast-150: 1.5
+$backdropContrast-200: 2
+
+$backdropGrayscale-0: 0
+$backdropGrayscale-DEFAULT: 100%
+
+$backdropHueRotate-0: 0deg
+$backdropHueRotate-15: 15deg
+$backdropHueRotate-30: 30deg
+$backdropHueRotate-60: 60deg
+$backdropHueRotate-90: 90deg
+$backdropHueRotate-180: 180deg
+$backdropHueRotate--180: -180deg
+$backdropHueRotate--90: -90deg
+$backdropHueRotate--60: -60deg
+$backdropHueRotate--30: -30deg
+$backdropHueRotate--15: -15deg
+
+$backdropInvert-0: 0
+$backdropInvert-DEFAULT: 100%
+
+$backdropOpacity-0: 0
+$backdropOpacity-5: 0.05
+$backdropOpacity-10: 0.1
+$backdropOpacity-20: 0.2
+$backdropOpacity-25: 0.25
+$backdropOpacity-30: 0.3
+$backdropOpacity-40: 0.4
+$backdropOpacity-50: 0.5
+$backdropOpacity-60: 0.6
+$backdropOpacity-70: 0.7
+$backdropOpacity-75: 0.75
+$backdropOpacity-80: 0.8
+$backdropOpacity-90: 0.9
+$backdropOpacity-95: 0.95
+$backdropOpacity-100: 1
+
+$backdropSaturate-0: 0
+$backdropSaturate-50: .5
+$backdropSaturate-100: 1
+$backdropSaturate-150: 1.5
+$backdropSaturate-200: 2
+
+$backdropSepia-0: 0
+$backdropSepia-DEFAULT: 100%
 
 $backgroundColor-transparent: transparent
 $backgroundColor-current: currentColor
@@ -446,6 +559,28 @@ $backgroundSize-auto: auto
 $backgroundSize-cover: cover
 $backgroundSize-contain: contain
 
+$blur-0: 0
+$blur-none: 0
+$blur-sm: 4px
+$blur-DEFAULT: 8px
+$blur-md: 12px
+$blur-lg: 16px
+$blur-xl: 24px
+$blur-2xl: 40px
+$blur-3xl: 64px
+
+$brightness-0: 0
+$brightness-50: .5
+$brightness-75: .75
+$brightness-90: .9
+$brightness-95: .95
+$brightness-100: 1
+$brightness-105: 1.05
+$brightness-110: 1.1
+$brightness-125: 1.25
+$brightness-150: 1.5
+$brightness-200: 2
+
 $borderColor-transparent: transparent
 $borderColor-current: currentColor
 $borderColor-black: #000
@@ -568,6 +703,102 @@ $boxShadow-2xl: (0 25px 50px -12px rgba(0, 0, 0, 0.25))
 $boxShadow-inner: (inset 0 2px 4px 0 rgba(0, 0, 0, 0.06))
 $boxShadow-none: none
 
+$caretColor-transparent: transparent
+$caretColor-current: currentColor
+$caretColor-black: #000
+$caretColor-white: #fff
+$caretColor-gray-50: #f9fafb
+$caretColor-gray-100: #f3f4f6
+$caretColor-gray-200: #e5e7eb
+$caretColor-gray-300: #d1d5db
+$caretColor-gray-400: #9ca3af
+$caretColor-gray-500: #6b7280
+$caretColor-gray-600: #4b5563
+$caretColor-gray-700: #374151
+$caretColor-gray-800: #1f2937
+$caretColor-gray-900: #111827
+$caretColor-red-50: #fef2f2
+$caretColor-red-100: #fee2e2
+$caretColor-red-200: #fecaca
+$caretColor-red-300: #fca5a5
+$caretColor-red-400: #f87171
+$caretColor-red-500: #ef4444
+$caretColor-red-600: #dc2626
+$caretColor-red-700: #b91c1c
+$caretColor-red-800: #991b1b
+$caretColor-red-900: #7f1d1d
+$caretColor-yellow-50: #fffbeb
+$caretColor-yellow-100: #fef3c7
+$caretColor-yellow-200: #fde68a
+$caretColor-yellow-300: #fcd34d
+$caretColor-yellow-400: #fbbf24
+$caretColor-yellow-500: #f59e0b
+$caretColor-yellow-600: #d97706
+$caretColor-yellow-700: #b45309
+$caretColor-yellow-800: #92400e
+$caretColor-yellow-900: #78350f
+$caretColor-green-50: #ecfdf5
+$caretColor-green-100: #d1fae5
+$caretColor-green-200: #a7f3d0
+$caretColor-green-300: #6ee7b7
+$caretColor-green-400: #34d399
+$caretColor-green-500: #10b981
+$caretColor-green-600: #059669
+$caretColor-green-700: #047857
+$caretColor-green-800: #065f46
+$caretColor-green-900: #064e3b
+$caretColor-blue-50: #eff6ff
+$caretColor-blue-100: #dbeafe
+$caretColor-blue-200: #bfdbfe
+$caretColor-blue-300: #93c5fd
+$caretColor-blue-400: #60a5fa
+$caretColor-blue-500: #3b82f6
+$caretColor-blue-600: #2563eb
+$caretColor-blue-700: #1d4ed8
+$caretColor-blue-800: #1e40af
+$caretColor-blue-900: #1e3a8a
+$caretColor-indigo-50: #eef2ff
+$caretColor-indigo-100: #e0e7ff
+$caretColor-indigo-200: #c7d2fe
+$caretColor-indigo-300: #a5b4fc
+$caretColor-indigo-400: #818cf8
+$caretColor-indigo-500: #6366f1
+$caretColor-indigo-600: #4f46e5
+$caretColor-indigo-700: #4338ca
+$caretColor-indigo-800: #3730a3
+$caretColor-indigo-900: #312e81
+$caretColor-purple-50: #f5f3ff
+$caretColor-purple-100: #ede9fe
+$caretColor-purple-200: #ddd6fe
+$caretColor-purple-300: #c4b5fd
+$caretColor-purple-400: #a78bfa
+$caretColor-purple-500: #8b5cf6
+$caretColor-purple-600: #7c3aed
+$caretColor-purple-700: #6d28d9
+$caretColor-purple-800: #5b21b6
+$caretColor-purple-900: #4c1d95
+$caretColor-pink-50: #fdf2f8
+$caretColor-pink-100: #fce7f3
+$caretColor-pink-200: #fbcfe8
+$caretColor-pink-300: #f9a8d4
+$caretColor-pink-400: #f472b6
+$caretColor-pink-500: #ec4899
+$caretColor-pink-600: #db2777
+$caretColor-pink-700: #be185d
+$caretColor-pink-800: #9d174d
+$caretColor-pink-900: #831843
+$caretColor-cyan: #9cdbff
+
+$contrast-0: 0
+$contrast-50: .5
+$contrast-75: .75
+$contrast-100: 1
+$contrast-125: 1.25
+$contrast-150: 1.5
+$contrast-200: 2
+
+
+$content-none: none
 
 $cursor-auto: auto
 $cursor-default: default
@@ -575,6 +806,7 @@ $cursor-pointer: pointer
 $cursor-wait: wait
 $cursor-text: text
 $cursor-move: move
+$cursor-help: help
 $cursor-not-allowed: not-allowed
 
 $divideColor-transparent: transparent
@@ -685,7 +917,33 @@ $divideWidth-2: 2px
 $divideWidth-4: 4px
 $divideWidth-default: 1px
 
+$dropShadow-sm: (0 1px 1px rgba(0,0,0,0.05))
+$dropShadow-DEFAULT: (0 1px 2px rgba(0, 0, 0, 0.1),0 1px 1px rgba(0, 0, 0, 0.06))
+$dropShadow-md: (0 4px 3px rgba(0, 0, 0, 0.07),0 2px 2px rgba(0, 0, 0, 0.06))
+$dropShadow-lg: (0 10px 8px rgba(0, 0, 0, 0.04),0 4px 3px rgba(0, 0, 0, 0.1))
+$dropShadow-xl: (0 20px 13px rgba(0, 0, 0, 0.03),0 8px 5px rgba(0, 0, 0, 0.08))
+$dropShadow-2xl: (0 25px 25px rgba(0, 0, 0, 0.15))
+$dropShadow-none: 0 0 #0000
+
 $fill-current: currentColor
+
+$grayscale-0: 0
+$grayscale-DEFAULT: 100%
+
+$hueRotate-0: 0deg
+$hueRotate-15: 15deg
+$hueRotate-30: 30deg
+$hueRotate-60: 60deg
+$hueRotate-90: 90deg
+$hueRotate-180: 180deg
+$hueRotate--180: -180deg
+$hueRotate--90: -90deg
+$hueRotate--60: -60deg
+$hueRotate--30: -30deg
+$hueRotate--15: -15deg
+
+$invert-0: 0
+$invert-DEFAULT: 100%
 
 $flex-1: 1 1 0%
 $flex-auto: 1 1 auto
@@ -926,16 +1184,6 @@ $gridRowEnd-5: 5
 $gridRowEnd-6: 6
 $gridRowEnd-7: 7
 $gridRowEnd-auto: auto
-
-$transformOrigin-center: center
-$transformOrigin-top: top
-$transformOrigin-top-right: top right
-$transformOrigin-right: right
-$transformOrigin-bottom-right: bottom right
-$transformOrigin-bottom: bottom
-$transformOrigin-bottom-left: bottom left
-$transformOrigin-left: left
-$transformOrigin-top-left: top left
 
 $gridTemplateColumns-1: (repeat(1, minmax(0, 1fr)))
 $gridTemplateColumns-2: (repeat(2, minmax(0, 1fr)))
@@ -1678,6 +1926,12 @@ $rotate--3: -3deg
 $rotate--2: -2deg
 $rotate--1: -1deg
 
+$saturate-0: 0
+$saturate-50: .5
+$saturate-100: 1
+$saturate-150: 1.5
+$saturate-200: 2
+
 $scale-0: 0
 $scale-50: .5
 $scale-75: .75
@@ -1688,6 +1942,9 @@ $scale-105: 1.05
 $scale-110: 1.1
 $scale-125: 1.25
 $scale-150: 1.5
+
+$sepia-0: 0
+$sepia-DEFAULT: 100%
 
 $skew-0: 0deg
 $skew-1: 1deg
@@ -1882,15 +2139,15 @@ $textOpacity-90: 0.9
 $textOpacity-95: 0.95
 $textOpacity-100: 1
 
-$transitionDuration-75: 75ms
-$transitionDuration-100: 100ms
-$transitionDuration-150: 150ms
-$transitionDuration-200: 200ms
-$transitionDuration-300: 300ms
-$transitionDuration-500: 500ms
-$transitionDuration-700: 700ms
-$transitionDuration-1000: 1000ms
-$transitionDuration-DEFAULT: 150ms
+$transformOrigin-center: center
+$transformOrigin-top: top
+$transformOrigin-top-right: top right
+$transformOrigin-right: right
+$transformOrigin-bottom-right: bottom right
+$transformOrigin-bottom: bottom
+$transformOrigin-bottom-left: bottom left
+$transformOrigin-left: left
+$transformOrigin-top-left: top left
 
 $transitionDelay-75: 75ms
 $transitionDelay-100: 100ms
@@ -1901,9 +2158,19 @@ $transitionDelay-500: 500ms
 $transitionDelay-700: 700ms
 $transitionDelay-1000: 1000ms
 
+$transitionDuration-75: 75ms
+$transitionDuration-100: 100ms
+$transitionDuration-150: 150ms
+$transitionDuration-200: 200ms
+$transitionDuration-300: 300ms
+$transitionDuration-500: 500ms
+$transitionDuration-700: 700ms
+$transitionDuration-1000: 1000ms
+$transitionDuration-DEFAULT: 150ms
+
 $transitionProperty-none: none
 $transitionProperty-all: all
-$transitionProperty-DEFAULT: (background-color, border-color, color, fill, stroke, opacity, box-shadow, transform)
+$transitionProperty-DEFAULT: (background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter)
 $transitionProperty-colors: (background-color, border-color, color, fill, stroke)
 $transitionProperty-opacity: opacity
 $transitionProperty-shadow: box-shadow
