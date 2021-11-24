@@ -53,7 +53,7 @@
     "babel-jest": "^24.9.0",
     "bili": "^4.8.1",
     "jest": "^24.9.0",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   },
   "jest": {
     "transform": {
