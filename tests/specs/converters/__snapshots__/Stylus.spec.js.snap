@@ -1131,19 +1131,32 @@ $flexShrink = {
 };
 
 $fontSize = {
-  xs: (0.75rem,[object Object]),
-  sm: (0.875rem,[object Object]),
-  base: (1rem,[object Object]),
-  lg: (1.125rem,[object Object]),
-  xl: (1.25rem,[object Object]),
-  \\"2xl\\": (1.5rem,[object Object]),
-  \\"3xl\\": (1.875rem,[object Object]),
-  \\"4xl\\": (2.25rem,[object Object]),
-  \\"5xl\\": (3rem,[object Object]),
-  \\"6xl\\": (3.75rem,[object Object]),
-  \\"7xl\\": (4.5rem,[object Object]),
-  \\"8xl\\": (6rem,[object Object]),
-  \\"9xl\\": (8rem,[object Object]),
+  xs: 0.75rem,
+  xs-lineHeight: 1rem,
+  sm: 0.875rem,
+  sm-lineHeight: 1.25rem,
+  base: 1rem,
+  base-lineHeight: 1.5rem,
+  lg: 1.125rem,
+  lg-lineHeight: 1.75rem,
+  xl: 1.25rem,
+  xl-lineHeight: 1.75rem,
+  \\"2xl\\": 1.5rem,
+  \\"2xl-lineHeight\\": 2rem,
+  \\"3xl\\": 1.875rem,
+  \\"3xl-lineHeight\\": 2.25rem,
+  \\"4xl\\": 2.25rem,
+  \\"4xl-lineHeight\\": 2.5rem,
+  \\"5xl\\": 3rem,
+  \\"5xl-lineHeight\\": 1,
+  \\"6xl\\": 3.75rem,
+  \\"6xl-lineHeight\\": 1,
+  \\"7xl\\": 4.5rem,
+  \\"7xl-lineHeight\\": 1,
+  \\"8xl\\": 6rem,
+  \\"8xl-lineHeight\\": 1,
+  \\"9xl\\": 8rem,
+  \\"9xl-lineHeight\\": 1,
 };
 
 $fontWeight = {
@@ -3241,19 +3254,32 @@ $flexGrow-DEFAULT = 1;
 $flexShrink-0 = 0;
 $flexShrink-DEFAULT = 1;
 
-$fontSize-xs = (0.75rem,[object Object]);
-$fontSize-sm = (0.875rem,[object Object]);
-$fontSize-base = (1rem,[object Object]);
-$fontSize-lg = (1.125rem,[object Object]);
-$fontSize-xl = (1.25rem,[object Object]);
-$fontSize-2xl = (1.5rem,[object Object]);
-$fontSize-3xl = (1.875rem,[object Object]);
-$fontSize-4xl = (2.25rem,[object Object]);
-$fontSize-5xl = (3rem,[object Object]);
-$fontSize-6xl = (3.75rem,[object Object]);
-$fontSize-7xl = (4.5rem,[object Object]);
-$fontSize-8xl = (6rem,[object Object]);
-$fontSize-9xl = (8rem,[object Object]);
+$fontSize-xs = 0.75rem;
+$fontSize-xs-lineHeight = 1rem;
+$fontSize-sm = 0.875rem;
+$fontSize-sm-lineHeight = 1.25rem;
+$fontSize-base = 1rem;
+$fontSize-base-lineHeight = 1.5rem;
+$fontSize-lg = 1.125rem;
+$fontSize-lg-lineHeight = 1.75rem;
+$fontSize-xl = 1.25rem;
+$fontSize-xl-lineHeight = 1.75rem;
+$fontSize-2xl = 1.5rem;
+$fontSize-2xl-lineHeight = 2rem;
+$fontSize-3xl = 1.875rem;
+$fontSize-3xl-lineHeight = 2.25rem;
+$fontSize-4xl = 2.25rem;
+$fontSize-4xl-lineHeight = 2.5rem;
+$fontSize-5xl = 3rem;
+$fontSize-5xl-lineHeight = 1;
+$fontSize-6xl = 3.75rem;
+$fontSize-6xl-lineHeight = 1;
+$fontSize-7xl = 4.5rem;
+$fontSize-7xl-lineHeight = 1;
+$fontSize-8xl = 6rem;
+$fontSize-8xl-lineHeight = 1;
+$fontSize-9xl = 8rem;
+$fontSize-9xl-lineHeight = 1;
 
 $fontWeight-thin = 100;
 $fontWeight-extralight = 200;
