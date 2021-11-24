@@ -65,11 +65,18 @@ class Converter {
     return this._walkFlatRecursively(data, prop).join('')
   }
 
+  _shouldContinueWalking (value) {
+    return isObject(value) || (Array.isArray(value) && value.some(isObject))
+  }
+
   _walkFlatRecursively (value, parentPropertyName) {
     return Object.entries(value)
       .reduce((all, [propertyName, propertyValue]) => {
-        const property = [parentPropertyName, propertyName].filter(Boolean).join('-')
-        const val = isObject(propertyValue)
+        const isParentArray = Array.isArray(value)
+        // construct the var name. If parent was an array, we skip the index keys
+        const property = [parentPropertyName, isParentArray ? null : propertyName].filter(Boolean).join('-')
+
+        const val = this._shouldContinueWalking(propertyValue)
           ? this._walkFlatRecursively(propertyValue, property)
           : this._buildVar(
             this._propertyNameSanitizer(property),
@@ -124,23 +131,22 @@ class Converter {
    * @private
    */
   _buildMapData (metric, value, indent, metricIndex) {
-    if (!isObject(value)) {
-      // not an object so we can directly build an entry
-      return this._buildObjectEntry(metric, value, indent, metricIndex)
+    if (this._shouldContinueWalking(value)) {
+      const nestLevel = indent / INDENT_BY
+      if (nestLevel <= this.flattenMapsAfter) {
+        return this._buildObjectEntry(metric, this._buildMap(value, indent + INDENT_BY), indent, metricIndex)
+      }
+      return this._walkRecursively(value, metric, indent, metricIndex).join('')
     }
-    const nestLevel = indent / INDENT_BY
-    // should deeply nested maps be flattened out, or resolved deeply
-    if (nestLevel <= this.flattenMapsAfter) {
-      return this._buildObjectEntry(metric, this._buildMap(value, indent + INDENT_BY), indent, metricIndex)
-    }
-    // its an object so we need to flatten it out
-    return this._walkRecursively(value, metric, indent, metricIndex).join('')
+    // not an object so we can directly build an entry
+    return this._buildObjectEntry(metric, value, indent, metricIndex)
   }
 
   _walkRecursively (value, parentPropertyName, indent, metricIndex) {
+    const isValueArray = Array.isArray(value)
     return Object.entries(value)
       .reduce((all, [propertyName, propertyValue], index) => {
-        const property = [parentPropertyName, propertyName].filter(Boolean).join('-')
+        const property = [parentPropertyName, isValueArray ? null : propertyName].filter(Boolean).join('-')
         const val = isObject(propertyValue)
           ? this._walkRecursively(propertyValue, property, indent, metricIndex)
           : this._buildObjectEntry(property, propertyValue, indent, index, metricIndex)

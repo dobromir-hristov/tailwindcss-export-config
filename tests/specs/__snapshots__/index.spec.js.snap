@@ -1,5 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Tailwind Options Exporter converts arrays of arrays 1`] = `
+"/* Converted Tailwind Config to scss */
+$fontSize: (
+  xs: 0.75rem,
+  xs-lineHeight: 1rem,
+  sm: 0.875rem,
+  sm-lineHeight: 1.25rem,
+  base: 1rem,
+  base-lineHeight: 1.5rem,
+  lg: 1.125rem,
+  lg-lineHeight: 1.75rem,
+  xl: 1.25rem,
+  xl-lineHeight: 1.75rem,
+  2xl: 1.5rem,
+  2xl-lineHeight: 2rem,
+  3xl: 1.875rem,
+  3xl-lineHeight: 2.25rem,
+  4xl: 2.25rem,
+  4xl-lineHeight: 2.5rem,
+  5xl: 3rem,
+  5xl-lineHeight: 1,
+  6xl: 3.75rem,
+  6xl-lineHeight: 1,
+  7xl: 4.5rem,
+  7xl-lineHeight: 1,
+  8xl: 6rem,
+  8xl-lineHeight: 1,
+  9xl: 8rem,
+  9xl-lineHeight: 1,
+);
+"
+`;
+
+exports[`Tailwind Options Exporter converts arrays of arrays. flat 1`] = `
+"/* Converted Tailwind Config to scss */
+$fontSize-xs: 0.75rem;
+$fontSize-xs-lineHeight: 1rem;
+$fontSize-sm: 0.875rem;
+$fontSize-sm-lineHeight: 1.25rem;
+$fontSize-base: 1rem;
+$fontSize-base-lineHeight: 1.5rem;
+$fontSize-lg: 1.125rem;
+$fontSize-lg-lineHeight: 1.75rem;
+$fontSize-xl: 1.25rem;
+$fontSize-xl-lineHeight: 1.75rem;
+$fontSize-2xl: 1.5rem;
+$fontSize-2xl-lineHeight: 2rem;
+$fontSize-3xl: 1.875rem;
+$fontSize-3xl-lineHeight: 2.25rem;
+$fontSize-4xl: 2.25rem;
+$fontSize-4xl-lineHeight: 2.5rem;
+$fontSize-5xl: 3rem;
+$fontSize-5xl-lineHeight: 1;
+$fontSize-6xl: 3.75rem;
+$fontSize-6xl-lineHeight: 1;
+$fontSize-7xl: 4.5rem;
+$fontSize-7xl-lineHeight: 1;
+$fontSize-8xl: 6rem;
+$fontSize-8xl-lineHeight: 1;
+$fontSize-9xl: 8rem;
+$fontSize-9xl-lineHeight: 1;
+"
+`;
+
 exports[`Tailwind Options Exporter converts deeply nested configs, with flat:false: level-default 1`] = `
 "/* Converted Tailwind Config to scss */
 $customForms: (
