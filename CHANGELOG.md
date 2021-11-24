@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.3.1...v3.0.0) (2021-11-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* This PR Updates the TW dependency to ~2.0.0
+
+* Update to latest TW 2 ([#45](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/45)) ([e385f1d](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/e385f1d))
+
+### [2.3.1](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.3.0...v2.3.1) (2021-11-24)
+
 ## [2.3.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v2.2.1...v2.3.0) (2020-10-15)
 
 
