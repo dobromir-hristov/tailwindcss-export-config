@@ -73,7 +73,7 @@ describe('Tailwind Options Exporter', () => {
     let converterInstance = new ConvertTo({
       config: testConfigDisabledPlugins,
       format: 'scss',
-      preserveKeys: ['colors', 'screens'],
+      preserveKeys: ['colors', 'screens']
     })
 
     const scssConfig = converterInstance.convert()
@@ -196,6 +196,35 @@ describe('Tailwind Options Exporter', () => {
       '$customForms-somethingElse-level1-nestedB-nestedC-nestedD-color2: color2;\n' +
       '$customForms-somethingElse-level1-nestedB-nestedC-nestedD-nestedE-color: nestedE;'
     )
+    expect(result).toMatchSnapshot()
+  })
+
+  it('converts arrays of arrays', () => {
+    const converterInstance = new ConvertTo({
+      config: {
+        theme: {},
+        corePlugins: ['fontSize'] // fontSize has a [string, {}] format
+      },
+      format: 'scss'
+    })
+    let result = converterInstance.convert()
+    expect(result).toContain(`xs: 0.75rem`)
+    expect(result).toContain(`xs-lineHeight: 1rem`)
+    expect(result).toMatchSnapshot()
+  })
+
+  it('converts arrays of arrays. flat', () => {
+    const converterInstance = new ConvertTo({
+      config: {
+        theme: {},
+        corePlugins: ['fontSize'] // fontSize has a [string, {}] format
+      },
+      format: 'scss',
+      flat: true
+    })
+    let result = converterInstance.convert()
+    expect(result).toContain(`xs: 0.75rem`)
+    expect(result).toContain(`xs-lineHeight: 1rem`)
     expect(result).toMatchSnapshot()
   })
 })
