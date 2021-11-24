@@ -40,20 +40,20 @@
   ],
   "homepage": "https://github.com/dobromir-hristov/tailwindcss-export-config#readme",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "fs-extra": "^8.1.0",
+    "chalk": "^4.1.2",
+    "fs-extra": "^10.0.0",
     "lodash.reduce": "^4.6.0",
     "tailwindcss": "2.2.19",
-    "yargs": "^14.0.0"
+    "yargs": "^17.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "babel-jest": "^24.9.0",
-    "bili": "^4.8.1",
-    "jest": "^24.9.0",
-    "standard-version": "^7.0.0"
+    "babel-jest": "^27.3.1",
+    "bili": "^5.0.5",
+    "jest": "^27.3.1",
+    "standard-version": "^9.3.2"
   },
   "jest": {
     "transform": {

@@ -2,7 +2,7 @@
 
 const yargs = require('yargs')
 const ConvertTo = require('./dist')
-const chalk = require('chalk').default
+const chalk = require('chalk')
 const log = console.log
 const error = (msg) => chalk.bold.bgRed('\n' + chalk.white(msg) + '\n')
 const path = require('path')
