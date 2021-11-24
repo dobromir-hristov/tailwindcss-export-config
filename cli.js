@@ -56,7 +56,10 @@ const argv = yargs // eslint-disable-line
   .option('preserve-keys', {
     describe: 'Keys to preserve',
     type: 'array', /* array | boolean | string */
-    nargs: 1
+    nargs: 1,
+    coerce: array => {
+      return array.flatMap(v => v.split(','))
+    }
   })
   .argv
 
