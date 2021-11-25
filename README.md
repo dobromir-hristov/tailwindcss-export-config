@@ -12,7 +12,7 @@
 
 ## Features
 
-* 🚀 Exports Tailwindcss config options to SASS, SCSS, LESS and Stylus.
+* 🚀 Exports Tailwindcss 2 config options to SASS, SCSS, LESS and Stylus.
 * 💥 CLI and Node api support
 * 💪 Unit Tested
 * ⚙️ Also available for [Gulp](https://github.com/dkern/gulp-tailwindcss-export-config)
@@ -331,8 +331,8 @@ tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-var
 
 ## Compatibility
 
-This branch works with v1.x of Tailwindcss. If you are using the older 0.x version, please use `legacy` version
+Version 3.x of this tool works with v2.x of Tailwindcss. If you are using the older 0.x version, please use the 2.x version of `Tailwindcss-export-config`
 
 ```bash
-npm install tailwindcss-export-config@legacy
+npm install tailwindcss-export-config@2
 ```
