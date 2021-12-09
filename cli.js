@@ -27,7 +27,7 @@ const argv = yargs // eslint-disable-line
     alias: 'f',
     describe: 'Format to generate - sass,less,stylus',
     type: 'string',
-    choices: ['sass', 'scss', 'less', 'styl'],
+    choices: ['sass', 'scss', 'less', 'styl', 'json'],
     nargs: 1,
     demand: true
   })
@@ -57,7 +57,7 @@ const argv = yargs // eslint-disable-line
     describe: 'Keys to preserve',
     type: 'array', /* array | boolean | string */
     nargs: 1,
-    coerce: array => {
+    coerce: (array = []) => {
       return array.flatMap(v => v.split(','))
     }
   })
