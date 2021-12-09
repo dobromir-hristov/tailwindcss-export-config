@@ -8,7 +8,8 @@ const allowedFormatsMap = {
   styl: converters.Stylus,
   sass: converters.Sass,
   scss: converters.Scss,
-  less: converters.Less
+  less: converters.Less,
+  css: converters.Css,
 }
 
 /**
