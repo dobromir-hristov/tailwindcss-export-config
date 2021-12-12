@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-export-config",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "Export Tailwindcss config options to SASS, SCSS, LESS and Stylus",
   "main": "dist/index.js",
   "bin": "cli.js",
