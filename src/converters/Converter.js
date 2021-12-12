@@ -25,6 +25,8 @@ class Converter {
   flattenMapsAfter = -1
   /** @type {array} - config keys to preserve */
   preserveKeys = []
+  prefixContent = ''
+  suffixContent = ''
 
   /**
    * @param opts
@@ -175,7 +177,7 @@ class Converter {
    */
   convert () {
     let setting
-    let buffer = ''
+    let buffer = this.prefixContent
     for (setting in this.theme) {
       if (this.theme.hasOwnProperty(setting) && this._isSettingEnabled(setting)) {
         const data = this.theme[setting]
@@ -188,6 +190,7 @@ class Converter {
         buffer += body
       }
     }
+    buffer = buffer += this.suffixContent
     return buffer
   }
 

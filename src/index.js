@@ -9,7 +9,8 @@ const allowedFormatsMap = {
   sass: converters.Sass,
   scss: converters.Scss,
   less: converters.Less,
-  json: converters.JSON
+  json: converters.JSON,
+  css: converters.Css,
 }
 
 /**

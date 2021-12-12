@@ -27,7 +27,7 @@ const argv = yargs // eslint-disable-line
     alias: 'f',
     describe: 'Format to generate - sass,less,stylus',
     type: 'string',
-    choices: ['sass', 'scss', 'less', 'styl', 'json'],
+    choices: ['sass', 'scss', 'less', 'styl', 'css', 'json'],
     nargs: 1,
     demand: true
   })
