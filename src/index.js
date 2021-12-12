@@ -8,7 +8,8 @@ const allowedFormatsMap = {
   styl: converters.Stylus,
   sass: converters.Sass,
   scss: converters.Scss,
-  less: converters.Less
+  less: converters.Less,
+  json: converters.JSON
 }
 
 /**
@@ -42,7 +43,10 @@ class ConvertTo {
    * @returns {string}
    */
   convert () {
-    let buffer = `/* Converted Tailwind Config to ${this.options.format} */`
+    let buffer = ''
+    if (this.options.format !== 'json') {
+      buffer = `/* Converted Tailwind Config to ${this.options.format} */`
+    }
     buffer += this.converterInstance.convert()
     return buffer
   }
