@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v3.1.0...v4.0.0) (2021-12-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update to TW 3. That comes with major changes in the resulting exports
+
+### Features
+
+* support TW-3.0 ([f7e2d6c](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/f7e2d6c888cf4031508c08bce4b15921d844b2a8))
+
+
+### Bug Fixes
+
+* sanitize less negative values ([b3638d2](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/b3638d2c549be79341d8b059bc20a2119050d129))
+
 ## [3.1.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v3.0.2...v3.1.0) (2021-12-12)
 
 
