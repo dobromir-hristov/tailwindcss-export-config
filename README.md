@@ -12,7 +12,7 @@
 
 ## Features
 
-* 🚀 Exports Tailwindcss 2 config options to SASS, SCSS, LESS, Stylus, Custom CSS Properties or even JSON.
+* 🚀 Exports Tailwindcss 3 config options to SASS, SCSS, LESS, Stylus, Custom CSS Properties or even JSON.
 * 💥 CLI and Node api support
 * 💪 Unit Tested
 * ⚙️ Also available for [Gulp](https://github.com/dkern/gulp-tailwindcss-export-config)
@@ -215,7 +215,7 @@ With stylus, using nested maps is a matter of reaching using dot notation `$colo
   --borderWidth-2: 2px;
   --borderWidth-4: 4px;
   --borderWidth-default: 1px;
-  
+
   /* etc... */
 }
 ```
@@ -362,15 +362,19 @@ tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-var
 ```
 
 **Removed Options**
+
 1. colors
 2. screens
 3. spacing
 4. keyframes
 
-
 ## Compatibility
 
-Version 3.x of this tool works with v2.x of Tailwindcss. If you are using the older 0.x version, please use the 2.x version of `Tailwindcss-export-config`
+| tailwindcss-export-config | tailwindcss |
+|------------------------|-------------|
+| 4.x                    | 3.x         |
+| 3.x                    | 2.x         |
+| 2.x                    | 0.x         |
 
 ```bash
 npm install tailwindcss-export-config@2
