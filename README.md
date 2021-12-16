@@ -12,7 +12,7 @@
 
 ## Features
 
-* 🚀 Exports Tailwindcss 2 config options to SASS, SCSS, LESS and Stylus.
+* 🚀 Exports Tailwindcss 2 config options to SASS, SCSS, LESS, Stylus, Custom CSS Properties or even JSON.
 * 💥 CLI and Node api support
 * 💪 Unit Tested
 * ⚙️ Also available for [Gulp](https://github.com/dkern/gulp-tailwindcss-export-config)
@@ -203,6 +203,45 @@ $colors = {
 ```
 
 With stylus, using nested maps is a matter of reaching using dot notation `$colors.black` or `$colors[black]`. JavaScript anyone?
+
+### Custom CSS Properties
+
+```css
+:root {
+  --fontFamily-display: Gilroy, sans-serif;
+  --fontFamily-body: Graphik, sans-serif;
+
+  --borderWidth-0: 0;
+  --borderWidth-2: 2px;
+  --borderWidth-4: 4px;
+  --borderWidth-default: 1px;
+  
+  /* etc... */
+}
+```
+
+### JSON
+
+```json
+{
+  "fontFamily": {
+    "display": [
+      "Gilroy",
+      "sans-serif"
+    ],
+    "body": [
+      "Graphik",
+      "sans-serif"
+    ]
+  },
+  "borderWidth": {
+    "0": "0",
+    "2": "2px",
+    "4": "4px",
+    "default": "1px"
+  }
+}
+```
 
 ### Prefix
 
