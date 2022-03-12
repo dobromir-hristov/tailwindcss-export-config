@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v4.0.0...v4.0.1) (2022-03-12)
+
+
+### Bug Fixes
+
+* prefix dots in the var names. closes [#55](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/55) ([#56](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/56)) ([321ff62](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/321ff62ccd637655c297e9b4923899056d6b1443))
+
 ## [4.0.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v3.1.0...v4.0.0) (2021-12-16)
 
 
