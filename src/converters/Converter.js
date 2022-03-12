@@ -234,7 +234,10 @@ class Converter {
    * @private
    */
   _propertyNameSanitizer (property) {
-    property = sanitizeKey(property.replace(/\//g, '\\/'))
+    property = sanitizeKey(property
+      .replace(/\//g, '\\/')
+      .replace(/\./g, '\\.')
+    )
     return [this.prefix, property].filter(v => v).join('-')
   }
 

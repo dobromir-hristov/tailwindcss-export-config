@@ -17,11 +17,6 @@ class CssConverter extends Converter {
     if (Array.isArray(value)) return value.join(', ')
     return value
   }
-
-  _propertyNameSanitizer (property) {
-    property = super._propertyNameSanitizer(property)
-    return property.replace(/\./g, '\\.')
-  }
 }
 
 export default CssConverter
