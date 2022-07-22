@@ -368,6 +368,18 @@ tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-var
 3. spacing
 4. keyframes
 
+### Only include keys
+
+When you only want some `corePlugins`, you can explicitly add these using the `onlyIncludeKeys` parameter, both in CLI and in the node api.
+
+```
+tailwindcss-export-config --config=tailwind.config.js --destination=tailwind-variables --format=scss --onlyIncludeKeys=colors,screens
+```
+
+### Note of caution
+
+When using the `onlyIncludeKeys` parameter, defined `corePlugins` and the `preserveKeys` parameter have no effect.
+
 ## Compatibility
 
 | tailwindcss-export-config | tailwindcss |
