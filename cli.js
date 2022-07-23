@@ -61,6 +61,14 @@ const argv = yargs // eslint-disable-line
       return array.flatMap(v => v.split(','))
     }
   })
+  .option('only-include-keys', {
+    describe: 'Keys to include exclusivly',
+    type: 'array', /* array | boolean | string */
+    nargs: 1,
+    coerce: (array = []) => {
+      return array.flatMap(v => v.split(','))
+    }
+  })
   .argv
 
 try {
@@ -73,6 +81,7 @@ try {
     quotedKeys: argv['quoted-keys'],
     flattenMapsAfter: argv['flatten-maps-after'],
     preserveKeys: argv['preserve-keys'],
+    onlyIncludeKeys: argv['only-include-keys'],
   })
   converter.writeToFile()
     .then((options) => {

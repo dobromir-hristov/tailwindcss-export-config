@@ -83,6 +83,21 @@ describe('Tailwind Options Exporter', () => {
     expect(scssConfig).toContain('colors')
   })
 
+  it('onlyInclude keys that are set', () => {
+    let converterInstance = new ConvertTo({
+      config: testConfigDisabledPlugins,
+      format: 'scss',
+      onlyIncludeKeys: ['colors', 'screens']
+    })
+
+    const scssConfig = converterInstance.convert()
+
+    // assert it does not contain a few properties
+    expect(scssConfig).toContain('screens')
+    expect(scssConfig).toContain('colors')
+    expect(scssConfig).not.toContain('backgroundSize')
+  })
+
   it('it properly includes the provided configuration properties', () => {
     let converterInstance = new ConvertTo({
       config: testConfig,

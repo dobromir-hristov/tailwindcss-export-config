@@ -25,6 +25,7 @@ class Converter {
   flattenMapsAfter = -1
   /** @type {array} - config keys to preserve */
   preserveKeys = []
+  onlyIncludeKeys = []
   prefixContent = ''
   suffixContent = ''
 
@@ -47,6 +48,7 @@ class Converter {
     if (opts.quotedKeys) this.quotedKeys = opts.quotedKeys
     if (typeof opts.flattenMapsAfter !== 'undefined') this.flattenMapsAfter = opts.flattenMapsAfter
     if (typeof opts.preserveKeys !== 'undefined') this.preserveKeys = opts.preserveKeys
+    if (typeof opts.onlyIncludeKeys !== 'undefined') this.onlyIncludeKeys = opts.onlyIncludeKeys
   }
 
   /**
@@ -201,6 +203,7 @@ class Converter {
    * @private
    */
   _isSettingEnabled (key) {
+    if (this.onlyIncludeKeys.length) return this.onlyIncludeKeys.includes(key);
     const { corePlugins } = this.configs
     if (this.preserveKeys.length && this.preserveKeys.includes(key)) return true
     if (!corePlugins) return true
