@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v4.0.1...v4.1.0) (2022-07-23)
+
+
+### Features
+
+* add onlyIncludeKeys ([#60](https://github.com/dobromir-hristov/tailwindcss-export-config/issues/60)) ([ffee472](https://github.com/dobromir-hristov/tailwindcss-export-config/commit/ffee4727966046fba427afe98b3343950179ee12))
+
 ### [4.0.1](https://github.com/dobromir-hristov/tailwindcss-export-config/compare/v4.0.0...v4.0.1) (2022-03-12)
 
 
